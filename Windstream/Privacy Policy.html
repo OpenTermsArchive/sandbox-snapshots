@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head"><title>
+	Privacy Policy | Kinetic by Windstream
+</title><meta name="description" content="The Windstream privacy policy describes how we collect and use information from customers and visitors to Windstream's website and other digital properties." />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=2.0">
+<meta name="google-site-verification" content="eq_Jp_Z0KdVtDlZa5qd2FQAWLJi5Gei5EvyiGBjwWo8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="iotmetatag">
+<script type="text/javascript">
+;window.NREUM||(NREUM={});NREUM.init={distributed_tracing:{enabled:true},privacy:{cookies_enabled:true}};
+window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(29),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(30),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError";if(!c.disabled){var l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){L++,C=g.hash,this[u]=y.now()}function o(){L--,g.hash!==C&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),S=t(7),N=t(14),M=t(9),P=t("ee"),T=P.get("tracer");t(16),y.features.spa=!0;var C,L=0;P.on(u,r),b.on(p,r),M.on(p,r),P.on(d,o),b.on(l,o),M.on(l,o),P.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),N.buffer([u,"new-xhr","send-xhr"+s]),S.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),T.buffer([u,"no-"+u]),M.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(N,"send-xhr"+s),a(P,"xhr-resolved"),a(P,"xhr-done"),a(S,m+s),a(S,m+"-done"),a(M,"new-jsonp"),a(M,"jsonp-end"),a(M,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");if(!y.disabled){y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(30),a=t(29);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t("wrap-function")(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=i.context(),n=s(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,s=o(i),c=t(29),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),s=f.resolve(a);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=s(n[0],"cb-",r,null,!1),n[1]=s(n[1],"cb-",r,null,!1);var c=t.apply(this,n);return r.nextPromise=c,i.emit("propagate",[e,!0],c,!1,!1),c}}),i.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this,null,!1),t[1]=s(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",s=1,c="",f="";return o+"@nr="+i+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(26),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime]))}}function o(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(22),m=t(21),v=t(18),w=NREUM.o.REQ,g=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof g&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof g&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},i=this.target;"string"==typeof i?n=i:"object"==typeof i&&i instanceof w?n=i.url:window.URL&&"object"==typeof i&&i instanceof URL&&(n=i.href),o(this,n);var s=(""+(i&&i instanceof w&&i.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}),u.on("fetch-done",function(t,e){this.params||(this.params={}),this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime])})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(21);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(29),s=t(30),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],21:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],22:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],23:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,s=t(31);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],24:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),v=!0,d("timing",["fi",e,n])}}function s(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,f,u,d=t("handle"),p=t("loader"),l=t(28),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}l(s)}},{}],26:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],27:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],28:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],29:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],30:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],31:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!l.aborted||i){t&&a&&t(n,r,o);for(var s=e(o),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var p=d[y[n]];return p&&p.push([x,n,r,s]),s}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return p[t]=p[t]||o(n)}function w(t,e){l.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function i(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",f=t("gos"),u=t(29),d={},p={},l=e.exports=o();e.exports.getOrSetContext=i,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!S++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+O.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===m.readyState&&i()}function i(){s("mark",["domContent",a()+O.offset],null,"api")}var a=t(23),s=t("handle"),c=t(29),f=t("ee"),u=t(27),d=t(24),p=t(20),l=p.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!d(h.location);NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1210.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(19),t(25),m[v]?(m[v]("DOMContentLoaded",i,!1),h[v]("load",r,!1)):(m[w]("onreadystatechange",o),h[w]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var S=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var i,a,u,p;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(l){o([l,"",[i,a,c],u],t)}s(n+"start",[i,a,c],u,f);try{return p=e.apply(a,i)}catch(h){throw s(n+"err",[i,a,h],u,f),h}finally{s(n+"end",[i,a,p],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,o,c,i))}function s(n,r,i,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,i,e,a)}catch(c){o([c,n,r,i],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=p,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function s(t,e){var n=e(t);return n[p]=t,i(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(30),p="nr@original",l=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,16,5,3,4]);
+;NREUM.loader_config={accountID:"1032370",trustKey:"1032370",agentID:"267658954",licenseKey:"3e2cbb898e",applicationID:"267343158"}
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"3e2cbb898e",applicationID:"267343158",sa:1}
+</script>
+
+<meta charset="utf-8">
+<link as="style" rel="stylesheet preload prefetch" href="/CMSVirtualFiles/CSSStylesheets/bootstrap.min.css">
+<link rel="stylesheet" href="/CMSVirtualFiles/CSSStylesheets/font-awesome.min.css">
+
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2CString.prototype.includes%2CElement.prototype.replaceWith%2CArray.prototype.forEach%2CNodeList.prototype.forEach%2CArray.from%2CObject.assign"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" href="https://use.typekit.net/lor4fxr.css">
+<script>
+  $(document).ready(function () {
+    $(".icon-chevron-left, .icon-chevron-right").click(function () {
+        $('.carousel-marquee').slick('setPosition');
+    });
+  
+   });
+</script>
+<script>
+setTimeout(function(){ $(".md-accordion button:first").trigger("click");}, 500);</script>
+<script>
+  setTimeout(function(){
+    $("img[src*='trkn.us']").each(function(){
+      $(this).css("display","none");
+    });
+    $("img[src*='tags.w55c.net']").each(function(){ 
+        $(this).css("display","none");
+    });
+  }, 1500);
+</script>
+<script type="text/javascript">
+
+(function() {
+
+  var didInit = false;
+
+  function initMunchkin() {
+
+    if(didInit === false) {
+
+      didInit = true;
+
+      Munchkin.init('436-SWJ-524');
+
+    }
+
+  }
+
+  var s = document.createElement('script');
+
+  s.type = 'text/javascript';
+
+  s.async = true;
+
+  s.src = '//munchkin.marketo.net/munchkin.js';
+
+  s.onreadystatechange = function() {
+
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+
+      initMunchkin();
+
+    }
+
+  };
+
+  s.onload = initMunchkin;
+
+  document.getElementsByTagName('head')[0].appendChild(s);
+
+})();
+
+</script>
+<script src="https://visit.gokinetic.com/rs/436-SWJ-524/images/utm-attribution_website.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@union/windstream-design-system@0.1.33/dist/windstream-design-system/windstream-design-system.css">
+<script type="module" src="https://unpkg.com/@union/windstream-design-system@0.1.33/dist/windstream-design-system/windstream-design-system.esm.js" async></script>
+
+<script>
+window.app = window.app || {
+  mapKey: 'AIzaSyCnL5QmeJpO1er3cQ4UwCPllrCCuOyGYP4',
+  endpoint: 'https://craftcms.windstream.com/api',
+  entryUri: '/buy',
+  checkoutUri: '/checkout',
+  goKinetic: 'https://login.windstream.com/idp/startSSO.ping?PartnerSpId=https://login.windstream.com&loginAdapterId=myWindstreamWeb&TargetResource=https://www.windstream.com/',
+  iframeSrc: 'https://epaytest.windstream.com/NATCOMLandingController?Offer=',
+  enableAutopay: false,
+}
+</script>
+<style>
+  :root {
+    --win-sans-font: 'Lato', sans-serif;
+    --color-primary-lighter: #FFF4EF;
+    --color-primary-light: #EF9123;
+    --color-primary: #EF6724;
+    --color-secondary-light: #544FC7;
+    --color-secondary: #1B2C83;
+    --color-tertiary-lighter: #F0FAF7;
+    --color-tertiary-light: #6BBE59;
+    --color-tertiary: #21A881;
+    --color-smoke: #F0F0F0;
+    --color-pink: #ED1863;
+  }
+  
+  /* Start Menu Styles - Mike D */
+  .rebranding-theme .ws-site-nav .menu_full_width_w_icons__dropdown :first-child.CMSListMenuUL .CMSListMenuLI .CMSListMenuLink .CMSListMenuAnimation {
+    transition: transform 300ms ease-in-out;
+    padding-left: 0px;
+}
+
+.rebranding-theme .ws-site-nav .menu_full_width_w_icons__dropdown :first-child.CMSListMenuUL .CMSListMenuLI .menu-item-w-icon-description .page-name {
+    font-weight: 800;
+    font-size: 16px;
+}  
+.rebranding-theme .cta-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+}
+.rebranding-theme .cta-legal a {
+    font-weight: 700;
+}
+  
+  .k-product-offering .site_fixed_container .k-product-offering__swiper-slide-content.product-slide.black-card .k-services-icon {
+    /*height: 100% !important;
+    width: 100%;
+    display: flex;*/
+    padding-top: 30px;
+}
+  /*
+ .rebranding-theme .k-product-offering h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+  
+ .rebranding-theme .k-product-offering .k-product-offering__swiper-slide-content.product-slide.black-card .k-product-offering__copy-holder .k-product-offering__copy {
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+    flex-grow: 0;
+    margin-bottom: 40px;
+    opacity: .6;
+    min-height: 100px;
+}
+  */
+  
+ /*.black-card .k-services-icon img {
+    max-height: 120px;
+    padding-top: 20px
+    }*/
+  
+  .rebranding-theme .kinetic-value-proposition {
+    margin-top: 0px;
+    padding: 0px 30px;
+}
+  
+  .rebranding-theme .feature .ws-image-text-module .textContainer h3 {
+    font-weight: 700;
+}
+  
+ .rebranding-theme .kinetic-value-proposition .value_prpo_abtus {
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #231F20 !important;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 15px 0px;
+}
+  
+  img[src*="trkn.us"] {
+    display: none;
+  }
+  img[src*="tags.w55c.net"] {
+    display: none;
+  }
+  
+  /*img[src="/getattachment/5473e6e7-2cb6-44f2-86f8-13853d7e2bff/Internet Security?width=180"] {
+  margin-left: 40px !important;
+}
+  img[src="/getattachment/2de0651b-ee87-4584-9512-79b6761db843/Wi-Fi?width=180"] {
+  margin-left: 10px !important;
+}*/
+  
+  /* End Menu Styles - Mike D */
+</style>
+
+<script>
+ var siteContext = {
+   pageTitle: "Windstream-residential",
+}
+</script>
+
+
+
+
+
+<link rel="canonical" href="https://www.windstream.com/about/legal/privacy-policy" />
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-THS7L57');
+</script>
+
+
+<script>
+   window.dataLayer = window.dataLayer || [];
+</script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha512-5WvZa4N7Jq3TVNCp4rjcBMlc6pT3lZ7gVxjtI6IkKW+uItSa+rFgtFljvZnCxQGj8SUX5DHraKE6Mn/4smK1Cg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<link href="/CMSVirtualFiles/CSSStylesheets/ws-res-main.css?ver=20220606" type="text/css" rel="stylesheet" defer />
+
+
+
+
+
+
+
+
+
+
+<script>
+	window.gMapsKey =  'AIzaSyCnL5QmeJpO1er3cQ4UwCPllrCCuOyGYP4'; 
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=GTM-W2QQH26"></script>
+<meta name=”referrer” content=”origin”></head>
+<body class="LTR ENUS ContentBodyTestClass" rebranding-theme role="body content">
+
+<noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-THS7L57"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script type="text/javascript" src="https://c.la4-c2-ph2.salesforceliveagent.com/content/g/js/47.0/deployment.js"></script>
+<script type="text/javascript">
+window.liveAgentScript = "https://c.la4-c2-ph2.salesforceliveagent.com/content/g/js/47.0/deployment.js";
+</script>
+<form method="post" action="/about/legal/privacy-policy" id="form">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LY16YenpdHNCwg0h79oDTpEZhURFBs4Q_RHILljq1m5_L55Wyn2EgX3kmkEdHpFlcTiCPaaydnMeNjnag4g3Uc9_1xrV0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "isDebuggingEnabled": false,
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+<div id="ctxM">
+</div>
+<div id="covid19" class='top-animation p-0 bg-white res' data-item-content='Ending Soon: New customers - receive a $200 Kinetic® Visa® Prepaid Card with Internet Purchase. Call to Order' tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="w-100">
+<div class="modal-content">
+<div class="covid19-close" data-dismiss="modal" data-item-id="close icon">
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Icon/Close">
+<polygon id="Bounds" fill-opacity="0" fill="#FFFFFF" points="0 0 24 0 24 24 0 24"></polygon>
+<polygon id="Shape" fill="#000000" points="19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p class="covid-19-content desktop">
+<span id="p_lt_ctl00_WSCovidPopup_Text_TF">Ending Soon: New customers - receive a $200 Kinetic® Visa® Prepaid Card with Internet Purchase. Call to Order <a style="margin-right:12px;padding-top:0 !important;" href="tel:8664458084" data-item-id="phone-number">866-445-8084.</a><a href="/offer-conditions" style="text-decoration:underline !important;color:white;padding-top:0;">View Details</a></span>
+<a href='' title='' target="_blank" class='txt-black page_link' data-item-id=''>
+<span><span id="p_lt_ctl00_WSCovidPopup_Link_TF"></span></span>
+</a>
+</p>
+<p class="covid-19-content mobile">
+<span id="p_lt_ctl00_WSCovidPopup_MobileText_TF">Ending Soon: New customers - receive a $200 Kinetic® Visa® Prepaid Card with Internet Purchase. Call to Order <a style="margin-right:12px;padding-top:0 !important;" href="tel:8664458084" data-item-id="phone-number">866-445-8084.</a><a href="/offer-conditions" style="text-decoration:underline !important;color:white;padding-top:0">View Details</a></span>
+<a href='' title='' target="_blank" class='txt-black page_link' data-item-id=''>
+<span><span id="p_lt_ctl00_WSCovidPopup_mobileLink_TF"></span></span>
+</a>
+</p>
+</div>
+</div>
+</div>
+<div class="rebranding-theme">
+<div class="header-color-bar">
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<div class='ws-crown'>
+<div class="mobile-crown-header">
+<div>
+<a class="logo" href="/"><img src="/Windstream-residential/media/res/Kinetic-Horizontal.svg" alt="Windstream Logo" width="130"></a>
+<ul class="mobile-icon-menu">
+<li id="mobile-icon-menu-call" role="button" aria-label="Call Icon"><a class="ws-icon-phone" aria-label="Icon Phone" href="tel:18664458084"></a></li>
+
+
+<li>
+<win-cart-icon style="margin-left: 0 !important;"></win-cart-icon>
+</li>
+<li id="mobile-icon-menu-menu" role="button" aria-label="Menu Icon"><a class="ws-icon-hamburger" href="#" aria-label="Hamburger menu icon"></a></li>
+</ul>
+</div>
+</div>
+<div class="desktop-crown-header">
+<div class="container nopadding container_new res-lg-container">
+<ul class="site-links-desktop left pl-0">
+<li class="mr-3"><a href='/' class="active-site" title="Residential">Residential</a></li>
+<li class="mr-3"><a href='http://business.windstream.com/' title="Business">Business</a></li>
+<li class="mr-3"><a href='https://business.windstream.com/enterprise' title="Enterprise">Enterprise</a></li>
+</ul>
+<ul class="site-links-desktop right site_links_new">
+
+<li><span class="ws-icon-location"></span></li>
+<li class="myLocation" aria-label="Click Here To Provide Your Location" role="img">
+<a id="crownLocation" class="crown-location">Click here to provide your location</a>
+</li>
+
+<li class="sign-in"><a class="sso-sign-in" id="desktopAccount">My Account</a>
+<ul class="myaccount-dropdown">
+<li class="desktop-greating"></li>
+<li class="account-overview"><a href='https://my.gokinetic.com'>Account Overview</a></li>
+<li><a href='https://my.gokinetic.com/consumer/AccountSummary/AccountSummary'>View or Pay
+Bill</a></li>
+<li><a href='/referralprogram/'>Refer a Friend</a></li>
+<li><a href='/Movers/'>Move My Service</a></li>
+<li><a href='https://www.windstream.net/?_ga=2.192303277.601409664.1562163959-1951997977.1562163959'>Check
+My Emails</a></li>
+<li id="Hidesignout" style="padding-bottom:20px"><a href="#" class="sso-sign-out">Sign Out</a></li>
+</ul>
+</li>
+
+
+<li role="img" aria-label="Open Shopping Cart">
+<a href="#" class="ws-icon-shop-circle-outline ws-icon-shop-circle-outline--desktop"></a>
+</li>
+<li class="btn-searches">
+<div class="btn_searches_icons"></div>
+<span role="img" aria-label="Search Site" class="search-span" title="Search">&nbsp;</span>
+<input id="headersearchID" name="header-search" autocomplete="off" type="text" placeholder="Search site">
+</li>
+</ul>
+</div>
+</div><ul class="account-links">
+<li><a href='#'>Manage My Account</a></li>
+<li><a href='#'>View or Pay my Bill</a></li>
+<li><a href='#'>Check My Email</a></li>
+<li><a href="#" class="sso-sign-out">Sign Out</a></li>
+</ul><script type='text/javascript'>window.WSCustomerInfo ={"CamsId":null,"CustomerType":"Unknown","Exchange":"","ExchangeFlagNames":null,"Market":null,"MaxQualificationSpeed":"99","IptvDownloadSpeed":"0","FutureMaxQualSpeed":"0","KineticCustomerFlag":null,"KineticMaxAddSpeed":"0","Profiles":"7,14,44,45,46,47,48,60,71,72,74,88,90,91,131,132,154,158,159","ProfileNames":"21,103,155,156,157,158,159,171,191,192,194,209,211,213,214,215,225,229,230","City":"","State":"","ZipCode":"","FirstName":null,"LastName":null,"Number":"","Street":"","StreetPostdirection":"","StreetPredirection":"","Type":null,"UnitNumber":"","Authenticated":false,"ShowSSOError":false,"PreviousPage":"/","IsGatedPage":false,"SSOUrl":null,"DishCustomer":false,"IsCustomer25Mb":false,"CurrentHSISpeed":null,"IsActivateCustomer":false,"IsVoipCustomer":false,"Tier1Retention":false,"Tier2Retention":false,"IsAmplifinity":false,"IsCableExchange":false,"IsPremiuimExchange":false,"IGigMarket":false,"IsEmployee":false,"IsBPQValidated":false,"UserSubmittedZip":null,"NeedAsyncBpq":false,"FixedWirelessEligible":false,"MonetatePageType":"default","SpeedRange":null,"Status":null,"CartHasPromoPrice":false,"HasInternet":false,"HasPhone":false,"IsCable":false,"IsDirectTv":false,"ChatInit":"https://d.la4-c2-ph2.salesforceliveagent.com/chat","ChatKey":"00D3i000000sC4j","SessionIdealTimeOut":"3600","ApplicationVersion":"1.0.0.3.0620220726","HavingT3200ModemorNot":false,"HavingT3260ModemorNot":false,"IsFiberApplicable":null,"IsCableAddress":null,"VoipIndicator":null,"TechType":null,"IsCoJack":null,"CoJackAddressLocation":null,"MyWinRegistrationUrl":"https://my.windstream.com/consumer/registration/InviteRegistration?zerodayregistration="};</script>
+<div id="mobileMenu" class="mobile-menu">
+<div class="col-sm-10 mx-auto text-left text-sm-center">
+<div class="contact row">
+<div class="left"><p id="mobileTopBarContact">Call now to order <a href="tel:+18664458084" aria-label="1-866-445-8084">1-866-445-8084</a></p></div>
+<div class="right"><div id="crownMobileModalClose1" class="ws-modal-close res-crownMobileModalClose"><i class="material-icons">close</i></div></div>
+</div>
+<ul style="visibility: hidden;" id="myAccountDropdownMobile" class="myaccount-dropdown--mobile">
+<li><a href="https://my.gokinetic.com">Manage My Account</a></li>
+<li><a href="https://my.gokinetic.com">View or Pay my Bill</a></li>
+<li><a href="https://www.windstream.net">Check My Email</a></li>
+<li><a href="#" class="sso-sign-out">Sign Out</a></li>
+</ul>
+<ul class="site-links">
+<li><a class="sublevel_found link-activenone" href='#Internet'>Internet<i class="material-icons">keyboard_arrow_right</i></a></li>
+<li><a class="sublevel_found link-activenone" href='#Product'>Products <i class="material-icons">keyboard_arrow_right</i></a></li>
+<li><a href="/Accessories" class="link-activenone" target="_blank">Accesories</a></li>
+<li class="support"><a href='/support' class="link-activenone">Support</a></li>
+
+<li class="sign-in GotoSign"><a href="#">My Account<i class="material-icons">keyboard_arrow_right</i></a>
+<li class="sign-in GotoMyaccount"><a href="#">Go To My Account <i class="material-icons">keyboard_arrow_right</i></a>
+</li>
+</li>
+
+
+<li class="search">
+<div class="inner-search">
+<i class="material-icons search-icon">search</i>
+<input id="mobileCrownSearch" class="form-control search-input" type="text" title="Search" placeholder="Search" />
+</div></li>
+<li class="businessSolution"><a href="https://business.windstream.com/" target="_self">Looking for Business Solutions?</a></li>
+</ul>
+</div>
+</div>
+
+<div id="Internet" class="mobile-menu mobileSubMenu">
+<div class="col-sm-10 mx-auto text-left">
+<div class="contact row">
+<div class="left">
+<p>Call now to order <a href="tel:+18664458084" aria-label="1-866-445-8084">1-866-445-8084</a></p>
+</div>
+<div class="right">
+<div id="crownMobileModalClose2" class="ws-modal-close res-crownMobileModalClose"><i class="material-icons">close</i></div>
+</div>
+</div>
+
+<ul class="site-links m-0">
+<li class="myaccountBand backBtn backnone "><a href="#"><i class="material-icons">keyboard_arrow_right</i> Back</a></li>
+<li><a title="Kinetic Home Internet" class="link-activenone" href="/high-speed-internet">Kinetic Home Internet</a></li>
+<li><a title="Kinetic Fiber Internet" class="link-activenone" href="/fiber">Kinetic Fiber Internet</a></li>
+<li class="view-all backnone"><a title="Internet" href="#">Internet</a></li>
+</ul>
+</div>
+</div>
+
+<div id="Product" class="mobile-menu mobileSubMenu">
+<div class="col-sm-10 mx-auto text-left">
+<div class="contact row">
+<div class="left">
+<p>Call now to order <a href="tel:+18664458084" aria-label="1-866-445-8084">1-866-445-8084</a></p>
+</div>
+<div class="right">
+<div id="crownMobileModalClose2" class="ws-modal-close res-crownMobileModalClose"><i class="material-icons">close</i></div>
+</div>
+</div>
+
+<ul class="site-links m-0">
+<li class="myaccountBand backBtn backnone "><a href="#"><i class="material-icons">keyboard_arrow_right</i> Back</a></li>
+<li><a title="TV & Entertainment" data-href="#tv-entertainment" class="product-subcategory link-activenone">TV & Entertainment</a></li>
+<li><a title="Internet Security" class="product-subcategory link-activenone" data-href="#security">Security</a></li>
+<li><a title="Voice" class="product-subcategory link-activenone" data-href="#voice">Voice</a></li>
+<li><a title="Kinetic WiFi Manager" class="link-activenone" href="/kinetic-wifi-manager">Wi-Fi</a></li>
+<li><a title="Kinetic Home Security" class="link-activenone" href="/kinetic-home-security-services">Home Security</a></li>
+
+<li class="view-all backnone "><a title="All-products" href="/products">View All Products</a></li>
+</ul>
+</div>
+</div>
+
+<div id="Myaccount" class="mobile-menu mobileSubMenu">
+<div class="col-sm-10 mx-auto text-left">
+<div class="contact row">
+<div class="left">
+<p>Call now to order <a href="tel:+18664458084" aria-label="1-866-445-8084">1-866-445-8084</a></p>
+</div>
+<div class="right">
+<div id="crownMobileModalClose3" class="ws-modal-close res-crownMobileModalClose"><i class="material-icons">close</i></div>
+</div>
+</div>
+<ul class="site-links m-0">
+<li class="myaccountBand backBtn"><a href="#"><i class="material-icons">keyboard_arrow_right</i> Back</a></li>
+<li class="userName"><a>Hello Jane!</a></li>
+<li><a href="https://my.gokinetic.com">Account Overview</a></li>
+<li><a href="https://my.gokinetic.com/consumer/AccountSummary/AccountSummary">View or Pay Bill</a></li>
+<li><a href="/referralprogram/">Refer a Friend</a></li>
+<li><a href="/Movers/">Move My Service</a></li>
+<li><a href="https://www.windstream.net/?_ga=2.192303277.601409664.1562163959-1951997977.1562163959">Check My Emails</a></li>
+<li><a href="#" class="sso-sign-out">Sign Out</a></li>
+</ul>
+</div>
+</div>
+<div id="SignInGO" class="mobile-menu mobileSubMenu">
+<div class="col-sm-10 mx-auto text-left">
+<div class="contact row">
+<div class="left">
+<p>Call now to order <a href="tel:+18664458084" aria-label="1-866-445-8084">1-866-445-8084</a></p>
+</div>
+<div class="right">
+<div id="crownMobileModalClose4" class="ws-modal-close res-crownMobileModalClose"><i class="material-icons">close</i></div>
+</div>
+</div>
+<ul class="site-links m-0">
+<li class="myaccountBand backBtn"><a href="#"><i class="material-icons">keyboard_arrow_right</i> Back</a></li>
+<li><a href="https://my.gokinetic.com">Account Overview</a></li>
+<li><a href="https://my.gokinetic.com/consumer/AccountSummary/AccountSummary">View or Pay Bill</a></li>
+<li><a href="/referralprogram/">Refer a Friend</a></li>
+<li><a href="/Movers/">Move My Service</a></li>
+<li><a href="https://www.windstream.net/?_ga=2.192303277.601409664.1562163959-1951997977.1562163959">Check My Emails</a></li>
+<li><a class="sso-sign-in"></a></li>
+</ul>
+</div>
+</div>
+<div class="Mobile_call_footer d-sm-block d-md-none">
+<div class="siteCommonPadding offline_content_text">
+<div class="mob_callNow_section clearfix">
+<p class="text-center m-0">Call now to order <a class="font-weight-bold colorblue" href="tel:1-866-445-8084">(844) 549-0945</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="topBlock">
+<nav class="ws-site-nav residential">
+<div class="container nopadding container_new header_nav_new res-lg-container">
+<a class="logo" href="/" aria-label="windstream.com">
+<img src="/Windstream-residential/media/res/Kinetic-Horizontal.svg" alt="Kinetic logo." class="header_logo">
+</a>
+<a class="scroll_logo" href="/" aria-label="windstream.com">
+<img src="/Windstream-residential/media/res/Kinetic-Horizontal.svg" alt="Kinetic mobile logo." class="kentico_mobile_header_logo" style="width:36px; height:36px">
+</a>
+<ul class="CMSListMenuUL"><li class="CMSListMenuLI menu_full_width_w_icons">
+<div class="supportdropdown menu_full_width_w_icons__dropdown">
+<ul class="CMSListMenuUL"><li class="CMSListMenuLI ">
+<a href="/high-speed-internet" class="txt-color-inherit  py-4 CMSListMenuLink contact-link" title="Kinetic Home Internet">
+<div class="d-flex m-auto menu-item-w-icon-description">
+<div class="CMSListMenuAnimation mr-1 translate-x-animation-left">
+<img src="/getattachment/2ce57bce-b6f5-4dc2-a4ff-2f653ca489c9/Kinetic Home Internet?width=180" alt="Kinetic Home Internet icon">
+</div>
+<div class="CMSListMenuAnimation ml-1 my-auto pt-2 translate-x-animation-right">
+<span class="page-name">Kinetic Home Internet</span>
+<div class="mt-3 mb-0 page-description"><p>Choose the best high-speed internet plans for an ultra-fast, ultra-reliable connection.</p>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li class="CMSListMenuLI ">
+<a href="/fiber" class="txt-color-inherit  py-4 CMSListMenuLink contact-link" title="Kinetic Fiber Internet">
+<div class="d-flex m-auto menu-item-w-icon-description">
+<div class="CMSListMenuAnimation mr-1 translate-x-animation-left">
+<img src="/getattachment/5c6163a3-a991-426f-8f22-aa946e58a67a/Kinetic Fiber Internet?width=180" alt="Kinetic Fiber Internet icon">
+</div>
+<div class="CMSListMenuAnimation ml-1 my-auto pt-2 translate-x-animation-right">
+<span class="page-name">Kinetic Fiber Internet</span>
+<div class="mt-3 mb-0 page-description"><p>Upgrade to residential fiber internet for more speed and reliability across all devices.</p>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<a href="#" class="CMSListMenuLink menu_full_width_w_icons__link" title="Internet">Internet</a>
+</li>
+<li class="CMSListMenuLI menu_full_width_w_icons">
+<div class="supportdropdown menu_full_width_w_icons__dropdown">
+<ul class="CMSListMenuUL"><li class="CMSListMenuLI ">
+<div class="d-flex flex-column align-items-center">
+<a href="/products-security" class="txt-animated-color CMSListMenuLink contact-link" title="Internet Security">
+Internet Security
+<img class="CMSListMenuAnimation zoom-in-out-animation" src="/getattachment/9c240f17-2341-4f77-84c5-3b1988a3a5f5/Internet Security?width=180" alt="Internet Security icon" width="180" height="180">
+</a>
+</div>
+</li>
+<li class="CMSListMenuLI ">
+<div class="d-flex flex-column align-items-center">
+<a href="/products-voice" class="txt-animated-color CMSListMenuLink contact-link" title="Voice">
+Voice
+<img class="CMSListMenuAnimation zoom-in-out-animation" src="/getattachment/f00d615a-2dc9-40e2-8036-e3dc6290b167/Voice?width=180" alt="Voice icon" width="180" height="180">
+</a>
+</div>
+</li>
+<li class="CMSListMenuLI ">
+<div class="d-flex flex-column align-items-center">
+<a href="/kinetic-home-security-services" class="txt-animated-color CMSListMenuLink contact-link" title="Home Security">
+Home Security
+<img class="CMSListMenuAnimation zoom-in-out-animation" src="/getattachment/9e334f59-5af7-45f6-8003-0e9382ea08fd/Home Security?width=180" alt="Home Security icon" width="180" height="180">
+</a>
+</div>
+</li>
+<li class="CMSListMenuLI ">
+<div class="d-flex flex-column align-items-center">
+<a href="/products-tv-entertainment" class="txt-animated-color CMSListMenuLink contact-link" title="TV &amp; Entertainment">
+TV &amp; Entertainment
+<img class="CMSListMenuAnimation zoom-in-out-animation" src="/getattachment/c42cb5ff-b4d6-4393-a976-a81e0667d96e/TV  Entertainment?width=180" alt="TV & Entertainment icon" width="180" height="180">
+</a>
+</div>
+</li>
+<li class="CMSListMenuLI ">
+<div class="d-flex flex-column align-items-center">
+<a href="/kinetic-wifi-manager" class="txt-animated-color CMSListMenuLink contact-link" title="Wi-Fi Manager">
+Wi-Fi Manager
+<img class="CMSListMenuAnimation zoom-in-out-animation" src="/getattachment/021ce448-b49e-4e0c-9e60-f2cae541bb9a/Wi-Fi Manager?width=180" alt="Wi-Fi Manager icon" width="180" height="180">
+</a>
+</div>
+</li>
+</ul>
+</div>
+<a href="/products" class="CMSListMenuLink menu_full_width_w_icons__link" title="Products">Products</a>
+</li>
+<li class="CMSListMenuLI ">
+<a href="/accessories" class="CMSListMenuLink " title="Accessories">Accessories</a>
+</li>
+<li class="CMSListMenuLI ">
+<a href="/support" class="CMSListMenuLink " title="Support">Support</a>
+</li>
+</ul>
+
+<p class="desktop-contact">
+<span class='call'><a href="tel:+18664458084">1-866-445-8084</a></span>
+
+
+
+<div class="desktop-contact-cta desktop-contact-cta_small px-2 d-flex ws-primary-button shop-now-btn">
+<div class="desktop-contact-cta_text desktop-contact-cta_small_text mx-1">
+<a href="/#/shop">Shop Now</a>
+</div>
+<div class="desktop-contact-cta_icon desktop-contact-cta_small_icon mx-1">
+<a href="/#/shop">
+<img src="/Windstream-residential/media/res/icons/shopping-bag.svg" class="desktop-contact-cta_icon-img">
+</a>
+</div>
+</div>
+
+
+</p>
+<ul class="site-links-desktop right site_links_new">
+<li class="btn-searches" role="img" aria-label="Search Icon">
+<div class="btn_searches_icons">&nbsp;</div>
+<span class="search-span" title="Search">&nbsp;</span>
+<input class="header-search" name="header-search" autocomplete="off" type="text" placeholder="Search">
+</li>
+</ul>
+</div>
+</nav>
+<div id="residential-package-configurator-root"></div>
+</div>
+<div class="mainBlock container-fluid">
+<div class="container-fluid">
+<div class="width-movers">
+<div class="col-sm-12 col-md-12  about-side-nav desktop">
+<div class="max-width-limited">
+<p><a class="about__link--overview">About Windstream</a></p>
+<ul class="aboutList"><li class="aboutLinkItem ml-3 mr-3">
+<a class="about-us-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Windstream Information">Windstream Information</a>
+<ul aria-labelledby="dropdownMenu1" class="aboutList dropdown-menu"><li class="aboutLinkItem">
+<a href="http://news.windstream.com/history" class="aboutLinkItem" title="Company History">Company History</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/cavalier-tariffs" class="aboutLinkItem" title="Tariffs">Tariffs</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/coverage-map" class="aboutLinkItem" title="Coverage Map">Coverage Map</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/lifeline-assistance-program" class="aboutLinkItem" title="Lifeline Assistance Program">Lifeline Assistance Program</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/bill-information" class="aboutLinkItem" title="Bill Information">Bill Information</a>
+<ul class="aboutList"><li class="aboutLinkItem">
+<a href="/about/windstream-information/bill-information/bill-information-spanish" class="aboutLinkItem" title="Bill Information (Spanish)">Bill Information (Spanish)</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/bill-information/california-teleconnect-fund-program" class="aboutLinkItem" title="California Teleconnect Fund Program">California Teleconnect Fund Program</a>
+</li></ul>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/store-finder" class="aboutLinkItem" title="Store Finder">Store Finder</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/fcc-rural-call-completion" class="aboutLinkItem" title="FCC Rural Call Completion">FCC Rural Call Completion</a>
+</li></ul>
+<i class="aboutheader_material_icon material-icons">keyboard_arrow_right</i>
+</li>
+<li class="aboutLinkItem ml-3 mr-3">
+<a class="about-us-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Suppliers">Suppliers</a>
+<ul aria-labelledby="dropdownMenu1" class="aboutList dropdown-menu"><li class="aboutLinkItem">
+<a href="/about/suppliers/supplier-information" class="aboutLinkItem" title="Supplier Information">Supplier Information</a>
+</li><li class="aboutLinkItem">
+<a href="/about/suppliers/supplier-diversity" class="aboutLinkItem" title="Supplier Diversity">Supplier Diversity</a>
+</li><li class="aboutLinkItem">
+<a href="/about/suppliers/supplier-code-of-ethics" class="aboutLinkItem" title="Supplier Code of Ethics">Supplier Code of Ethics</a>
+</li></ul>
+<i class="aboutheader_material_icon material-icons">keyboard_arrow_right</i>
+</li>
+<li class="aboutLinkItem ml-3 mr-3">
+<a class="about-us-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Legal">Legal</a>
+<ul aria-labelledby="dropdownMenu1" class="aboutList dropdown-menu"><li class="aboutLinkItem">
+<a href="/about/legal/acceptable-use-policy" class="aboutLinkItem" title="Acceptable Use Policy">Acceptable Use Policy</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/broadband-network-statement" class="aboutLinkItem" title="Broadband Network Statement">Broadband Network Statement</a>
+</li><li class="aboutLinkItem">
+<a href="/about-windstream/legal/dps-complaints" class="aboutLinkItem" title="DPS complaints">DPS complaints</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/legal-notices" class="aboutLinkItem" title="Legal Notices">Legal Notices</a>
+</li><li class="aboutLinkItem">
+<a href="/about-windstream/legal/network-change-notifications" class="aboutLinkItem" title="Network Change Notifications">Network Change Notifications</a>
+</li><li class="aboutLinkItem">
+<a href="/offer-conditions" class="aboutLinkItem" title="Offer Conditions">Offer Conditions</a>
+</li><li class="aboutLinkItem">
+<a href="/about-windstream/legal/pennsylvania-competitive-services" class="aboutLinkItem" title="Pennsylvania Competitive Services">Pennsylvania Competitive Services</a>
+</li><li class="aboutLinkItem active">
+<a href="/about/legal/privacy-policy" class="aboutLinkItem active" title="Privacy Policy">Privacy Policy</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/procurement-terms-and-conditions" class="aboutLinkItem" title="Procurement Terms and Conditions">Procurement Terms and Conditions</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/kinetic-business-terms-and-conditions" class="aboutLinkItem" title="Kinetic Business Terms and Conditions">Kinetic Business Terms and Conditions</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/call-authentication-statement" class="aboutLinkItem" title="Call Authentication Statement">Call Authentication Statement</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/terms-and-conditions" class="aboutLinkItem" title="Kinetic Terms and Conditions">Kinetic Terms and Conditions</a>
+</li></ul>
+<i class="aboutheader_material_icon material-icons">keyboard_arrow_right</i>
+</li>
+<li class="aboutLinkItem ml-3 mr-3">
+<a class="about-us-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Additional Information">Additional Information</a>
+<ul aria-labelledby="dropdownMenu1" class="aboutList dropdown-menu"><li class="aboutLinkItem">
+<a href="https://investor.windstream.com/home/default.aspx" class="aboutLinkItem" title="Investor Relations">Investor Relations</a>
+</li><li class="aboutLinkItem">
+<a href="http://news.windstream.com/" class="aboutLinkItem" title="News Center">News Center</a>
+</li><li class="aboutLinkItem">
+<a href="https://careers.windstream.com/" class="aboutLinkItem" title="Windstream Talent">Windstream Talent</a>
+</li><li class="aboutLinkItem">
+<a href="https://www.windstream.net/" class="aboutLinkItem" title="Windstream.net">Windstream.net</a>
+</li></ul>
+<i class="aboutheader_material_icon material-icons">keyboard_arrow_right</i>
+</li>
+</ul>
+</div></div><div class="col-sm-12 col-md-12  about-side-nav mobile">
+<div class="max-width-limited">
+<p><a class="about__link--overview">About Windstream</a></p>
+<ul class="aboutList">
+<li class="aboutLinkItem">
+<a id="about-top-trigger" title="Jump To">Jump To<span>&#9660;</span></a>
+<ul class="aboutList aboutpage_mobileview_menu"><li class="aboutLinkItem ml-3 mr-3">
+<a class="about-us-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Windstream Information">Windstream Information</a>
+<ul class="aboutList aboutpage_mobileview_menu"><li class="aboutLinkItem">
+<a href="http://news.windstream.com/history" class="aboutLinkItem" title="Company History">Company History</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/cavalier-tariffs" class="aboutLinkItem" title="Tariffs">Tariffs</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/coverage-map" class="aboutLinkItem" title="Coverage Map">Coverage Map</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/lifeline-assistance-program" class="aboutLinkItem" title="Lifeline Assistance Program">Lifeline Assistance Program</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/bill-information" class="aboutLinkItem" title="Bill Information">Bill Information</a>
+<ul class="aboutList aboutpage_mobileview_menu"><li class="aboutLinkItem">
+<a href="/about/windstream-information/bill-information/bill-information-spanish" class="aboutLinkItem" title="Bill Information (Spanish)">Bill Information (Spanish)</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/bill-information/california-teleconnect-fund-program" class="aboutLinkItem" title="California Teleconnect Fund Program">California Teleconnect Fund Program</a>
+</li></ul>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/store-finder" class="aboutLinkItem" title="Store Finder">Store Finder</a>
+</li><li class="aboutLinkItem">
+<a href="/about/windstream-information/fcc-rural-call-completion" class="aboutLinkItem" title="FCC Rural Call Completion">FCC Rural Call Completion</a>
+</li></ul>
+<i class="aboutheader_material_icon material-icons">keyboard_arrow_right</i>
+</li>
+<li class="aboutLinkItem ml-3 mr-3">
+<a class="about-us-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Suppliers">Suppliers</a>
+<ul class="aboutList aboutpage_mobileview_menu"><li class="aboutLinkItem">
+<a href="/about/suppliers/supplier-information" class="aboutLinkItem" title="Supplier Information">Supplier Information</a>
+</li><li class="aboutLinkItem">
+<a href="/about/suppliers/supplier-diversity" class="aboutLinkItem" title="Supplier Diversity">Supplier Diversity</a>
+</li><li class="aboutLinkItem">
+<a href="/about/suppliers/supplier-code-of-ethics" class="aboutLinkItem" title="Supplier Code of Ethics">Supplier Code of Ethics</a>
+</li></ul>
+<i class="aboutheader_material_icon material-icons">keyboard_arrow_right</i>
+</li>
+<li class="aboutLinkItem ml-3 mr-3">
+<a class="about-us-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Legal">Legal</a>
+<ul class="aboutList aboutpage_mobileview_menu"><li class="aboutLinkItem">
+<a href="/about/legal/acceptable-use-policy" class="aboutLinkItem" title="Acceptable Use Policy">Acceptable Use Policy</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/broadband-network-statement" class="aboutLinkItem" title="Broadband Network Statement">Broadband Network Statement</a>
+</li><li class="aboutLinkItem">
+<a href="/about-windstream/legal/dps-complaints" class="aboutLinkItem" title="DPS complaints">DPS complaints</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/legal-notices" class="aboutLinkItem" title="Legal Notices">Legal Notices</a>
+</li><li class="aboutLinkItem">
+<a href="/about-windstream/legal/network-change-notifications" class="aboutLinkItem" title="Network Change Notifications">Network Change Notifications</a>
+</li><li class="aboutLinkItem">
+<a href="/offer-conditions" class="aboutLinkItem" title="Offer Conditions">Offer Conditions</a>
+</li><li class="aboutLinkItem">
+<a href="/about-windstream/legal/pennsylvania-competitive-services" class="aboutLinkItem" title="Pennsylvania Competitive Services">Pennsylvania Competitive Services</a>
+</li><li class="aboutLinkItem active">
+<a href="/about/legal/privacy-policy" class="aboutLinkItem active" title="Privacy Policy">Privacy Policy</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/procurement-terms-and-conditions" class="aboutLinkItem" title="Procurement Terms and Conditions">Procurement Terms and Conditions</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/kinetic-business-terms-and-conditions" class="aboutLinkItem" title="Kinetic Business Terms and Conditions">Kinetic Business Terms and Conditions</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/call-authentication-statement" class="aboutLinkItem" title="Call Authentication Statement">Call Authentication Statement</a>
+</li><li class="aboutLinkItem">
+<a href="/about/legal/terms-and-conditions" class="aboutLinkItem" title="Kinetic Terms and Conditions">Kinetic Terms and Conditions</a>
+</li></ul>
+<i class="aboutheader_material_icon material-icons">keyboard_arrow_right</i>
+</li>
+<li class="aboutLinkItem ml-3 mr-3">
+<a class="about-us-trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Additional Information">Additional Information</a>
+<ul class="aboutList aboutpage_mobileview_menu"><li class="aboutLinkItem">
+<a href="https://investor.windstream.com/home/default.aspx" class="aboutLinkItem" title="Investor Relations">Investor Relations</a>
+</li><li class="aboutLinkItem">
+<a href="http://news.windstream.com/" class="aboutLinkItem" title="News Center">News Center</a>
+</li><li class="aboutLinkItem">
+<a href="https://careers.windstream.com/" class="aboutLinkItem" title="Windstream Talent">Windstream Talent</a>
+</li><li class="aboutLinkItem">
+<a href="https://www.windstream.net/" class="aboutLinkItem" title="Windstream.net">Windstream.net</a>
+</li></ul>
+<i class="aboutheader_material_icon material-icons">keyboard_arrow_right</i>
+</li>
+</ul>
+</li></ul></div></div>
+</div>
+</div>
+<div class="col-sm-12 col-md-10 offset-md-1">
+<div class="about-body support-container about-subpages" style="position:relative">
+<div class="about_l2_conatiner divider">
+<h1 class="compview_head">Privacy Policy</h1>
+<p>This Privacy Statement describes how Windstream and its affiliates collects information from or about you, either as a customer, visitor to any Windstream website or user of any Windstream mobile apps, when you order services from us, how we use the information we collect, and the choices customers have concerning the collection and use of such information. The goal of this Statement is to ensure that your Windstream experience is secure so that you may use our products and services with complete confidence. Please review this Statement carefully.</p>
+<p>This Statement addresses:</p>
+<ol>
+<li><a href="#A">Personal Information Collected</a></li>
+<li><a href="#B">Use of Personally Identifiable Information</a></li>
+<li><a href="#C">Customer Proprietary Network Information (CPNI)</a></li>
+<li><a href="#D">SMS/Text Messaging</a></li>
+<li><a href="#E">Value-Added Services</a></li>
+<li><a href="#F">Information Disclosed to Third Parties</a></li>
+<li><a href="#G">Data Collection Technologies</a></li>
+<li><a href="#H">Security Measures</a></li>
+<li><a href="#I">Children</a></li>
+<li><a href="#J">Links</a></li>
+<li><a href="#K">Statement Updates</a></li>
+<li><a href="#L">Security Breaches</a></li>
+<li><a href="#M">Contact Us</a></li>
+<li><a href="#N">Definitions</a></li>
+<li><a href="#O">Internet Information</a></li>
+<li><a href="#P">US-EU Privacy Principles</a></li>
+</ol>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="A">A. Personal Information Collected</h2>
+<p>Windstream limits the information collected about you to what is needed for conducting business, including the offering of products and services that might be of interest to you. You may choose to provide &ldquo;personally identifiable information&rdquo; (PII) to Windstream in a number of ways either in person, telephonically or via our websites or mobile apps. Examples of how you may share PII with us include: ordering a service or equipment from us, sending us e-mail, responding to Windstream surveys, entering Windstream-sponsored contests or sweepstakes, registering to receive news or public information or applying for a job. We may also obtain PII from third parties (for example, credit agencies) with your permission.</p>
+<p>Examples of PII are:</p>
+<ul>
+<li>Name (including company name for business customers)</li>
+<li>Unlisted or restricted mailing address</li>
+<li>Unlisted or restricted telephone number</li>
+<li>E-mail address</li>
+<li>Credit card number or financial/bank account number or information, including routing numbers</li>
+<li>Passwords or personal identification codes (PINs)</li>
+<li>Date of birth</li>
+<li>Social Security number</li>
+<li>Driver&rsquo;s license number or government issued identification number</li>
+<li>Company contact information for business customers</li>
+<li>Information obtained by Windstream through customer referral programs</li>
+</ul>
+<p>The following information is not PII:</p>
+<ul>
+<li>Mailing address, unless unlisted or restricted at your request</li>
+<li>Telephone number, unless unlisted or restricted at your request</li>
+<li>IP Address allowing you to use our internet service</li>
+<li>PII included in aggregate data complied by Windstream</li>
+</ul>
+<p>Windstream may compile or aggregate PII from numerous customers or Web visitors or mobile app users to collect data about groups of customers or potential customers or categories of service. Windstream does not consider this &ldquo;aggregate&rdquo; information as PII because the aggregate information does not contain the PII of any individual customer, Web visitor, or mobile app user.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="B">B. Use of Personally Identifiable Information</h2>
+<p>Windstream uses PII to provide products and services to meet customers&#39; needs, including new products or services. Windstream may share PII with any Windstream-affiliated company, and these companies are subject to the terms of this Statement.</p>
+<p>Windstream retains PII only as long as is necessary for Windstream to comply with business, tax and legal requirements. This retention period could be the entire time you are our customer depending on the type of PII.</p>
+<p><strong>Windstream does not:</strong></p>
+<p>Sell any customer data, whether it be defined as PII or otherwise, to third parties.</p>
+<p>Collect PII from you unless you provide it to us in person, telephonically or electronically by visiting our websites or using our mobile apps, including information you provide in order to use our services.</p>
+<p>Sell the names and addresses of Windstream Web visitors or mobile app users to unaffiliated suppliers, without your prior approval.</p>
+<p>Allow third parties to change your service provider or otherwise access your account information, at your request, without complying with our security policies, including our Customer Account Protection Plan that protects your account from changes not authorized by you.</p>
+<p>Information about our customers and users, including PII, may be shared and transferred as part of any merger, acquisition, sale of company assets or transition of service to another provider. This also applies in the unlikely event of an insolvency, bankruptcy or receivership in which customer and user records would be transferred to another entity as a result of such a proceeding.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="C">C. SMS/Text Messaging</h2>
+<p>By selecting Mobile you agree to receive Windstream notifications via text to the mobile number provided and agree to the Terms within this page:&nbsp;<a href="https://www.windstream.com/about/legal/Terms-and-Conditions">https://www.windstream.com/about/legal/Terms-and-Conditions</a>&nbsp;. Message frequency will vary. Message and data rates may apply. You can reply STOP any time to 22023 to cancel. Reply HELP to 22023 or click on CUSTOMER SERVICE:&nbsp;<a href="http://www.windstream.com/Support">www.windstream.com/Support</a>&nbsp;&nbsp;for help.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="D">D. Customer Proprietary Network Information (CPNI)</h2>
+<p>CPNI is information that relates to the quantity, technical configuration, type, destination, location and amount of use of the telecommunications services purchased by you from Windstream. CPNI is available to Windstream solely through its relationship with you and information contained in your bill for telecommunication services. CPNI does not include information that is typically classified as PII, such as your name or e-mail address and does not include compiled or aggregated PII. U.S. federal law requires Windstream to protect the confidentiality of CPNI. Unless you opt-out from the use of CPNI, Windstream may use CPNI to market service offerings to you to which you do not already subscribe. To opt-out, just&nbsp;<a href="/support">contact us</a>. Windstream may, without prior approval from you, use CPNI to provide or market service offerings to you, if the service offerings are within the same categories of service to which you already subscribe, regardless of your CPNI selection.</p>
+<p>If you order Windstream services from a Windstream dealer, Windstream&rsquo;s dealers are prohibited from accessing or using your CPNI unless you sign a consent form authorizing Windstream to release your CPNI to the dealers. Dealers are required by Windstream to take all necessary measures to protect the confidentiality of your CPNI. As part of the dealers&rsquo; agreements with Windstream, dealers agree that, upon termination of your Windstream services, the dealers will promptly return all of your CPNI to Windstream and will not retain any CPNI in any form.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="E">E. Value-Added Services</h2>
+<p>Because we appreciate the trust you have placed in us, we continually look for ways to enhance your customer experience. From time to time, we may notify you about a Windstream product or service using the information you have provided to us either in person, telephonically or electronically by visiting our websites or using our mobile apps, including information you provide to use our services. We strive to limit our offers to those we think you would benefit from and appreciate receiving. We want every contact you have with us to be a positive experience. If you prefer not to receive these Windstream value-added services, offers and opportunities, just&nbsp;<a href="/support" target="_blank">contact us</a>.</p>
+<p>Windstream complies with all applicable laws and regulations regarding &ldquo;Do Not Call&rdquo; Lists. Generally, Windstream is allowed to contact its customers, even if the customers are registered with federal or state Do Not Call Lists, because of our relationship with you. Windstream will, of course, honor any request to remove your name from our telephone, mail or e-mail solicitation lists and will delete your information from existing files within a reasonable time period. Just&nbsp;<a href="/support" target="_blank">contact us</a>.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="F">F. Information Disclosed to Third Parties</h2>
+<p>Windstream does not sell PII of its customers. In limited circumstances, Windstream may provide PII to third parties:</p>
+<ul>
+<li>To assist us in developing, promoting, establishing, maintaining, and/or providing Windstream-related products and services to you, including joint marketing efforts or promotions, but PII may not be used by the third parties for any other purpose;</li>
+</ul>
+<ul>
+<li>To assist us in establishing accounts, billing, collecting payment (i.e. credit bureaus and collection agencies), enforcing the Terms and Conditions or the Acceptable Use Policy of our Windstream services where permitted by law, and protecting or enforcing our rights or property, or the services of our other customers, from fraudulent, abusive, or unlawful use by you of our services;</li>
+<li>To comply, when required by law, with court or administrative orders, civil or criminal subpoenas, warrants from law enforcement agencies, federal or state regulatory requirements, mandatory governmental audits, E911 reporting requirements, grand jury investigations, civil or criminal governmental investigations, or reporting required by the National Center for Missing and Exploited Children, designated by federal law as a reporting mechanism for child pornography; and</li>
+<li>To appropriate law enforcement, 911 centers, or emergency services when Windstream, in good faith, believes the disclosure is necessary to protect a person, Windstream property, or the public from an immediate threat of serious harm.</li>
+</ul>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="G">G. Data Collection Technologies</h2>
+<p>In addition to PII identified in Section A of this Statement, we, or our third-party partners, may collect non-personal information automatically when you visit Windstream websites, other third-party sites, open Windstream emails&nbsp;or use Windstream mobile apps, such as domain name, browser, your computer operating system, information about the Web page from which you linked to the website, and time spent on different parts of our websites or mobile apps. We or our partners may use this information to evaluate and improve the websites and mobile apps, and may share the information with third parties on an aggregated basis to enhance our products and services offered. This on-line information is typically collected via&nbsp;<strong>cookies</strong>,&nbsp;<strong>web beacons&nbsp;</strong>(see&nbsp;<strong>Section N</strong>&nbsp;for definitions), and/or other data collection technologies. Like virtually all other websites that you visit, we use cookies to deliver Web content specific to your interests and to control access to your personal shopping cart after your initial entry. The cookie permits the server to recall information from your previous shopping trip, should you decide to think about your purchase. A cookie is not used to access or otherwise compromise the data on your hard drive. With most browsers, you can choose to change your browser settings to disable cookies. Please be aware that cookies may be required to complete certain functions on Windstream websites and other websites you may link to from Windstream websites, including making purchases or payments on your Windstream account.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="H">H. Security Measures</h2>
+<p>Windstream wants you to use our services with confidence, and therefore we use a number of security techniques designed to protect your information from unauthorized access, including firewalls and access control procedures. Windstream has physical, electronic, contractual, and managerial security measures in place to protect against the loss, misuse and alteration of information under our control. For example, when you place an order on a Windstream Website, the information you submit is encrypted using the Secure Sockets Layer (SSL) protocol.</p>
+<p>Windstream employees are bound non-disclosure agreements that prevent them from disclosing any PII or CPNI. Further, Windstream&rsquo;s Working with Integrity Guidelines state that Windstream employees must abide by all state and federal laws and regulations in the performance of their job duties.</p>
+<p>Our policies also limit access to PII to only those employees, contractors, agents, or representatives that require the information to perform their jobs or assist Windstream with providing products and services to you.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="I">I. Children</h2>
+<p>Children under the age of majority should consult with their parents or guardian before furnishing any data to us. Parents should consider using one of a number of available parental control tools that provide a child-friendly, on-line environment and can prevent children from disclosing PII without parental consent. If a child has provided personal information without the consent of a parent or guardian, that parent or guardian should&nbsp;<a href="/support" target="_blank">contact us</a>&nbsp;to request that the information be deleted from our records. More information about parental controls may be found on Windstream websites or by contacting a Windstream customer care representative.</p>
+<p>Windstream does not knowingly collect PII from children under the age of 13 in connection with providing products and services, and it strives to comply with all provisions of the Children&rsquo;s Online Privacy Protection Act (COPPA). If Windstream inadvertently collects information from minors below the age of 13, the information will be treated as PII of the adult customer.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="J">J. Links</h2>
+<p>Windstream is not responsible for the content or privacy policies of other non-Windstream websites or non-Windstream mobile apps. You should keep this in mind when accessing websites through links on Windstream websites or mobile apps, or through third party advertisements appearing on Windstream websites or mobile apps. Further, Windstream may advertise on other websites or mobile apps. The advertising companies placing our ads may use cookies or web beacons to track the effectiveness of our ads. The use of such technology is subject to the privacy policies of the advertising companies, and not this Statement.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="K">K. Statement Updates</h2>
+<p>We may update this Privacy Statement at any time in connection with our constant efforts to improve our products and services. We strongly encourage you to periodically review this Statement. We reserve the right to expand our capabilities for information collection and use and change this Statement in this regard. If any change constitutes a material change to this Statement, we will post a notice on our websites in a prominent position. If Windstream decides to use PII in a manner that is materially different from what is contained herein, we will post the change on this page for 30 days before making the change.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="L">L. Security Breaches</h2>
+<p>While our goal is to prevent any unauthorized disclosure of PII, Windstream cannot guarantee that a disclosure will not occur. We will make reasonable efforts to contact you if we determine that a security breach has occurred and that there is a reasonable risk of identity theft or as otherwise required by law.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="M">M. Contact Us</h2>
+<p>If you have questions, concerns, or complaints about this Statement or Windstream&rsquo;s privacy practices, please contact a Windstream customer care representative; email us at&nbsp;<a href="/cdn-cgi/l/email-protection#2156484f4552555344404c0f515348574042580f52554055444c444f556156484f4552555344404c0f424e4c"><span class="__cf_email__" data-cfemail="b2c5dbdcd6c1c6c0d7d3df9cc2c0dbc4d3d1cb9cc1c6d3c6d7dfd7dcc6f2c5dbdcd6c1c6c0d7d3df9cd1dddf">[email&#160;protected]</span></a>; or write to us at Windstream Services, LLC, ATTN: Legal Department, 4001 Rodney Parham Road, Little Rock, Arkansas 72212. We will respond to your inquiries in a timely manner.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="N">N. Definitions</h2>
+<p><strong>Cookies</strong>&nbsp;are small, encrypted data strings our server writes to your hard drive that contains your unique Windstream User ID.&nbsp;For more information on managing cookies and opting out of interest-based advertising, <a href="http://www.aboutads.info/" target="_blank">click here</a> for more information from the Digital Advertising Alliance.</p>
+<p><strong>Web beacons</strong>&nbsp;are small graphic images imbedded in a webpage or email.</p>
+</div>
+<div class="about_l2_conatiner divider">
+<h2 class="compview_head" id="O">O. Internet Information</h2>
+<p>Windstream&rsquo;s network management practices are designed to provide the best possible online experience to its customers. To that end, Windstream monitors traffic flows between points within its network and between its network and locations on the Internet for purposes of reasonable network management. Windstream uses this information to manage its network, provide security for its customers, plan for future needs, and ensure its network runs efficiently. Monitored information includes the amount of data sent to and from your connection, the source and destination of the data, and the type of information sent and received. In limited circumstances, Windstream may also look into the contents of the information to determine whether it is malicious in nature (such as a virus, spam, worm, etc) or when required by law to comply with judicial orders or regulations.</p>
+</div>
+<div class="about_l2_conatiner  ">
+<h2 class="compview_head" id="P">P. US-EU Privacy Principles</h2>
+<p>For individually identifiable information received by Windstream in the United States from Users in the European Union, Windstream adheres to the following principles:</p>
+<p><strong>Notice:</strong>&nbsp;Windstream will inform Users about the purposes for which it collects and uses PII, the types of non-agent third parties to which Windstream discloses PII, and the choices and means, if any, Windstream offers for limiting use and disclosure of PII.</p>
+<p><strong>Choice:</strong>&nbsp;Windstream will offer Users the opportunity to choose (opt-out) whether their PII is (a) to be disclosed to a third party who is not an agent, or (b) to be used for a purpose other than the purpose for which it was originally collected or subsequently authorized. For sensitive PII, Windstream will give Users the opportunity to affirmatively and explicitly (opt-in) consent to such disclosure or use.</p>
+<p><strong>Access:</strong>&nbsp;Upon request, Windstream will provide Users with the PII that it holds about them and will take reasonable steps to provide individuals with a means to correct, amend or delete PII that is inaccurate or incomplete.</p>
+<p><strong>Dispute Resolution:</strong>&nbsp;For complaints that cannot be resolved between Windstream and the User, such disputes will be governed by the current provisions of Windstream&rsquo;s Terms and Conditions, or the terms of your written agreement with Windstream, if applicable.</p>
+</div>
+</div>
+</div>
+<hr class="aboutpages_hr">
+<div id="ws-qual-form-modal-container" class="ws-modal-container container">
+<div class="ws-modal-background qual-bg"></div>
+<div id="qualForm" data-modal-id="qualForm" data-onload="false" data-modal-template="" class="ws-modal qual-form row d-sm-flex align-items-sm-center">
+<div class="ws-modal-close close-qualForm">close</div>
+<div class="loading-screen">
+<div class="loader"></div>
+</div>
+
+
+<div id="shortForm" class="col-md-11 col-lg-10 col-xl-8 mx-auto text-left text-sm-center short-form qual-form-content-view">
+<h2 class="col-sm-8 col-md-8 mx-sm-auto">See what Kinetic products are available to you</h2>
+<p class="col-sm-8 col-md-6 mx-sm-auto">Enter your address to review products and pricing available in your area.</p>
+<div class="row no-gutters d-sm-flex justify-content-center short-form-fields">
+<div class="col-12 col-sm-6 col-md-5 form-field-container street-address">
+<input id='shortFormStreetAddress' class="shortFormStreetAddress" type="text" autocomplete="off" placeholder="Street Address">
+</div>
+<div class="col-12 col-sm-6 col-md-4 d-block d-sm-flex d-md-flex d-lg-flex unit-zip-fields-container">
+<div class="form-field-container optional col-12 col-sm-6">
+<input id='shortFormUnitNumber' class="shortFormUnitNumber" type="text" placeholder="Unit (Optional)">
+</div>
+<div class="form-field-container zip col-12 col-sm-6">
+<input id='shortFormZip' class='shortFormZip' type="text" placeholder="Zip Code">
+</div>
+</div>
+ <div class="col-sm-6 col-md-3 qual-form-cta__cta-container">
+<a id="shortFormSubmitBtn" class="shortFormSubmitBtn ws-primary-button d-block ws-btn">See Products & Pricing</a>
+</div>
+</div>
+<p class="text-center"> Already a customer? <a href="#" class="signup sso-sign-in shortFormSignIn"> Sign In</a></p>
+</div>
+<div id="longForm" class="col-md-11 col-lg-10 col-xl-8 mx-auto text-left text-sm-center long-form qual-form-content-view active">
+<h2 id="longFormTitle" class="col-11 mx-sm-auto">See what Kinetic products are available to you.</h2>
+<p class="col-sm-8 col-md-6 mx-sm-auto">Enter your address to review products and pricing available in your area.</p>
+<div class="row no-gutters d-sm-flex flex-row flex-wrap justify-content-center long-form-fields long-form-container">
+<div class="col-sm-9 col-md-9 form-field-container">
+<input id='longFormStreetAddress' class="longFormStreetAddress" type="text" data-value="address" autocomplete="nope" placeholder="S&zwnj;treet">
+<ul class="suggestedStreets suggestedStreet qual-form__dropdown-menu hide">
+</ul>
+</div>
+<div class="col-sm-3 col-md-3 form-field-container optional unit">
+<input id='longFormUnit' class='longFormUnit' type="text" placeholder="Apt, suite, etc. (optional)">
+</div>
+<div class="col-sm-6 col-md-4 form-field-container">
+<input id='longFormCity' class='longFormCity' type="text" autocomplete="nope" placeholder="C&zwnj;ity">
+</div>
+<div class="col-sm-6 col-md-5 d-flex state-zip-fields-container">
+<div class="col-6 dropdown form-field-container" id="statesDropdown">
+<button class=" btn btn-secondary dropdown-toggle ddlalign" type="button" id="selectedState" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">State</button>
+<div id="longFormStateOptions" class="dropdown-menu qual-form__dropdown-menu show-top" aria-labelledby="dropdownMenuButton"></div>
+</div>
+<div class="col-6 form-field-container zip">
+<input id='longFormZip' class='longFormZip' type="text" placeholder="Z&zwnj;ip" autocomplete="nope">
+</div>
+</div>
+<div class="EmailID optional">
+<input id='EmailID' name="EmailID" class='ohHP' type="text" placeholder="E&zwnj;mail" autocomplete="nope">
+</div>
+<div class="col-sm-4 col-md-3 qual-form-cta__cta-container">
+<a id="longFormSubmitBtn" class="longFormSubmitBtn ws-primary-button ws-btn msad-submit-btn d-block">Check Availability</a>
+</div>
+</div>
+<p class="text-center cusSignIn"><span class="pr-1">Already a customer?</span> <a href="#" class="signup sso-sign-in shortFormSignIn"> Sign In</a></p>
+<p class="need-assistance-text text-center col-12"><br />Or call to order <a class="tel-link d-lg-none" href="tel:1-866-445-8084">1-866-445-8084</a><a class="tel-link-text-only d-none d-md-inline" href="tel:1-866-445-8084">1-866-445-8084</a><span class="chat-now hide"> or
+
+<a href="javascript://Chat" id="liveagent_button_online_chat01_5733i000000LjeD" onclick="liveagent.startChat('5733i000000LjeD')" class="chat-now hide" style="display: none;">Chat Now</a>
+<span id="liveagent_button_offline_chat01_5733i000000LjeD" class="chat-now hide" style="display: none;">No Chat Available</span>
+</span>.
+</p>
+
+<div class="d-none">
+<div id="react-chat">
+<div class="Small-Popup-Cta text-center">
+<a href="javascript://Chat" id="online" onclick="liveagent.startChat('5733i000000LjeD')" class="Cart-2_0-cta Continue btn_full px-5 py-3 chat-now hide" style="display: none;">Chat Now</a>
+<span id="offline" class="chat-now hide" style="display: none;">No Chat Available</span>
+</div>
+<div class="chat-cta">
+<p>Or<span>Call <a href="tel:+18664458084" class="phno_primary text-decoration-underline">1-866-445-8084</a></span></p>
+</div>
+</div>
+</div>
+
+
+<div class="d-none">
+<div id="appendCalltoOrder">
+<p class="m-0 needHelptxt d-none d-sm-none d-md-none d-lg-block">Need help? Call <a class="page_linkphone_no phno_primary font-weight-bold pl-2" href="tel:+18664458084">1-866-445-8084</a></p>
+</div>
+</div>
+
+</div>
+<div id="notAvailable" class="col-md-9 col-lg-7 mx-auto qual-form-content-view text-left text-sm-center mt-4 mt-lg-0 mt-xl-4">
+<h2 id="notAvailableHeadline" class="col-12 col-sm-10 mx-auto">We still canï¿½t find your address. Contact us to see if youï¿½re in our service area.</h2>
+<p class="col-12 inputedAdress"></p>
+<p id="notAvailableSubhead" class="col-12 d-none">Contact us now to find out if you're located in one of our service areas.</p>
+<div class="qual-form__btns-container row no-gutters col-sm-11 d-sm-flex flex-sm-row-reverse  ">
+<div class="col-12 col-sm-6 mx-auto chat-now hide" id="divChat">
+
+<a href="javascript://Chat" id="liveagent_button_online_chat02_5733i000000LjeD" onclick="liveagent.startChat('5733i000000LjeD')" class="ws-primary-button ws-btn chat-now hide" style="display: none;">Chat With Agent Now</a>
+<span id="liveagent_button_offline_chat02_5733i000000LjeD" class="chat-now hide out-of-market" style="display: none;">No Chat Available</span>
+</div>
+<div class="col-12 col-sm-6 mx-auto call-now">
+<a class="ws-secondary-button ws-btn ws-btn-padding-sm d-block tel-link" href="tel:1-866-445-8084">Call <span class="tel-number d-block d-sm-inline">1-866-445-8084</span></a>
+
+</div>
+<div class="col-12 col-sm-6 mx-auto call-now-zip">
+<a class="ws-secondary-button ws-btn ws-btn-padding-sm d-block tel-link" href="tel:1-866-938-0358">Call <span class="tel-number d-block d-sm-inline">1-866-938-0358</span></a>
+</div>
+</div>
+<p class="col-10 mx-auto text-center cta-links-container">
+<a class="backToaddressInput">Enter your address again </a> <span id="spnOtherCarriers" class="d-none">or
+<a class="view-other-areas" href="https://mover.bundledealer.com?utm_campaign=20190503&utm_source=prosp&utm_term=A" id="viewOtherCarriers" target="_blank"> view other carriers in your area</a></span>
+</p>
+</div>
+<div id="alternateAddress" class="col-md-7 col-lg-6 col-xl-5 mx-auto qual-form-content-view text-left text-sm-center">
+<h2 id="partialMatchtitle" class="col-sm-10 col-sm-12 mx-auto">Do we have this right?</h2>
+<p class="col-12 inputedAdress"></p>
+<p class="col-sm-6 col-md-8 mx-sm-auto">
+Pick the correct address from this list to see the best deals available
+<span id="altProceedCopy">, or <a id="altProceed">use that address</a></span>.
+</p>
+<div class="alternate-addresses__form-container col-sm-7 col-md-8 mx-sm-auto">
+<div id="addressesDropdown">
+<div id="selectedAddress" class="text-left text-capitalize"></div>
+<ul id="alternateAddressOptions" class="qual-form__dropdown-menu"></ul>
+</div>
+<div class="qual-form__btns-container d-sm-flex flex-sm-row-reverse">
+<div class="col-12 col-sm-6 submitGrp">
+<a id="useSelected" class="ws-primary-button ws-btn d-block">Submit</a>
+</div>
+<div id="toShortForm" class="col-12 col-sm-6">
+<a id="backToaddressInputShortForm" class="ws-secondary-button ws-btn d-block Change-address-text">Change Address</a>
+</div>
+<div id="toLongForm" class="col-12 col-sm-6 p-0 hide ">
+<a class="backToaddressInput ws-btn ws-secondary-button d-block">Change Address</a>
+</div>
+</div>
+</div>
+<p class="col-12 need-assistance-text text-center"><br /> Or call to order <a class="tel-link" href="tel:1-866-445-8084">1-866-445-8084</a>
+<span class="chat-now hide"> or 
+<a href="javascript://Chat" id="liveagent_button_online_chat03_5733i000000LjeD" onclick="liveagent.startChat('5733i000000LjeD')" class="chat-now hide" style="display: none;">Chat Now</a>
+<span id="liveagent_button_offline_chat03_5733i000000LjeD" class="chat-now hide" style="display: none;">No Chat Available</span>
+</span>.</p>
+</div>
+<div id="UQualDBNotAvailable" class="col-md-9 col-lg-7 mx-auto qual-form-content-view text-left text-sm-center text-center bottom-20">
+<h3 id="UQualDBNotAvailableHeadline" class="col-12 col-sm-12 mx-auto">Sorry!<br />We are experiencing technical difficulties but our team is currently working to resolve it.</h3>
+<p id="UQualDBNotAvailableSubhead" class="col-11 text-center mt-4">In the meantime, please call <a class="tel-link-text-only d-md-inline uqal-subhead-tel" href="tel:1-866-445-8084"><span class="tel-number uqal-subhead-tel">1-866-445-8084</span></a><a class="tel-link-text-only d-md-inline" href="tel:1-855-314-1951"><span class="tel-number">1-855-314-1951</span></a> for immediate assistance.</p>
+</div>
+<div id="copperDeal" class="copper-deal col-md-12 col-lg-8 col-sm-11 mx-auto qual-form-content-view text-left text-sm-center text-center">
+<p class="copperHeader mb-3 mx-sm-auto">Your address qualifies for a special deal!</p>
+<p class="copperSubHeader fw-bold mb-4 mbb-3 mx-sm-auto">Receive a $100 Kinetic Visa<sup>&reg;</sup> prepaid card when you call-in and order* today.</p>
+<div class="col-12 chat-now copper-phone-main col-sm-6 m-auto">
+<a class="d-block flex-grow-1 mb-md-2  ws-primary-button  mr-md-1" href="tel:1-866-445-8084">Call Now <span class="tel-number">1-866-445-8084</span></a>
+</div>
+<div class="col-12 chat-now copper-phone col-sm-6 m-auto">
+<a class="d-block flex-grow-1 mb-md-2  ws-primary-button  mr-md-1" href="tel:1-866-278-8150">Call Now <span class="tel-number">1-866-278-8150</span></a>
+</div>
+<div class="col-12 call-now">
+<a class="d-block flex-grow-1 mb-2" id="clickToShopBtn">No - proceed to cart</a>
+</div>
+<p class="copper-notes">* For call-in orders only. Requires Internet purchase. Local, State, or Federal government accounts are not eligible. Card is issued by MetaBank<sup>&reg;</sup>, Member FDIC, pursuant to a license from Visa U.S.A. Inc. No cash access or recurring payments. Can be used everywhere Visa debit cards are accepted. Card valid for up to 6 months; unused funds will forfeit after the valid thru date. Card terms and conditions apply. </p>
+<a class="backToaddressInput"><u>Change the address </u></a>
+</div>
+<div id="FiberPromo" class="col-md-9 col-lg-8 mx-auto qual-form-content-view text-left text-sm-center">
+<div>
+<div class="FiberPromoSection">
+
+<h2 id="FiberPromoHeadline2" class="FiberPromoHeadline2">FIBER is now available to your area.</h2>
+
+<h3 id="FiberPromoContent" class="FiberPromoContent">Promo Month</h3>
+<h3 id="FiberPromoContentoffer" class="FiberPromoContentoffer">Limitedoffer</h3>
+<p class="inputedAdress"></p>
+</div>
+<div class="FiberPromoActionCta">
+<div class="callNowPromp">
+<a class="ws-primary-button ws-btn d-block tel-link callNowPrompCTA" href="tel:1-866-445-8084">Call Now <span class="tel-number">866-445-8084</span></a>
+</div>
+<div class="Learnmore">
+<a id="LearnMore" href="/fiber-promotion" class="ws-secondary-button ws-btn d-block LearnMoreCTA">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+        if (!window._laq) { window._laq = []; }
+
+        window._laq.push(function(){
+            liveagent.showWhenOnline('5733i000000LjeD', document.getElementById('liveagent_button_online_chat01_5733i000000LjeD'));
+            liveagent.showWhenOffline('5733i000000LjeD', document.getElementById('liveagent_button_offline_chat01_5733i000000LjeD'));
+
+            liveagent.showWhenOnline('5733i000000LjeD', document.getElementById('liveagent_button_online_chat02_5733i000000LjeD'));
+            liveagent.showWhenOffline('5733i000000LjeD', document.getElementById('liveagent_button_offline_chat02_5733i000000LjeD'));
+
+            liveagent.showWhenOnline('5733i000000LjeD', document.getElementById('liveagent_button_online_chat03_5733i000000LjeD'));
+	        liveagent.showWhenOffline('5733i000000LjeD', document.getElementById('liveagent_button_offline_chat03_5733i000000LjeD'));
+
+            liveagent.showWhenOnline('5733i000000LjeD', document.getElementById('online'));
+	        liveagent.showWhenOffline('5733i000000LjeD', document.getElementById('offline'));
+
+	    });
+
+        var ChatInit = WSCustomerInfo.ChatInit;
+	    var ChatKey = WSCustomerInfo.ChatKey;
+
+	    if(ChatInit != null && ChatKey != null ) {
+			liveagent.init(ChatInit, '5723i000000LixW', ChatKey);
+			liveagent.addCustomDetail("Label", "wincom");
+	    }
+    </script>
+</div>
+<script src="/cmsscripts/custom/res-module-library.js?v=20220614" type="text/javascript"></script>
+</div>
+<div id="nuanceC2CDiv"></div>
+<div class="ws-footer k-footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 footer_all_content">
+<div class="footer-link-menu">
+<div class="row footer-category-links ml-4 res-lg-container">
+<div class="col-sm-2 footer_category_types">
+<span class="category-header">EXPLORE</span>
+<ul class='footer_category_content'>
+<li><a title="Internet" href="/high-speed-internet">Internet</a></li>
+<li><a title="TV & Entertainment" href="#wp_42325863fc2b4e5b8eef6406587b0103_content">TV & Entertainment</a></li>
+<li><a title="Phone" href="/home-phone">Phone</a></li>
+<li><a title="Available Services" href="/seo/products">Available Services</a></li>
+</ul>
+<i class="footer_material_icon material-icons">keyboard_arrow_right</i>
+</div>
+<div class="col-sm-2 footer_category_types">
+<span class="category-header">RESOURCES</span>
+<ul class='footer_category_content'>
+<li><a title="Support" href="/support">Support</a></li>
+<li><a title="Store Finder" href="/about/windstream-information/Store-Finder">Store Finder</a></li>
+<li><a title="Windstream Blog" href="https://blog.windstream.com/" target="_blank">Kinetic Blog</a></li>
+
+<li><a title="Windstream.net" href="https://www.windstream.net/">Windstream.net</a></li>
+
+<li><a title="Move My Service" href="/Movers">Move My Service</a></li>
+<li><a title="Referral Program" href="/referralprogram/">Referral Program</a></li>
+<li><a class="sso-sign-in" href='https://my.gokinetic.com' title="GoKinetic">Go Kinetic Customer Portal</a></li>
+<li><a title="Affordable Connectivity Program" href="/affordable-connectivity-program">Affordable Connectivity Program</a></li>
+</ul>
+<i class="footer_material_icon material-icons">keyboard_arrow_right</i>
+</div>
+<div class="col-sm-2 footer_category_types">
+<span class="category-header">COMPANY</span>
+<ul class='footer_category_content'>
+<li><a title="About Us" href="/about">About Us</a></li>
+<li><a title="Careers" href="https://careers.windstream.com/">Careers</a></li>
+<li><a title="Investor Relations" href="http://investor.windstream.com/" target="_blank">Investor Relations</a></li>
+<li><a title="News" href="http://news.windstream.com/">News</a></li>
+<li><a title="Offer Conditions" href="/offer-conditions" class="-1">Offer Conditions</a></li>
+<li><a title="Broadband Network Statement" href="/about/legal/broadband-network-statement">Broadband Network Statement</a></li>
+<li><a title="Suppliers" href="/about/suppliers/Supplier-Information" class="-1">Suppliers</a></li>
+<li><a title="LESC" href="/Law-Enforcement-Support-Center" class="-1">Law Enforcement Support Center</a></li>
+<li><a title="Call Authentication Statement" href="/about/legal/call-authentication-statement" class="-1">Call Authentication Statement</a></li>
+</ul>
+<i class="footer_material_icon material-icons">keyboard_arrow_right</i>
+</div>
+<div class="col-sm-2 footer_category_types">
+<span class="category-header">WINDSTREAM</span>
+<ul class='footer_category_content'>
+<li><a title="Residential" href="/">Residential</a></li>
+<li><a title="Business" href="https://business.windstream.com/">Business</a></li>
+<li><a title="Enterprise" href="https://business.windstream.com/enterprise">Enterprise</a></li>
+</ul>
+<i class="footer_material_icon material-icons">keyboard_arrow_right</i>
+</div>
+<div class="col-sm-2 footer-contactUs-links">
+<span class="category-header">CONTACT US</span>
+<ul class='footer_category_content'>
+<li id="footerContactUs"><span>Call to order </span><a href="tel: 1-866-445-8084">1-866-445-8084</a></li>
+
+</ul>
+
+<span class="category-header desktop-social-icons-header">STAY CONNECTED</span>
+<ul class='right footer-social res-social-icons'>
+<li class="desktop-social-icons twitter"><a href="https://twitter.com/gokinetichome" title="Twitter" target="_blank"><span role="img" aria-label="Open Windstream Twitter Page" class="ws-icon-twitter"></span></a> </li>
+<li class="desktop-social-icons"><a title="Facebook" href="https://www.facebook.com/GoKineticHome/" target="_blank"><span role="img" aria-label="Open Windstream Facebook Page" class="ws-icon-facebook"></span></a></li>
+<li class="desktop-social-icons instagram"><a title="Instagram" href="https://www.instagram.com/GoKineticHome/" target="_blank"><span role="img" aria-label="Open Windstream Instagram Page" class="ws-icon fa fa fa-instagram "></span></a></li>
+</ul>
+<div class="fortune_container">
+<img src="/Windstream-residential/media/res/logos/fortune_1000_logo_white_text.svg" alt="Fortune 1000 Logo ">
+</div>
+
+<i class="footer_material_icon material-icons">keyboard_arrow_right</i>
+</div>
+</div>
+<script>
+  function openwendy(){
+    Nina.safeOpenWendy();
+    }
+
+var dropDwn = document.querySelector(".ws-site-nav ul li ul");
+dropDwn.style.position = "absolute";
+</script><div class="footer-contact-links contact-us-border row">
+<div class="col-sm-12">
+<span class="category-header">CONTACT US</span>
+<div class="fortune_container">
+<img src="/Windstream-residential/media/res/logos/fortune_1000_logo_white_text.svg" alt="Fortune 1000 Logo ">
+</div>
+<ul>
+<li id="mFooterContactUs">
+<span class='lightGraySpan'>Call now to order <br /><a href="tel:+18664458084" aria-label="Call now to order">1-866-445-8084</a> </span></li>
+
+
+</ul>
+</div>
+</div>
+
+<div class="footer-contact-links row">
+<div class="col-sm-12 footer-contactUs-links">
+<span class="category-header lightGraySpan">STAY CONNECTED</span>
+<div class="mobile-social-icons-header">
+<ul class='footer-social res-social-icons'>
+<li class="mobile-social-icons twitter"><a href=" https://twitter.com/gokinetichome" title="Twitter" target="_blank"><span role="img" aria-label="Open Windstream Twitter Page" class="ws-icon-twitter"></span></a> </li>
+<li class="d-inline-block"><a title="Facebook" href=" https://www.facebook.com/GoKineticHome/" target="_blank"><span role="img" aria-label="Open Windstream Facebook Page" class="ws-icon-facebook"></span></a></li>
+<li class="d-inline-block instagram"><a title="Instagram" href=" https://www.instagram.com/GoKineticHome/" target="_blank"><span role="img" aria-label="Open Windstream Instagram Page" class="ws-icon fa fa fa-instagram"></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12 footer_all_content legal-content">
+<div class="legal">
+
+<div class="row res-lg-container">
+
+<div class="col-lg-6 col-md-8 col-12">
+
+
+<h2 class="ws-footer__tagpitch">High speed for here.</h2>
+
+<p class="copyright-text inherit-text-color">© 2022 Windstream Intellectual Property Services, LLC. All rights
+reserved. Kinetic and Windstream are registered service marks or trademarks of Windstream
+Intellectual Property Services, LLC. All other marks are the property of their respective
+owners.</p>
+<p class="copyright-text inherit-text-color">From Fortune ©2021 Fortune Media IP Limited. Fortune and Fortune 1000 are registered trademarks of Fortune Media IP Limited and are used under license. Fortune and Fortune Media IP Limited are not affiliated with, and do not endorse the products or services of, Windstream.</p>
+
+ <span class="res-footer-policy-link d-none d-sm-block"><a title="Privacy Policy" href="/about/legal/Privacy-Policy">Privacy Policy</a> &nbsp; &nbsp;
+<a title="Terms &amp; Conditions" href="/about/legal/Terms-and-Conditions">Terms &amp;
+Conditions</a> &nbsp; &nbsp;
+<a title="Legal Notices" href="/about/legal/Legal-Notices">Legal Notices</a>
+
+</span>
+
+<span class="res-footer-policy-link d-block d-sm-none d-flex justify-content-between"><a title="Privacy Policy" href="/about/legal/Privacy-Policy">Privacy Policy</a> &nbsp; &nbsp;
+<a title="Terms &amp; Conditions" href="/about/legal/Terms-and-Conditions">Terms &amp;
+Conditions</a> &nbsp; &nbsp;
+<a title="Legal Notices" href="/about/legal/Legal-Notices">Legal Notices</a>
+
+</span>
+</div>
+
+<img src="/Windstream-residential/media/res/Kinetic_Mountain_Layer_Options_V6_04-1.svg" alt="Mountains" class="ws-footer__mountains">
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- -->
+</div>
+</form>
+</body>
+</html>
