@@ -1,0 +1,632 @@
+
+
+
+<!doctype html>
+<!-- CDN: https://static-website.miro.com VERSION: 1.831.0 -->
+<html lang="en">
+<head>
+		<script src="https://browser.sentry-cdn.com/5.5.0/bundle.min.js" crossorigin="anonymous"></script>
+
+	<script>Sentry.init({dsn: "https://b46aa7ff2c794eba81492d9275b26543@s.realtimeboard.com/36"});</script>
+
+	
+						<link rel="stylesheet" href="https://static-website.miro.com/static/css/layout/one-trust-cookie-banner.css?version=1.831.0" type="text/css" media="screen">
+
+	<script src="https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8"
+			data-domain-script="4133a0ef-6999-461d-909d-24f2b05bbc15"></script>
+	<script type="text/javascript">
+
+		function getFilteredOptanonActiveGroups() {
+			return getActiveGroups(OptanonActiveGroups);
+		}
+
+		function getActiveGroups(groups) {
+			if (typeof(groups) === 'undefined' || !groups) {
+				return [];
+			}
+
+			return groups
+				.split(',')
+				.filter(function(s) {
+					return typeof s !== 'undefined' && s.toString().trim() !== '';
+				});
+		}
+
+		function OptanonWrapper() {
+			var body = document.querySelector('body');
+			var bodyHeight = body.getBoundingClientRect().height;
+			var banner = document.querySelector('#onetrust-banner-sdk');
+			var button = document.querySelector('#onetrust-pc-btn-handler');
+			var container = document.querySelector('#ot-pc-content');
+			var closeButton = document.querySelector('#close-pc-btn-handler');
+			var cookieSettingsButtons = document.querySelectorAll('a[href="#manage-cookies"]');
+
+			if (banner) {
+				button.addEventListener('click', function () {
+					banner.classList.add('is-hidden');
+					container.classList.remove('ot-pc-scrollbar');
+				});
+
+				closeButton.addEventListener('click', function () {
+					banner.classList.remove('is-hidden');
+				});
+
+				document.addEventListener('keydown', function (e) {
+					if (banner.classList.contains('is-hidden')) {
+						if (e.keyCode === 27) {
+							closeButton.click();
+						}
+					}
+				});
+
+				banner.classList.add('is-active');
+			}
+
+			[].forEach.call(cookieSettingsButtons, function (button) {
+				button.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					if (typeof Optanon !== 'undefined') {
+						Optanon.ToggleInfoDisplay()
+					}
+				});
+			});
+
+			Optanon.OnConsentChanged(function() {
+				if (window.location.pathname.indexOf('distributed2021') > -1) {
+					body.style.height = bodyHeight + 'px';
+				}
+
+				if (typeof analytics !== 'undefined') {
+					analytics.track('user_consent_changed', {
+						activeGroups: getFilteredOptanonActiveGroups()
+					});
+				}
+			});
+		}
+	</script>
+		
+						<!-- Google Consent API -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('set', 'developer_id.dNzMyY2', true);
+
+		/* We are blocking all cookies upon consent for Europe*/
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'analytics_storage': 'denied',
+			'wait_for_update' : 500,
+			'region': [
+				'AT', // Austria
+				'BE', // Belgium
+				'BG', // Bulgaria
+				'CH', // Switzerland
+				'CY', // Cyprus
+				'CZ', //  Czech Republic
+				'DE', // Germany
+				'DK', // Denmark
+				'EE', // Estonia
+				'ES', // Spain
+				'FI', // Finland
+				'FR', // France
+				'GB', // United Kingdom of Great Britain and Northern Ireland
+				'GR', // Greece
+				'HR', // Croatia
+				'HU', // Hungary
+				'IE', // Ireland
+				'IS', // Iceland
+				'IT', // Italy
+				'LT', // Lithuania
+				'LV', // Latvia
+				'MK', // The former Yugoslav Republic of Macedonia
+				'MT', // Malta
+				'NL', // Netherlands
+				'NO', // Norway
+				'PL', // Poland
+				'PT', // Portugal
+				'RO', // Romania
+				'RS', // Serbia
+				'SE', // Sweden
+				'SI'  // Slovenia
+			]
+		});
+
+		/* For other regions storages are granted by default */
+		gtag('consent', 'default', {
+			'ad_storage': 'granted',
+			'analytics_storage': 'granted',
+			'wait_for_update' : 500
+		});
+
+		gtag('set', 'ads_data_refaction', true);
+	</script>
+	<!-- End Google Consent API -->
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			const variables = {
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			}
+
+			
+			w[l].push(variables);
+
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '';
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-N5MCLT8');</script>
+	<!-- End Google Tag Manager -->
+		
+					<script type="text/javascript">
+				(function(w) {
+					w.mrTranslations = {};
+
+											w.mrTranslations = {"en":"https:\/\/miro.com\/legal\/privacy-policy\/"};
+									})(window)
+			</script>
+		
+						<script>
+		(function (h, o, t, j, a, r) {
+			h.hj = h.hj || function () {(h.hj.q = h.hj.q || []).push(arguments)};
+			h._hjSettings = {hjid: 763128, hjsv: 6};
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script');
+			r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+	</script>
+		
+					<title>Terms of Service, Online Whiteboard | Miro</title>
+		
+					<meta http-equiv="x-ua-compatible" content="ie=edge">
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+			<meta name="description" content="Miro Terms of Service"/>
+
+			
+							
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://miro.com/">
+<meta name="twitter:title" content="Terms of Service, Online Whiteboard | Miro">
+<meta name="twitter:description" content="Miro Terms of Service">
+<meta name="twitter:image" content="https://static-website.miro.com/static/images/page/legal/legal_share_image.png?version=1.831.0&00001">
+			
+							<meta property="og:site_name" content="Miro"/>
+<meta property="og:type" content="website"/>
+<meta property="og:determiner" content="a"/>
+
+
+<meta property="og:title" content="Terms of Service, Online Whiteboard | Miro"/>
+<meta property="og:description" content="Miro Terms of Service"/>
+<meta property="og:image" content="https://static-website.miro.com/static/images/page/legal/legal_share_image.png?version=1.831.0&00001"/>
+
+
+					
+		
+	
+					<link rel="preload" href="https://static-website.miro.com/static/font/spoof/spoof-bold.woff2?version=1.831.0" as="font" type="font/woff2" crossorigin>
+			<link rel="preload" href="https://static-website.miro.com/static/font/formular/formular-regular.woff2?version=1.831.0" as="font" type="font/woff2" crossorigin>
+		
+					<meta name="norton-safeweb-site-verification"
+				  content="w9ld7s6-k1sgt064fgtd0onubirhhz5agmkbckiwizt-7qgsjt8za6wrfsby5kucji2vigd377lzy1i3q-3m5307wjol1jorjgttyu1qcuu5ddja7b37urwxv5koavm2"/>
+		
+					<meta name="facebook-domain-verification" content="noz7e2q9z5yuzoaefizovvll8p68yo"/>
+		
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+					<link rel="canonical" href="https://miro.com/legal/privacy-policy/">
+		
+						<script>
+		var ecommerce = (function () {
+			return {
+				status: false,
+				transactions: [],
+				currency: 'USD',
+				plans: {
+					'team_monthly': 'Team',
+					'team_yearly': 'Team',
+					'professional_monthly': 'Premium',
+					'professional_yearly': 'Premium'
+				},
+				init: function () {
+					this.status = true;
+				},
+				addTransaction: function (transaction) {
+					this.transactions.push(transaction);
+				},
+				preparationData: function () {
+					for (data of this.transactions) {
+						data.id = data.id.toLowerCase();
+
+						if (data.currency === undefined) {
+							data.currency = this.currency
+						}
+
+						if (this.plans[data.id] !== undefined) {
+							data.id = this.plans[data.id];
+						}
+
+						dataLayer.push(Object.assign({
+							event: 'ga-event', gaEvent: 'ecommerce:addTransaction',
+						}, data));
+					}
+					this.transactions = [];
+				},
+				send: function () {
+					this.preparationData();
+					dataLayer.push({ event: 'ga-event', gaEvent: 'ecommerce:send'});
+				}
+			}
+		})();
+		ecommerce.init();
+	</script>
+		
+					<script>
+	var _prum = [['id', '528b51f3abe53d9a74000000'],
+		['mark', 'firstbyte', (new Date()).getTime()]];
+	(function() {
+		var s = document.getElementsByTagName('script')[0]
+				, p = document.createElement('script');
+		p.async = 'async';
+		p.src = '//rum-static.pingdom.net/prum.min.js';
+		s.parentNode.insertBefore(p, s);
+	})();
+</script>		
+					<link rel="stylesheet" href="https://static-website.miro.com/static/css/common/common.css?version=1.831.0" type="text/css" media="screen">
+					
+									<link rel="stylesheet" href="https://static-website.miro.com/static/css/micro-apps/main.css?version=1.831.0" type="text/css" media="screen">
+
+				<script src="https://static-website.miro.com/static/js/micro-apps.vendors.js?version=1.831.0" defer></script>
+
+				<script defer src="https://static-website.miro.com/static/js/vendor/micro-apps/core/dist/index.js?version=1.831.0"></script>
+					
+				<link rel="stylesheet" href="https://static-website.miro.com/static/css/page/legal/main.css?version=1.831.0" type="text/css" media="all"/>
+
+	
+					<link rel="apple-touch-icon" sizes="180x180" href="https://static-website.miro.com/static/favicons/apple-touch-icon.png?version=1.831.0">
+			<link rel="icon" type="image/png" sizes="32x32" href="https://static-website.miro.com/static/favicons/favicon-32x32.png?version=1.831.0">
+			<link rel="icon" type="image/png" sizes="192x192" href="https://static-website.miro.com/static/favicons/android-chrome-192x192.png?version=1.831.0">
+			<link rel="icon" type="image/png" sizes="16x16" href="https://static-website.miro.com/static/favicons/favicon-16x16.png?version=1.831.0">
+			<link rel="manifest" href="https://static-website.miro.com/static/favicons/site.webmanifest?version=1.831.0">
+			<link rel="shortcut icon" href="https://static-website.miro.com/static/favicons/favicon.ico?version=1.831.0">
+			<meta name="apple-mobile-web-app-title" content="Miro">
+			<meta name="application-name" content="Miro">
+			<meta name="msapplication-TileColor" content="#ffd02f">
+			<meta name="msapplication-TileImage" content="https://static-website.miro.com/static/favicons/mstile-144x144.png?version=1.831.0">
+			<meta name="msapplication-config" content="https://static-website.miro.com/static/favicons/browserconfig.xml?version=1.831.0">
+		
+					<meta name="msvalidate.01" content="5A56B40715B8638E55FB9FCCEFC4CEFE"/>
+		
+					<meta name="slack-app-id" content="A8VK125AS">
+		
+					<script>
+	RTB = {
+		analytics: {
+			front: {
+				writeKey: 'mDOTYnGtSQjoYj4RxdBJOoB518sdsGDz'
+			},
+			endpoint: 'https://track.realtimeboard.com/api'
+		},
+		recaptcha: {
+			sitekey: '6LdKAiYUAAAAADx5LZnw3DTE7M6066-krWUfDwSg'
+		}
+	}
+</script>		
+			<!-- CloudWatchRUM is disabled in config -->
+	</head>
+
+<body class="en ">
+
+		<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5MCLT8"
+					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+							<script>
+		window.addEventListener('DOMContentLoaded', function() {
+			var container = document.querySelector('#header');
+			window.microApps_Core.renderHeader(container, {"label":"Header","productNavigation":{"title":"Product","groups":[{"title":"Product","items":[{"title":"Product Overview","path":"\/online-whiteboard\/","description":"Collaborate to create the next big thing"},{"title":"Miro Developer Platform","path":"\/api\/","description":"Build with our API, SDK, and iFrame"},{"title":"Apps & Integrations","path":"\/integrations\/","description":"Work smarter with connected tools"},{"title":"Miro for Devices","path":"\/apps\/","description":"Collaborate with your team from anywhere"},{"title":"Templates","path":"\/templates\/","description":"Save time with our ready-made frameworks and proven workflows"},{"title":"Security","path":"\/security\/","description":"Keep your work safe with enterprise-grade data protection"}],"viewAllLink":null}]},"solutionsNavigation":{"title":"Solutions","groups":[{"title":"By Team","items":[{"title":"Product Management","path":"\/how-product-teams-use-miro\/","description":"Build strategies that rally the team"},{"title":"UX & Design","path":"\/how-ux-teams-use-miro\/","description":"Map customer journeys and easily gather feedback on designs"},{"title":"Engineering","path":"\/how-development-teams-use-miro\/","description":"Understand and communicate complex ideas"},{"title":"Marketing","path":"\/how-marketing-teams-use-miro\/","description":"Brainstorm and design campaigns"},{"title":"Sales","path":"\/how-sales-teams-use-miro\/","description":"Align your team and strengthen client relationships"}],"viewAllLink":null},{"title":"By Use Case","items":[{"title":"Hybrid Work","path":"\/hybrid-work\/","description":"Collaborate wherever and whenever you work"},{"title":"Meetings & Workshops","path":"\/meetings-and-workshops\/","description":"Engage teams and make big things happen"},{"title":"Brainstorming","path":"\/online-brainstorm-tool\/","description":"Unleash and expand on creative ideas"},{"title":"Diagramming","path":"\/diagramming\/","description":"Chart a path and illustrate concepts"},{"title":"Strategy & Planning","path":"\/online-strategic-planning-tool\/","description":"Set goals and track progress"},{"title":"Agile Workflows","path":"\/online-scrum-agile-tool\/","description":"Drive faster team collaboration"},{"title":"Project Management","path":"\/how-project-managers-use-miro\/","description":"Visualize tasks and dependencies"}],"viewAllLink":null}]},"resourcesNavigation":{"title":"Resources","groups":[{"title":"Learn","items":[{"title":"Miro Academy","path":"\/academy\/","description":"Level up your skills with live sessions and online courses"},{"title":"Blog","path":"\/blog\/","description":"Explore collaboration, creativity, and teamwork"},{"title":"Miro Webinars","path":"https:\/\/go.miro.com\/webinars","description":"Engage in fun and informative virtual events "},{"title":"Miro Guides","path":"\/guides\/","description":"Tap into tips and tricks for better co-creation"},{"title":"Help Center","path":"https:\/\/help.miro.com","description":"Learn even more about how Miro works"},{"title":"Developer Documentation","path":"https:\/\/developers.miro.com","description":"Build on our platform"}],"viewAllLink":null},{"title":"Connect","items":[{"title":"Miro Community Forum ","path":"https:\/\/community.miro.com","description":"Get to know the people who use and love our platform"},{"title":"Miro Developer Community","path":"https:\/\/developers.miro.com","description":"Connect with other platform builders"},{"title":"Miro Professional Network","path":"\/professional-network-waiting-list\/","description":"Supercharge consultant-to-client work"},{"title":"Miro Experts Directory","path":"\/experts\/","description":"Work with people who are at the top of their craft and vetted by our team"},{"title":"Miro for Startups","path":"\/startups\/","description":"Grow and scale your business"},{"title":"Miro for Events & Hackathons","path":"\/hackathons-and-contests\/","description":"Bring teams together to create and connect"},{"title":"Miro for Education","path":"\/education-whiteboard\/","description":"Make teaching and learning more meaningful"},{"title":"Miro for NPO\u2019s","path":"\/npo\/","description":"Empower better solutions for big problems"}],"viewAllLink":null}]},"enterpriseLink":{"title":"Enterprise","path":"\/enterprise\/","description":""},"pricingLink":{"title":"Pricing","path":"\/pricing\/","description":""},"contactSalesLink":{"title":"Contact Sales","path":"\/contact\/sales\/","description":""},"loginLink":{"title":"Login","path":"\/login\/","description":""},"signupButton":{"title":"Sign up free","path":"\/signup\/","description":""},"dashboardButton":{"title":"Go to the dashboard","path":"\/app\/","description":""},"bottomLinks":[{"title":"Contact Sales","path":"\/contact\/sales\/","description":""},{"title":"View Demo","path":"\/online-whiteboard\/","description":""}],"whatsNew":{"title":"What\u2019s new","items":[{"title":"New templates","path":"\/templates\/","description":"400+ creators, 600+ templates, find everything you need","image":{"name":"new-templates","src":"\/\/images.ctfassets.net\/w6r2i5d8q73s\/21VkY7RX1MDBBeiQaY3SQe\/b97afb5de86853e0e3ddf5866ec2d2ad\/new-templates.png","width":272,"height":180}},{"title":"Sign in with Slack ","path":"\/works-with-slack\/","description":"Connect to Miro by using your Slack","image":{"name":"Sign-in-with-slack","src":"\/\/images.ctfassets.net\/w6r2i5d8q73s\/16FGWpDjU3jmVQ20A4kS5P\/da1c90a82861e9f72cbca2b022820b9c\/Sign-in-with-slack.png","width":272,"height":180}}],"showAllLink":{"title":"See changelog","path":"\/changelog\/","description":""}},"templates":{"navigationGroup":{"title":"Templates","items":[{"title":"Templates by Miro","path":"\/templates\/","description":"Save time with ready-made templates and proven workflows"},{"title":"Miroverse","path":"\/miroverse\/","description":"Discover templates from experts in the Miro community"}],"viewAllLink":null},"popularTemplates":{"title":"Popular Templates","items":[{"title":"Mind Map","path":"\/templates\/mindmap\/","description":"See the big picture all at once ","image":{"name":"mind-map","src":"\/\/images.ctfassets.net\/w6r2i5d8q73s\/5mdtNU2nepU4b8oOAEV0PU\/6893ec71a8bdbab74e72c6c9746f1323\/mind-map.png","width":272,"height":180}}],"showAllLink":{"title":"Explore all templates","path":"\/templates\/","description":""}}},"customerSpotlight":{"image":{"name":"christoph_kloth","src":"\/\/images.ctfassets.net\/w6r2i5d8q73s\/5Y56b4Ahl6UddKhNNn5dBk\/8fb36dcd26f915d112ef99f9fe576d1e\/christoph_kloth.png","width":401,"height":300},"logo":{"name":"logo","src":"\/\/images.ctfassets.net\/w6r2i5d8q73s\/1IEmCOJIx9x752a4RBxN0D\/f352a00eacacaee4f9d584534f1953af\/logo.svg","width":128,"height":32},"title":"Customer spotlight","description":"I think Miro has improved alignment across our divisions and our company","showAllLink":{"title":"Read more Miro stories","path":"https:\/\/miro.com\/blog\/customer-stories","description":""}}});
+		})
+	</script>
+
+	<div id="header"></div>
+		
+
+		<div class="container">
+			<main class="content">
+				<div class="mr-header-spacer-1 js__header-fixing-point"></div>
+
+									
+<section class="com-sec-hero-7 component-section component-section--offset-top-0">
+	<div class="com-sec-hero-7__back com-sec-hero-7__back--dark">
+		<div class="com-el-wrapper com-el-wrapper--offset-top-80 com-el-wrapper--offset-bottom-120">
+					<div class="com-sec-hero-7__elements com-sec-hero-7__elements--left">
+											
+
+	
+	
+
+
+
+
+	<h1 class="com-el-headline com-el-headline--mid com-el-headline--white">Miro legal information<br />
+</h1>
+					
+					
+									</div>
+
+							</div>
+	</div>
+</section>
+
+					<section class="legal-features-1">
+						<div class="legal-features-1__wrapper">
+							<div class="legal-features-1__content-block">
+																	<div class="legal-features-1__menu">
+																					<a href="/legal/terms-of-service" class="legal-features-1__menu--category "><span>Terms of Service</span></a>
+																																<a href="/legal/master-cloud-agreement" class="legal-features-1__menu--category "><span>Master Cloud Agreement</span></a>
+																																<a href="/legal/privacy-policy" class="legal-features-1__menu--category active"><span>Privacy Policy</span></a>
+																						<ul>
+																								<li>
+												<span data-id="0" class="js-anchor-link">
+													Applicability of this Privacy Policy
+												</span>
+													</li>
+																								<li>
+												<span data-id="1" class="js-anchor-link">
+													Identifying the data controller and processor
+												</span>
+													</li>
+																								<li>
+												<span data-id="2" class="js-anchor-link">
+													The types of personal data we collect
+												</span>
+													</li>
+																								<li>
+												<span data-id="3" class="js-anchor-link">
+													How we use personal data
+												</span>
+													</li>
+																								<li>
+												<span data-id="4" class="js-anchor-link">
+													Data retention
+												</span>
+													</li>
+																								<li>
+												<span data-id="5" class="js-anchor-link">
+													How we share and disclose personal data
+												</span>
+													</li>
+																								<li>
+												<span data-id="6" class="js-anchor-link">
+													Security
+												</span>
+													</li>
+																								<li>
+												<span data-id="7" class="js-anchor-link">
+													Our responsibility for third party links
+												</span>
+													</li>
+																								<li>
+												<span data-id="8" class="js-anchor-link">
+													Age restriction
+												</span>
+													</li>
+																								<li>
+												<span data-id="9" class="js-anchor-link">
+													Changes to this Privacy Policy
+												</span>
+													</li>
+																								<li>
+												<span data-id="10" class="js-anchor-link">
+													Local provisions
+												</span>
+													</li>
+																							</ul>
+																																<a href="/legal/recruitment-privacy-policy" class="legal-features-1__menu--category "><span>Recruitment Privacy Policy</span></a>
+																																<a href="/legal/cookies-policy" class="legal-features-1__menu--category "><span>Cookies Policy</span></a>
+																																<a href="/legal/developer-terms-of-use" class="legal-features-1__menu--category "><span>Developer Terms of Use</span></a>
+																																<a href="/legal/community-leader-program-terms-and-conditions" class="legal-features-1__menu--category "><span>Community Leader Program Terms and Conditions</span></a>
+																																<a href="/legal/online-community-terms-of-use" class="legal-features-1__menu--category "><span>Online Community Terms of Use</span></a>
+																																<a href="/legal/open-source-software-site" class="legal-features-1__menu--category "><span>Open Source Software - Site</span></a>
+																																<a href="/legal/open-source-software-client" class="legal-features-1__menu--category "><span>Open Source Software - Client</span></a>
+																																<a href="/legal/subprocessors-list" class="legal-features-1__menu--category "><span>Current Subprocessors List</span></a>
+																																<a href="/legal/code-of-conduct" class="legal-features-1__menu--category "><span>Code of Conduct</span></a>
+																																<a href="/legal/prior-master-cloud-agreement-mca-versions" class="legal-features-1__menu--category "><span>Prior Master Cloud Agreement &quot;MCA&quot; Versions</span></a>
+																														</div>
+									<div class="legal-features-1__content com-el-rich-text">
+										<div class="legal-filter__filter-category js-filter-category-wrap">
+											<input type="hidden" name="head-category" value="">
+																																																																																	<div class="legal-filter__filter-category-head js-filter-category">Privacy Policy</div>
+																																																																																																																																																																																																																																																																								<ul class="legal-filter__filter-category-list js-filter-category-list">
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/terms-of-service">Terms of Service</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/master-cloud-agreement">Master Cloud Agreement</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/privacy-policy">Privacy Policy</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/recruitment-privacy-policy">Recruitment Privacy Policy</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/cookies-policy">Cookies Policy</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/developer-terms-of-use">Developer Terms of Use</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/community-leader-program-terms-and-conditions">Community Leader Program Terms and Conditions</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/online-community-terms-of-use">Online Community Terms of Use</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/open-source-software-site">Open Source Software - Site</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/open-source-software-client">Open Source Software - Client</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/subprocessors-list">Current Subprocessors List</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/code-of-conduct">Code of Conduct</a></li>
+																									<li class="legal-filter__filter-category-item js-filter-category-item">
+														<a href="/legal/prior-master-cloud-agreement-mca-versions">Prior Master Cloud Agreement &quot;MCA&quot; Versions</a></li>
+																							</ul>
+										</div>
+										<h2 class="legal-features-1__sectiontitle">Privacy Policy</h2>
+																				<article class="legal-features-1__content-text">
+											<div class="">
+												<p>Last updated: 16 May 2022</p><p>This Privacy Policy describes how RealtimeBoard, Inc. dba Miro, including its affiliates and subsidiaries (collectively, <strong>Miro</strong> and also referred to as <strong>our</strong>, <strong>us</strong> and <strong>we</strong>) collects, uses and discloses personal data, as well as any choices you have with respect to this personal data.</p><p>When we refer to &ldquo;Miro&rdquo;, we mean the Miro entity that acts as the controller or processor of your personal data, explained in more detail in the &ldquo;Identifying the Data Controller and Processor&rdquo; section below.</p><h3><strong>Applicability of this Privacy Policy</strong></h3><p>This Privacy Policy applies to Miro&rsquo;s online collaboration tools and platform, including the associated Miro mobile and desktop applications (collectively, the &ldquo;<strong>Services</strong>&rdquo;), miro.com and other Miro websites (collectively, the &ldquo;<strong>Websites</strong>&rdquo;) and other interactions (e.g. customer support, the Miro Community, etc.) you may have with Miro, including the processing of any messages, files, video or audio recordings or other content submitted through our Services (collectively, &ldquo;<strong>Customer Content</strong>&rdquo;). This Privacy Policy does not apply to any third-party applications or software that integrate with our Services (&ldquo;<strong>Third-Party Services</strong>&rdquo;), or any other third-party products, services or businesses.&nbsp;</p><p>The organization (e.g., your employer or another entity or person) (&ldquo;<strong>Customer</strong>&rdquo;) that entered into the <a href="https://miro.com/legal/terms-of-service/" title=""><u>Terms of Service</u></a> or the<a href="https://miro.com/legal/master-cloud-agreement/" title=""><u> Master Cloud Agreement</u></a> (&ldquo;<strong>Customer Agreement&rdquo;</strong>) controls its instance of the Services (its &ldquo;<strong>Organization</strong>&rdquo;) and any associated Customer Content. Individuals that are granted access to an Organization by a Customer (&ldquo;<strong>Authorized Users</strong>&rdquo;) routinely submit Customer Content to Miro when using the Services.</p><p>If you have any questions about specific Organization settings and privacy practices, please contact the Customer whose Organization you use. If you have received an invitation to join an Organization but have not yet created an account, you should request assistance from the Customer that sent the invitation.</p><h3><strong>Identifying the data controller and processor</strong></h3><p>Data protection law in certain jurisdictions differentiates between the &ldquo;controller&rdquo; and &ldquo;processor&rdquo; of personal data. In general, Customer is the controller and Miro is the processor of Customer Content.&nbsp;</p><p>As the controller for Customer Content, Customer may, for example, use the Services to grant and remove access to an Organization, assign roles and configure settings, access, modify, export, share and remove Customer Content and otherwise apply its policies to the Services.</p><p>As the processor for Customer Content, Miro processes Customer Content only on the Customer&rsquo;s request and in accordance with the Customer&rsquo;s written instructions, including the applicable terms in the Customer Agreement, Customer&rsquo;s use of the Services, and as required by applicable law. For more information about how Customer Content is processed (such as how your personal data is processed, the purpose and legal basis for processing, and your data subject rights), we refer you to the relevant Customer&rsquo;s privacy notice.</p><p>Miro is the controller for certain other categories of data (described in paragraph 3 below). If you have any questions or complaints, or would like to exercise your rights with regard to your personal data, please contact us at <a href="mailto:privacy@miro.com" title="">privacy@miro.com</a>.</p><h3><strong>The types of personal data we collect</strong></h3><p>Your personal data is provided by you, obtained from third parties, and/or created by us when you use the Services.</p><p>Miro may collect and receive Customer Content and other personal data (&ldquo;<strong>Other Data</strong>&rdquo;) in a variety of ways:</p><ul><li><p><strong>Customer Content.</strong> Customers or Authorized Users routinely submit Customer Content to Miro when using the Services.</p></li><li><p><strong>Other Data.</strong> Miro also collects, generates and/or receives Other Data:</p><ul><li><p><strong>Organization and account information. </strong>To create or update an Organization account, you or the relevant Customer (e.g. your employer) supplies Miro with an email address, phone number, password, domain and/or similar account details. In addition, Customers that purchase a paid version of the Services provide Miro (or its payment processors) with billing details such as credit card information, banking information and/or a billing address.</p></li><li><p><strong>Usage data.&nbsp;</strong></p><ul><li><p><strong>Service metadata. </strong>When an Authorized User interacts with the Services, metadata is generated to provide additional context about their use of the Services. For example, Miro logs the Organizations, boards, people, features, content and links that you view or interact with, as well the types of files shared and any Third-Party Services that you use.</p></li><li><p><strong>Log data.</strong> Like most websites and services delivered over the Internet, our servers automatically collect information when you access or use our Websites or Services, recording this information in log files. This log data may include the Internet Protocol (IP) address, the address of the web page visited before using the Website or Services, your browser type and settings, the date and time the Services were used, information about browser configuration and plugins, and language preferences.</p></li><li><p><strong>Device data.</strong> Miro collects information about devices accessing the Services, including the type of device, operating system used, device settings, application IDs, unique device identifiers and crash data. Whether we collect some or all of this Other Data often depends on the type of device used and its settings.</p></li><li><p><strong>Location data.</strong> We receive information from you, the relevant Customer and other third-parties that helps us approximate your location. We may, for example, use a business address submitted by your employer or an IP address received from your browser or device to determine approximate location. Miro may also collect location information from devices in accordance with the consent provided by your device.</p></li><li><p><strong>Third-party data.</strong> Miro may receive data about organizations, industries, lists of companies that are customers, Website visitors, marketing campaigns and other matters relevant to our business from parent corporations, affiliates and subsidiaries, our partners, or other third parties that we use to make our own information more useful. This data may be combined and may include aggregate-level data. For example, information about how well an online marketing or email campaign performed, or to create a business contacts directory.</p></li><li><p><strong>Cookie data.</strong> Miro uses a variety of cookies and similar technologies in our Websites and Services to help us collect Other Data. For more details about how we use these technologies, as well as your opt-out opportunities and other options, please see our <a href="https://miro.com/legal/cookies-policy/" title=""><u>Cookie Notice</u></a>.</p></li><li><p><strong>Third-Party Services data. </strong>A Customer may choose to use Third-Party Services. If Customer enables Third-Party Services, Miro may access and exchange Customer Content and Other Data with the Third-Party on Customer&rsquo;s behalf, in accordance with our agreement with the Third-Party Services and any permissions granted by the Customer (including its Authorized User(s)).</p></li><li><p><strong>Contact data.</strong> In accordance with the consent provided by your device or other third-party API, we process any contact information that an Authorized User chooses to import when using the Services.</p></li><li><p><strong>Community data</strong>. We also receive Other Data when submitted to our Websites or in other ways, such as if you participate in the Miro Community (such as in Forums, Programs, Miroverse, contests, activities, events, educational programs hosted by Miro or a vendor, or otherwise communicate with Miro).</p></li><li><p><strong>Additional data provided to Miro.</strong> We also receive Other Data when submitted to our Websites or in other ways, such as when you request support, interact with our social media accounts or otherwise communicate with Miro.</p></li></ul></li></ul></li><li><p><strong>Business data</strong>. Miro may receive information about individuals from organisations, industries, Customers, (potential) partners, parent corporations, affiliates and subsidiaries, and our partners for cooperation and communication purposes.</p></li></ul><p>Generally, no one is under a statutory or contractual obligation to provide any Customer Content or Other Data (collectively, &ldquo;<strong>Personal Data</strong>&rdquo;). However, certain Personal Data is collected automatically and if some Personal Data, such as Organization setup details, is not provided, we may be unable to provide the Services.</p><h3><strong>How we use personal data</strong></h3><p>Customer Content will be used by Miro in accordance with Customer&rsquo;s instructions, including any applicable terms in the Customer Agreement and Customer&rsquo;s use of the Services, and as required by applicable law.</p><p>Miro uses Other Data for the purposes of our legitimate interests in operating our Services, Websites and business. More specifically, Miro uses Other Data:</p><ul><li><p><strong>To provide, update, maintain and protect our Services, Websites and business.</strong> This includes the use of Other Data to support delivery of the Services under a Customer Agreement, prevent or address service errors, security or technical issues, and to analyze and monitor usage, trends and other activities.</p></li><li><p><strong>As required by applicable law, legal process or regulation.</strong></p></li><li><p><strong>To support and communicate with you by responding to your requests, comments and questions.</strong> If you contact us, we may use your Other Data to respond.</p></li><li><p><strong>To develop, test and provide search, learning and productivity tools and additional features.</strong> Miro tries to make the Services as useful as possible. For example, we make Services suggestions based on historical use and predictive models, identify organizational trends and insights, customize your experience of the Services, or to create new features and products.</p></li><li><p><strong>To conduct market and user research. </strong>To improve our Services and troubleshoot new products and features, we may carry out research. For example we may survey Customers (including Admins, Users and other contacts) or third parties about customer satisfaction, user experience, the effectiveness of our marketing campaigns, and their broader interests.</p></li><li><p><strong>To send emails and other communications.</strong>&nbsp;</p><ul><li><p>We may send you service, transactional, technical and other administrative communications, such as communications about your account, our Service offerings, changes to the Services, and important Services-related notices, such as security and fraud notices. These communications are considered part of the Services.</p></li><li><p>In addition, if you have opted-in, we sometimes send emails about new product features, recommendations and promotional communications, or other news about Miro. You can opt-out of these messages at any time by using the unsubscribe link included in all of these communications.</p></li></ul></li><li><p><strong>For billing, account management and other administrative matters.</strong> Miro may need to contact you for invoicing, account management, and similar reasons and we use account data to administer accounts and keep track of billing and payments.</p></li><li><p><strong>To investigate and help prevent security issues and abuse.</strong></p></li><li><p><strong>To manage and to contact you with regard to involvement. </strong>We may need to manage and contact you with regard to your involvement and participation in the Miro Community (such as the Forums, Programs, Miroverse, contests, activities, events or educational programs hosted by Miro or a vendor).</p></li></ul><p>If information is aggregated or de-identified so that it can no longer reasonably be associated with an identified or identifiable natural person, Miro may use it for any business purpose. To the extent information is associated with an identified or identifiable natural person and is protected as personal data under applicable data protection law, it is referred to in this Privacy Policy as &ldquo;Personal Data.&rdquo;</p><h3><strong>Data retention</strong></h3><p>Miro will retain Customer Content in accordance with a Customer&rsquo;s instructions, including any applicable terms in the Customer Agreement and Customer&rsquo;s use of the Services, and as required by applicable law. The deletion of Customer&rsquo;s Personal Data may result in the deletion and/or de-identification of an account and certain associated Other Data. Miro may retain Other Data for as long as necessary for the purposes described in this Privacy Policy. </p><p>Please note that we may keep certain types of Other Data after the deactivation of an account for the period needed for Miro to pursue legitimate business interests, conduct audits, comply with (and demonstrate compliance with) legal obligations, resolve disputes, and enforce our agreements.</p><h3><strong>How we share and disclose personal data</strong></h3><p>This section describes how Miro may share and disclose personal data, as described in paragraph 3 above. Customers determine their own policies and practices for the sharing and disclosure of personal data. Miro does not control how they or any other third party chooses to share or disclose personal data.</p><p>Miro may share and disclose personal data in accordance with a Customer&rsquo;s instructions, including any applicable terms in the Customer Agreement and the Customer&rsquo;s use of the Services and in compliance with applicable law. Where necessary, may only share personal data with third parties where we have obtained consent to do so.</p><p>We may share personal data as follows:&nbsp;</p><ul><li><p><strong>Displaying the Services</strong>. When an Authorized User submits Customer Content (including personal data), it may be displayed to other Authorized Users that have access to the same Miro Board. For example, an Authorized User&rsquo;s name and Miro profile may be displayed. Please consult the Help Center for more information on this functionality.</p></li><li><p><strong>Customer access</strong>. Owners, administrators, Authorized Users, and other Customer representatives and personnel may be able to access, modify, or restrict access to personal data. This may include, for example, your employer using Service features to export logs of your activity or accessing or modifying your profile details.</p></li><li><p><strong>Subcontractors.</strong> We may engage third-party companies or individuals as sub-processors to process personal data. These third parties may, for example, provide virtual computing and storage services, or we may share business information to develop strategic partnerships to support our Customers. Please see more information on our subcontractors <a href="https://miro.com/static/legal/Miro-Current-Subprocessors-List.pdf" title=""><u>here</u></a>.</p></li><li><p><strong>Third-Party Services</strong>. Customers may enable Third-Party Services. When enabled, Miro may access and exchange Customer Content with the provider of a Third-Party Service on Customer&rsquo;s behalf. Third-Party Services are not owned or controlled by Miro and third parties that have been granted access to personal data may have their own policies and practices for its collection, use, and sharing. Please check the permissions, privacy settings, and notices for these Third-Party Services or contact the relevant provider with any questions.</p></li><li><p><strong>Partners. </strong>We may share personal data with developers, partners and others we engage to create Miro applications and/or integrating Miro features.</p></li><li><p><strong>Forums</strong>. The information you choose to provide in a community forum, including personal data, will be publicly available.</p></li><li><p><strong>Corporate Affiliates</strong>. Miro may share personal data with its corporate affiliates, parents and/or subsidiaries for business continuity purposes.</p></li><li><p><strong>During a change to Miro&rsquo;s business</strong>. If Miro engages in a merger, acquisition, bankruptcy, dissolution, reorganization, sale of some or all of Miro&rsquo;s assets or stock, financing, public offering of securities, acquisition of all or a portion of our business, a similar transaction or proceeding, or steps in contemplation of such activities, some or all personal data may be shared or transferred, subject to standard confidentiality arrangements.</p></li><li><p><strong>To comply with laws.</strong> If we receive a request for personal data, we may disclose personal data if we reasonably believe disclosure is in accordance with or required by any applicable law, regulation, or legal process.</p></li><li><p><strong>To enforce our rights, prevent fraud, and for safety.</strong> To protect and defend the rights, property or safety of Miro, its users, or third parties, including enforcing its contracts or policies, or in connection with investigating and preventing illegal activity, fraud, or security issues, including to prevent death or imminent bodily harm.</p></li></ul><h3><strong>Security</strong></h3><p>Miro takes security of personal data very seriously. Miro strives to protect all Personal Data from loss, misuse, and unauthorized access or disclosure, and we have received internationally recognized security certifications. To learn more about current practices and policies regarding security and confidentiality of the Services, please see our&nbsp; <a href="https://miro.com/trust/" title=""><u>Trust Center</u></a> and <a href="https://help.miro.com/hc/en-us/articles/360012346599-Security-FAQ" title=""><u>Security FAQs</u></a>. Given the nature of communications and information processing technology, Miro cannot guarantee that, during transmission through the internet or while stored on our systems or otherwise in our care, personal data will be absolutely safe from intrusion by others.</p><h3><strong>Our responsibility for third party links</strong></h3><p>Our Services may contain links to websites and services operated by third parties. If you follow a link to any of these websites, please note that these websites have their own privacy notices and terms and conditions. Further, we have no responsibility for, or control over, the information collected by any third-party website and we cannot be responsible for the protection and privacy of any information which you may provide to these websites. You should read the relevant privacy notices and terms and conditions before using their websites or services.&nbsp;</p><h3><strong>Age restriction</strong></h3><p>Miro does not allow use of our Services and Websites by anyone younger than 16 years old (&ldquo;<strong>Minor</strong>&rdquo;). If you learn that a Minor has unlawfully provided us with personal data, please contact us and we will take steps to delete this information.</p><p>By using our Services and Websites, you represent and warrant that you are not a Minor as of the date of first access to our Services and Websites.&nbsp;</p><p>If you are a Minor, you represent and warrant that you are accessing the Services and Websites with the consent of a competent guardian over the age of 16 years old who takes responsibility for your use of the Services and Websites. If you are a Minor accessing Miro via an education institution, that institution will have procured a licence on your behalf and agreed to our terms and conditions. In particular, it will have agreed that it has obtained all necessary consents and will take responsibility for your use of the Services and Websites.</p><h3><strong>Changes to this Privacy Policy</strong></h3><p>Miro may change this Privacy Policy from time to time. Laws, regulations, and industry standards evolve, which may make those changes necessary, or we may make changes to our services or business. We will post the changes to this page and we encourage you to review our Privacy Policy to stay informed. If we make changes that materially alter your privacy rights, Miro will provide additional notice, such as via email or through the Services. If you disagree with the changes to this Privacy Notice, you should deactivate your account. Contact the relevant Customer if you wish to request the removal of your personal data under their control.</p><h3><strong>Local provisions</strong></h3><h4><strong>European Union</strong></h4><p>If you are based in the European Union, the following provisions also apply:</p><ul><li><p><strong>GDPR</strong> means Regulation 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC.</p></li><li><p><strong>Member State</strong> means a member state of the European Union.</p></li><li><p>If we share your personal data with our group company(ies) or third parties located outside the European Economic Area, we take steps to ensure that appropriate safeguards are in place to guarantee the continued protection of your personal data, such as by entering into the Standard Contractual Clauses adopted by the European Commission (article 46(2)(c) GDPR), which are available <a href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc/standard-contractual-clauses-international-transfers_en" title=""><u>here</u></a>.</p></li><li><p>Where we are the controller of your personal data, the GDPR data protection rights set out below apply to you. Most of these rights are not absolute and are subject to exemptions under applicable law. We will respond to any request to exercise your rights within one month, but have the right to extend this period in certain circumstances. If we extend the response period, we will let you know within one month of your request. If your request is clearly unfounded or excessive, we reserve the right to charge a reasonable fee or refuse to comply with it.&nbsp;To exercise these rights, please submit a request to us by sending an email to <a href="mailto:privacy@miro.com" title=""><u>privacy@miro.com</u></a>.&nbsp;</p><ul><li><p><strong>Access your personal data. </strong>You are entitled to ask us if we are processing your personal data and, if we are, you can request access to your personal data. This enables you to receive a copy of the personal data we hold about you.</p></li><li><p><strong>Request the transfer of your personal data.&nbsp;</strong>We will provide your personal data to you or a third party you have chosen in a structured, commonly used, machine-readable format. Please note that this right applies only to personal data you have provided to us, and only if we process your personal data on the basis of consent, or where we process your personal data in order to perform a contract with you.&nbsp;</p></li><li><p><strong>Request erasure (deletion) of your personal data.&nbsp;</strong>You are entitled to ask us to delete or remove personal data in certain circumstances. There are certain exemptions where we may refuse a request for erasure. For example, where the personal data is required for compliance with law or in connection with legal claims. Where we rely on an exemption, we will inform you about this.</p></li><li><p><strong>Request the correction or updating of your personal data.</strong> This enables you to have any incomplete or inaccurate data we hold about you corrected.&nbsp;</p></li><li><p><strong>Request the restriction of our processing of your personal data in some situations.</strong>&nbsp;If you request this, we can continue to store your personal data but are restricted from processing it while the restriction is in place.</p></li><li><p><strong>Object to our processing of your personal data where we are relying on legitimate interests.</strong> You also have a right to object where we are processing your personal data for the purposes of direct marketing or profiling. You can object at any time and we shall stop processing the information you have objected to, unless we can show compelling legitimate grounds to continue that processing.&nbsp;</p></li><li><p><strong>Withdraw your consent.&nbsp;</strong>Where you have provided your consent to our processing of your personal data, you can withdraw your consent at any time. If you do withdraw consent, it will not affect the lawfulness of what we have done with your personal data before you withdrew consent.</p></li><li><p><strong>Lodge a complaint at a supervisory authority.</strong>&nbsp;We will do our best to resolve any complaints you may have. However, if you feel we have not resolved your complaint, you have a right to lodge a complaint with a supervisory authority in the country where you live, where you work, or where an alleged infringement of the applicable data protection law took place. A list of EU supervisory authorities and their contact details is available <a href="https://ec.europa.eu/justice/article-29/structure/data-protection-authorities/index_en.htm" title=""><u>here</u></a>.</p></li></ul></li><li><p>If you exercise the rights above and there is any question about who you are, we may require you to provide information in order to satisfy ourselves as to your identity.&nbsp;</p></li></ul><h4><strong>United Kingdom</strong></h4><p>If you are based in the United Kingdom, the following provisions also apply:</p><ul><li><p><strong>UK GDPR </strong>means the Retained Regulation 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC.</p></li><li><p>If we share your personal data with our group company(ies) or third parties located outside the United Kingdom, we take steps to ensure that appropriate safeguards are in place to guarantee the continued protection of your personal data, such as by entering into the international data transfer addendum to the European Commission&rsquo;s Standard Contractual Clauses, adopted by the UK Government under section 119A of the Data Protection Act 2018..&nbsp;</p></li><li><p>In relation to your data subject rights, these are the same as for the EU as listed above, except that references to the &quot;GDPR&quot; should be read as references to the &quot;UK GDPR&quot;, and in case you wish to lodge a complaint with a supervisory authority, you should direct your complaint to the UK supervisory authority, the <a href="https://ico.org.uk/make-a-complaint/your-personal-information-concerns/personal-information-concerns/" title=""><u>Information Commissioner&rsquo;s Office</u></a>.</p></li></ul><h4><strong>United States</strong></h4><p>If you are based in California, the following provisions also apply:</p><ul><li><p><strong>California Data Protection Laws</strong> means the California Consumer Privacy Act of 2018 and the California Privacy Rights Act of 2020, as each may be amended or replaced from time to time, and any regulations implementing the foregoing.</p></li><li><p>Under the California Data Protection Laws you have the following rights:</p></li><li><p><strong>Right to Know about Personal Information Collected, Disclosed or Sold. </strong>You have the right to request that we disclose certain information to you about our collection, use, disclosure or sale of your personal information over the past 12 months. Once we receive and confirm your verifiable consumer request (see Exercising Access and Deletion Rights), and subject to certain limitations that we describe below, we will disclose such information. You have the right to request any or all of the following:&nbsp;</p><ul><li><p>The categories of personal information we collected about you.&nbsp;</p></li><li><p>The categories of sources from which the personal information is collected.&nbsp;</p></li><li><p>The categories of third parties with whom we share that personal information.&nbsp;</p></li><li><p>The specific pieces of personal information we collected about you (also called a data portability request).&nbsp;</p></li></ul></li><li><p><strong>Notice of Sale</strong>. We do not sell the personal information of California residents. We also do not have any actual knowledge of selling the personal information of any California resident who is 16 years or younger.</p></li><li><p><strong>Right to Request Deletion. </strong>You have the right to request that we delete any of your personal information that we collected from you and retained, subject to certain exceptions. Once we receive and confirm your verifiable consumer request (see Exercising Access and Deletion Rights), we will delete (and direct our service providers to delete) your personal information from our records. However, we may retain personal information that has been de-identified or aggregated. Furthermore, we may deny your deletion request if retaining the information is necessary for us or our service provider(s) in order to perform certain actions set forth under the California Data Protection Laws, such as detecting security incidents and protecting against fraudulent or illegal activity.&nbsp;</p></li><li><p><strong>Exercising Access and Deletion Rights. </strong>To exercise the access and deletion rights described above, please submit a request to us by sending an email to <a href="mailto:privacy@miro.com" title=""><u>privacy@miro.com</u></a>.&nbsp;Only you, or a person or business entity registered with the California Secretary of State that you authorize to act on your behalf (an &ldquo;authorized agent&rdquo;), may make the requests set forth above. You may also make a request on behalf of your minor child. The request should include your contact information and describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to it. In addition, you should provide adequate information that we can reasonably verify that you are the person about whom we collected the personal information (including information that enables us to verify the identifying information we possibly maintain about you).&nbsp;</p><ul><li><p>We will respond to consumer requests in a reasonably timely manner. If we require extra time to respond, we will inform you of the reason and extension period in writing. In order to protect the security of your personal information, we will not honour a request if we cannot verify your identity or authority to make the request and confirm the personal information relates to you. The method used to verify your identity will depend on the type, sensitivity and value of the information, including the risk of harm to you posed by any authorized access or deletion. Generally speaking, verification will be performed by matching the identifying information provided by you to the personal information that we already have.</p></li><li><p>Any disclosures we provide will only cover the 12-month period preceding our receipt of your request (and will not be made more than twice in a 12-month period). If we cannot comply with a request, or cannot fully comply with a request, the response we provide will also explain the reasons we cannot comply.&nbsp;</p></li></ul></li><li><p><strong>Non-Discrimination.&nbsp;</strong>We will not discriminate against you for exercising any of your CCPA based on the California Data Protection Laws, including, but not limited to, by:&nbsp;</p><ul><li><p>Denying you goods or services.&nbsp;</p></li><li><p>Charging you different prices or rates for goods or services, including through granting discounts or other benefits, or imposing penalties.&nbsp;</p></li><li><p>Providing you a different level or quality of goods or services.&nbsp;</p></li><li><p>Suggesting that you may receive a different price or rate for goods or services or a different level or quality of goods or services.</p></li></ul></li></ul><p></p>
+											</div>
+										</article>
+																				<article class="legal-features-1__content-text">
+											<h5>Do you have any questions?</h5>
+											<p>
+											<a href="https://miro.com/contact/sales/?lead_source=Legal" class="contact-sales">Contact Sales</a>
+											</p>
+										</article>
+									</div>
+
+															</div>
+						</div>
+					</section>
+							</main>
+		</div>
+	
+				<script>
+		window.addEventListener('DOMContentLoaded', function() {
+			var footerContainer = document.querySelector('#footer');
+			window.microApps_Core.renderFooter(footerContainer, {"label":"Footer Navigation","categories":[{"title":"Product","groups":[{"items":[{"title":"Product Overview","path":"\/online-whiteboard\/"},{"title":"Apps & Integrations","path":"\/integrations\/"},{"title":"Templates","path":"\/templates\/"},{"title":"Miroverse","path":"\/miroverse\/"},{"title":"Miro Developer Platform","path":"\/api\/"},{"title":"Miro for Devices","path":"\/apps\/"},{"title":"Security & Compliance","path":"\/trust\/"},{"title":"Accessibility","path":"\/accessibility-statement\/"},{"title":"Changelog","path":"\/changelog\/"}],"viewAllLink":{"title":"View demo","path":"\/online-whiteboard\/"}}]},{"title":"Solutions","groups":[{"items":[{"title":"Meetings and Workshops","path":"\/meetings-and-workshops\/"},{"title":"Brainstorming & Ideation","path":"\/online-brainstorm-tool\/"},{"title":"Agile Workflows","path":"\/online-scrum-agile-tool\/"},{"title":"Diagramming","path":"\/diagramming\/"},{"title":"Research & Design","path":"\/online-canvas-for-design\/"},{"title":"Strategy & Planning","path":"\/online-strategic-planning-tool\/"},{"title":"Mind Map","path":"\/mind-map\/"},{"title":"Concept Map","path":"\/concept-map\/"},{"title":"Online Sticky Notes","path":"\/online-sticky-notes\/"},{"title":"Flowchart","path":"\/flowchart-maker\/"},{"title":"Wireframing ","path":"\/wireframe-tool\/"}],"viewAllLink":null}]},{"title":"Resources","groups":[{"items":[{"title":"Miro Academy","path":"https:\/\/academy.miro.com"},{"title":"Help Center","path":"https:\/\/help.miro.com\/hc\/en-us"},{"title":"Blog","path":"\/blog\/"},{"title":"Status","path":"https:\/\/status.miro.com"},{"title":"Miro Community","path":"\/community\/"},{"title":"Miro Professional Network","path":"\/professional-network\/"},{"title":"Miro Experts Directory","path":"https:\/\/miro.com\/experts"},{"title":"Miro Events","path":"https:\/\/events.miro.com"}],"viewAllLink":null}]},{"title":"Company","groups":[{"items":[{"title":"About us","path":"\/about\/"},{"title":"Careers \ud83d\ude80","path":"\/careers\/"},{"title":"Miro in the News","path":"\/newsroom\/"},{"title":"Customer Stories","path":"\/blog\/customer-stories\/"}],"viewAllLink":null}]},{"title":"Plans and Pricing","groups":[{"items":[{"title":"Pricing","path":"\/pricing\/"},{"title":"Business","path":"\/business-plan\/"},{"title":"Enterprise","path":"\/enterprise\/"},{"title":"Consultants","path":"\/consultants\/"},{"title":"Education","path":"\/education-whiteboard\/"},{"title":"Startups","path":"\/startups\/"},{"title":"NPOs","path":"\/npo\/"},{"title":"Miro for Hackathons & Contests","path":"\/hackathons-and-contests\/"}],"viewAllLink":{"title":"Contact sales","path":"\/contact\/sales\/"}}]}],"socialMedia":[{"title":"Twitter","path":"https:\/\/twitter.com\/mirohq"},{"title":"Facebook","path":"https:\/\/www.facebook.com\/TryMiro"},{"title":"LinkedIn","path":"https:\/\/www.linkedin.com\/company\/mirohq"},{"title":"Instagram","path":"https:\/\/www.instagram.com\/mirohq"},{"title":"Youtube","path":"https:\/\/www.youtube.com\/user\/RealtimeBoardEng"}],"bottomLinks":[{"title":"Terms of Service","path":"https:\/\/miro.com\/legal\/terms-of-service"},{"title":"Privacy Policy","path":"https:\/\/miro.com\/legal\/privacy-policy"},{"title":"Manage Cookies","path":"\/manage-cookies\/"}]});
+		})
+	</script>
+
+	<div id="footer"></div>
+	
+			<input type="hidden" name="nightwatch" value="/legal/privacy-policy/">
+	
+		<script src="https://static-website.miro.com/static/js/global.js?version=1.831.0"></script>
+	
+		<!-- Split.io -->
+	<script src="//cdn.split.io/sdk/split-10.15.8.min.js"></script>
+	<script>
+		if(typeof splitio === 'function') {
+			function getCookie(name) {
+				var matches = document.cookie.match(new RegExp(
+					"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+				));
+				return matches ? decodeURIComponent(matches[1]) : undefined
+			}
+
+			function isBot(){
+				var userAgent = navigator.userAgent;
+				var regexp = /bot|crawl|slurp|spider|mediapartners|go-http-client|apache|axios|ahc/i;
+				return !!(userAgent && userAgent.match(regexp));
+			}
+
+			const anonymousId = getCookie('ajs_anonymous_id');
+			if(typeof anonymousId === 'string' && !isBot()) {
+				const factory = splitio({
+					core: {
+						authorizationKey: 'm8v3edasit1svvgc7i7fhjodsgi51brchkd0',
+						key: anonymousId.replace(/"/g, ''),
+					},
+					impressionListener: {
+						logImpression(impression) {
+							const {changeNumber, feature, treatment, label} = impression.impression
+							if (typeof analytics !== 'undefined') {
+								analytics.track('experiment_viewed', {
+									experiment_id: `${feature}#${changeNumber}`,
+									experiment_name: feature,
+									variation_id: treatment,
+									variation_name: treatment,
+									target: label,
+									data_source: 'web-legacy-frontend'
+								});
+							}
+						},
+					},
+				});
+				window.splitClient = factory.client();
+				dataLayer.push({ split_client: window.splitClient });
+			}
+			else {
+				console.error('Split.io has no user id');
+			}
+		}
+		else {
+			console.error('Split.io is blocked or inaccessible');
+		}
+	</script>
+	<!-- End Split.io -->
+
+	<script type="text/javascript">
+	function analyticsIdentify() {
+			}
+</script>
+
+
+<script type="text/javascript">
+	function initCommon() {
+		if (typeof Common !== 'undefined') {
+			window.common = new Common();
+			window.common.config.publicApi = 'externalapi.miro.com.';
+			window.common.config.locale = 'en';
+			window.common.config.user = {
+				id: '',
+				name: '',
+				email: '',
+				redirect: ''
+			};
+		}
+	}
+</script>
+
+<script type="text/javascript">
+	analyticsIdentify();
+	initCommon();
+</script>
+
+
+		<script src="https://static-website.miro.com/static/js/page/legal/legal.js?version=1.831.0"></script>
+	
+
+
+	
+
+	
+
+
+
+
+			
+	<div id="js-branch-banner-iframe" class="branch-banner-iframe-experiment js-branch-banner-overlay">
+		<div class="branch-banner-iframe-experiment__wrapper">
+			<div class="branch-banner-iframe-experiment__body">
+				<div class="branch-banner-iframe-experiment__title">
+					<div class="branch-banner-iframe-experiment__ico"></div>
+					<div class="branch-banner-iframe-experiment__title-text">Get Miro app</div>
+				</div>
+				<div class="branch-banner-iframe-experiment__subtitle">Add ideas, digitize sticky notes, and leave comments on the go with Miro mobile app</div>
+			</div>
+			<div class="branch-banner-iframe-experiment__footer">
+				<a class="branch-banner-iframe-experiment__btn" id="js-branch-banner-close">Not now</a>
+				<a class="branch-banner-iframe-experiment__btn branch-banner-iframe-experiment__btn--blue" id="js-branch-banner-open-app">Open in the app</a>
+			</div>
+		</div>
+	</div>
+	
+	
+
+		<script type="text/javascript">
+		window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);
+		;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"061e37d721",applicationID:"126578952",sa:1}
+	</script>
+
+
+	</body>
+</html>
