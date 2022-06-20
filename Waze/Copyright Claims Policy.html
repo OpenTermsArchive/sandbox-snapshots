@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='en'>
+<head>
+<script type='application/json' id='gonJson'>
+  {"locale":"en","urlLocale":"en","config":{"flags":{"pii_tool_countries":["AT","BE","BG","BR","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","GB","US","LI","NO","IS"],"delete_data":false,"carpool_available_country_codes":["US","MX","IL","BR"],"ga_property":{"website":"UA-6698700-1","aa":"UA-6698700-5","mv":"UA-6698700-6","cpw":"UA-6698700-9"},"client_error_reporting":{"api_key":"AIzaSyBCaWDnvIXy7MZRIb9XfpAf6LiUTbwOY7w","project_id":"waze-web-am","service":"website"},"verify_email_auto_redirect":true},"country_code":"FR","locale":"en","revision":"v1.31.0","recaptcha":{"login_key":"6LfLjVIUAAAAAEJ5rgYY151d5Zy1qD46Gvc8MP42"},"navigation":{"editor_path":"/editor","livemap_path":"/livemap?utm_source=waze_website\u0026utm_campaign=waze_website","login_path":"/_user/login/multidevice/initiation","login_mobile_path":"/signin","download_data_path":"/account/download_data","support_path":"https://support.google.com/waze/carpool/answer/9719407","account_path":"/account","carpool_path":"/carpool","report_issue_path":"https://support.google.com/waze/carpool/contact/wazecarpool_web","notifications_path":"/notifications"}}}
+</script>
+<script>
+  var gonElement = document.getElementById('gonJson');
+  if (gonElement) { window.gon = JSON.parse(gonElement.textContent); }
+</script>
+<script>
+  dataLayer = [window.gon.data_layer]
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NCTWGXP')
+</script><!-- End Google Tag Manager -->
+
+<title>Driving directions, traffic reports &amp; carpool rideshares by Waze</title>
+<link rel="stylesheet" media="all" href="/website/assets/application_legacy-89de71f303b0dcf872da6aacefb526dbcdce8be18ccdf519232c95a666139159.css" />
+<link rel="stylesheet" media="screen" href="/website/assets/packs/css/1-7a2b24dc.chunk.css" />
+<link rel="stylesheet" media="screen" href="/website/assets/packs/css/2-3b86de37.chunk.css" />
+<link rel="stylesheet" media="screen" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0' name='viewport'>
+<meta property="og:title" content="Driving directions, traffic reports &amp; carpool rideshares by Waze" /><meta property="og:description" content="" /><meta property="og:type" content="website" /><meta property="twitter:card" content="summary" /><meta property="twitter:site" content="@waze" /><meta property="twitter:image" content="/website/assets/packs/media/images/og_rebrand/twitter-95a354976ffbf43a5588f8bab8a69b8b.png" /><meta property="twitter:title" content="Driving directions, traffic reports &amp; carpool rideshares by Waze" /><meta property="twitter:description" content="" /><meta property="og:image" content="/website/assets/packs/media/images/og_rebrand/standard-178b36e338d2091811b3cea4016dfce4.png" /><meta property="og:image:secure_url" content="/website/assets/packs/media/images/og_rebrand/standard-178b36e338d2091811b3cea4016dfce4.png" /><meta property="og:image:type" content="png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image" content="/website/assets/packs/media/images/og_rebrand/whatsapp-921341267b5349f600d8abfcd5d07d6d.png" /><meta property="og:image:secure_url" content="/website/assets/packs/media/images/og_rebrand/whatsapp-921341267b5349f600d8abfcd5d07d6d.png" /><meta property="og:image:type" content="png" /><meta property="og:image:width" content="400" /><meta property="og:image:height" content="400" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', gon.config.flags.ga_property.website, {
+    cookieDomain: 'waze.com'
+  });
+  if (window.gon.analytics_plugin) {
+    try {
+      ga('require', 'GTM-PXBJSCH');
+    } catch (e) {
+      console.error(e);
+    }
+  }
+</script>
+
+</head>
+<body class='legal-controller rebrand-2020 locale-en' id='legal-copyright'>
+<script type='text/javascript'>if (/(iPhone|iPad|iPod)/.test(navigator.userAgent)) {
+  document.body.classList.add('device-ios');
+} else if (/Android/.test(navigator.userAgent)) {
+  document.body.classList.add('device-android');
+} else {
+  document.body.classList.add('device-other');
+}
+</script>
+<script type='text/javascript'>/* eslint-disable no-use-before-define, prefer-promise-reject-errors, prefer-arrow-callback */
+
+function ScriptLoader() {
+  const scripts = {};
+
+  function waitFor(scriptName) {
+    return createIfNotExists(scriptName).promise;
+  }
+
+  function markAsLoaded(scriptName) {
+    createIfNotExists(scriptName).resolve();
+  }
+
+  function markAsFailed(scriptName) {
+    createIfNotExists(scriptName).reject();
+  }
+
+  function createIfNotExists(scriptName) {
+    if (!scripts[scriptName]) {
+      scripts[scriptName] = promisifiedScript();
+    }
+
+    return scripts[scriptName];
+  }
+
+  function promisifiedScript() {
+    const scriptObj = {};
+
+    const scriptPromise = new Promise(function (resolve, reject) {
+      scriptObj.resolve = function () {
+        resolve();
+      };
+
+      scriptObj.reject = function () {
+        reject();
+      };
+    });
+
+    scriptObj.promise = scriptPromise;
+
+    return scriptObj;
+  }
+
+  return {
+    waitFor,
+    markAsLoaded,
+    markAsFailed,
+  };
+}
+
+const scriptLoader = new ScriptLoader();
+window.scriptLoader = scriptLoader;
+</script>
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCTWGXP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<nav class='wz-menu'>
+<div class='wz-menu-bar'>
+<a class='wz-menu-logo' href='/'></a>
+<div class='wz-menu-switch'></div>
+</div>
+<div class='wz-menu-links'>
+<a class='wz-menu-link' href='/waze'>Waze</a>
+<a class='wz-menu-link' href='/carpool'>Carpool</a>
+<a class='wz-menu-link' href='/partners'>Partners</a>
+</div>
+<div class='separator'></div>
+<div class='wz-menu-links'>
+<a class='wz-menu-link' href='/rul?locale=en&amp;redirect_app=carpool_onboard&amp;utm_campaign=default&amp;utm_medium=website_menu&amp;utm_source=waze_website'>Ride in a Carpool</a>
+<a class='wz-menu-link' href='/livemap?utm_source=waze_website&amp;utm_campaign=waze_website'>Live map</a>
+<a class='wz-menu-link' href='/apps'>Download</a>
+</div>
+<div class='separator'></div>
+<div class='wz-menu-links'>
+<a class='wz-menu-link account-button wz-hidden' href='/account'>Settings</a>
+<a class='wz-menu-link' href='https://support.google.com/waze/answer/9058157?hl=en'>Support</a>
+<a class='wz-menu-link login-button wz-hidden' href='/_user/login/multidevice/initiation?redirect=%2Fen%2Flegal%2Fcopyright'>Log In</a>
+<a class='wz-menu-link logout-button wz-hidden' href='#'>Log out</a>
+</div>
+</nav>
+<nav class='wz-nav'>
+<div class='wz-nav-container'>
+<a class='wz-nav-logo' href='/'></a>
+<div class='wz-nav-switch'></div>
+<div class='wz-nav-links'>
+<a class="wz-nav-link" href="/waze" data-ga-category="header" data-ga-action="/waze" data-ga-label="/en/legal/copyright">Waze</a>
+<a class="wz-nav-link" href="/carpool" data-ga-category="header" data-ga-action="/carpool" data-ga-label="/en/legal/copyright">Carpool</a>
+<a class="wz-nav-link" href="/partners" data-ga-category="header" data-ga-action="/partners" data-ga-label="/en/legal/copyright">Partners</a>
+</div>
+<div class='wz-nav-links'>
+<a class="wz-nav-link" href="/rul?locale=en&amp;redirect_app=carpool_onboard&amp;utm_campaign=default&amp;utm_medium=website_menu&amp;utm_source=waze_website" data-ga-category="header" data-ga-action="/rul?locale=en&amp;redirect_app=carpool_onboard&amp;utm_campaign=default&amp;utm_medium=website_menu&amp;utm_source=waze_website" data-ga-label="/en/legal/copyright">Ride in a Carpool</a>
+<a class="wz-nav-link" href="/livemap?utm_source=waze_website&amp;utm_campaign=waze_website" data-ga-category="header" data-ga-action="/livemap?utm_source=waze_website&amp;utm_campaign=waze_website" data-ga-label="/en/legal/copyright">Live map</a>
+<a class="wz-nav-link" href="/apps" data-ga-category="header" data-ga-action="/apps" data-ga-label="/en/legal/copyright">Download</a>
+<div class='wz-nav-login-ui'>
+<a class="wz-nav-link login-button wz-hidden" href="/_user/login/multidevice/initiation?redirect=%2Fen%2Flegal%2Fcopyright" data-testid="nav-login-button">Log In</a>
+<span class='logged-in-user wz-hidden'></span>
+</div>
+</div>
+</div>
+</nav>
+
+
+<div class='page-contents'><div class='container about'>
+<div class='row'>
+<div class='col-md-3'>
+<ul class='nav nav-list side-nav'>
+<li class='legal first'>
+<a href='/legal/tos'>
+Terms of Use
+</a>
+</li>
+
+<li class='legal'>
+<a href='/legal/privacy'>
+Privacy Policy
+</a>
+</li>
+
+<li class='legal active'>
+<a href='/legal/copyright'>
+Copyrights
+</a>
+</li>
+
+<li class='legal'>
+<a href='/legal/cookies'>
+Cookie policy
+</a>
+</li>
+
+<li class='legal'>
+<a href='/legal/notices'>
+Notices
+</a>
+</li>
+
+</ul>
+</div>
+<div class='col-md-9'>
+<h2>Copyright Policy</h2>
+
+
+<p>Waze Mobile Ltd. ("<b>Waze</b>")
+respects the intellectual property rights of others and requests the
+users of its services to do the same. If you believe that certain content,
+which appears on Waze real-time road maps (the "<b>Service</b>"),
+infringes upon copyrights that you own or represent, you may send Waze's
+designated copyright agent ("<b>Copyright Agent</b>") a written
+notification, stating the location of the copyrighted work claimed to
+be infringed, in accordance with the provisions of the Digital Millennium
+Copyright Act ("<b>DMCA</b>"). </p>
+
+<p>Upon your notification,
+Waze may remove or disable access to any such content. </p>
+<p>To be effective, your
+notification of claimed infringement must be a written communication
+provided to the Copyright Agent that includes substantially the following: </p>
+<ol>
+<li><p>A physical or
+electronic signature of a person authorized to act on behalf of the
+owner of an exclusive right that is allegedly infringed; </p></li>
+<li><p>Identification
+of the copyrighted work claimed to be infringed via using the Website,
+or if multiple copyrighted works are covered by a single notification,
+a representative list of such works;  </p></li>
+<li><p>Identification
+of the material that is claimed to infringe or to be the subject of
+infringing activity and that access to which is to be disabled, and
+information reasonably sufficient to permit Waze to locate the material,
+including the exact URI (Uniform resource Identifier) or coordinates
+on the Service's maps in which you discovered the copyrighted work claimed
+to be infringed;  </p></li>
+<li><p>Information reasonably
+sufficient to permit Waze to contact you, such as an address, telephone
+number, and, if available, an electronic mail address at which you may
+be contacted;  </p></li>
+<li><p>A statement that
+you have a good faith belief that the use of the material in the manner
+complained of is not authorized by the copyright owner, its agent, or
+the law;  </p></li>
+<li><p>A statement that
+the information in the notification is accurate, and under penalty of
+perjury, that you are authorized to act on behalf of the owner of an
+exclusive right that is allegedly infringed. </p></li>
+</ol>
+<p>Following receipt of
+your communication, Waze may ask you to provide further or supplemental
+information, prior to removing any content which was displayed on the
+Website, as Waze deems necessary to comply with the provisions of the
+DMCA. Waze may also provide the registered user who uploaded the allegedly
+infringing content with your contact details, in order for that person
+to be able to contact you directly and communicate with you regarding
+your notification. </p>
+<p><b>Counter notification</b></p>
+<p>You may submit a counter
+notification to the Copyright Agent. To be effective, your counter notification
+must be a written communication provided to the Copyright Agent that
+includes substantially the following:</p>
+<ol>
+<li><p>Your physical
+or electronic signature;</p></li>
+<li><p>Identification
+of the material to which access has been disabled and the location at
+which the material appeared before access to it was disabled. </p></li>
+<li><p>A statement under
+penalty of perjury that you have a good faith belief that the material
+was disabled as a result of mistake or misidentification of the material
+to be disabled;</p></li>
+<li><p>Your name, address,
+and telephone number, and a statement that you consent to the jurisdiction
+of the Federal District Court for the judicial district in which your
+address is located, or if your address is outside of the United States,
+for any judicial district in which you may be found, and that you will
+accept service of process from the person who provided notification
+or an agent of such person.</p></li>
+</ol>
+<p>After receipt of a counter
+notification, Waze will promptly provide the person who submitted the
+claimed copyright infringement notification with a copy of the counter
+notification, and will inform that person that Waze will replace the
+removed material, or cease disabling access to that material 10 business
+days. </p>
+<p>Waze will then replace
+the removed the material and cease disabling access to it between 10
+to 14 business days following receipt of the counter notice, unless
+the Copyright Agent first receives notice from the person who notified
+Waze of the claimed copyright infringement that such person has filed
+an action seeking a court order to restrain the registered user from
+engaging in infringing activity relating to the material on Waze's system
+or network.</p>
+
+<p><b>Repeat infringements</b></p>
+<p>Waze may deny or cancel
+any individual use of the Website, or terminate your user account, if
+Waze determines in its sole discretion that you are a repeat infringer.
+A repeat infringer is a user who has been notified of infringing activity
+more than once or a user that his or her uploaded material was removed
+from the Website more than once. Waze may decide, at its sole discretion
+that a sufficient reason exists for the immediate termination of your
+account for any reason, at any time. In these cases Waze may terminate
+your account immediately. Waze may notify you that it canceled your
+account by sending a message to the e-mail address that you provided
+during the registration process. Such notification will come into effect
+immediately. </p>
+<p><b>Copyright Agent Details</b></p>
+<p>The Copyright Agent is
+Tal Avery-Amit, Waze Mobile Ltd., Electra Tower, 29th Floor 98 Yigal Alon Tel-Aviv, 6789141 Israel
+Telephone: +972-74-746-6453 <br />
+Fax: +972-3-761-7171<br />
+Email: <a href="mailto:copyright@linqmap.com" target="_blank">copyright@waze.com</a>.</p>
+<p>Please note that the
+Copyright Agent receives DMCA notifications only. Any other matters,
+such as comments, requests and other messages should be referred to:
+<a href="mailto:support@waze.com" target="_blank">support@waze.com</a> </p>
+<p><b>Misrepresentations</b></p>
+<p>
+Under the provisions of the DMCA, any person who knowingly materially
+misrepresents: (1) that material is infringing, or (2) that material was
+removed or disabled by mistake or misidentification, will be liable for any
+damages, including costs and attorneys' fees, that Waze may incur, if it is
+injured by such misrepresentation, as the result of its reliance upon such
+misrepresentation in removing or disabling access to the material claimed to be
+infringing.
+</p>
+
+
+</div>
+</div>
+</div>
+</div>
+<footer class='wz-footer'>
+<div class='wz-footer-container'>
+<div class='wz-footer-meta'>
+<div class='footer-meta-block1'>
+<a class='wz-footer-meta-logo' href='#'>Waze</a>
+<p class='wz-footer-meta-tagline'>
+130+ million drivers and riders who hate traffic, too
+</p>
+<div class='wz-footer-meta-social'>
+<a class="wz-footer-meta-social-link wz-footer-meta-social-link-twitter" href="https://twitter.com/waze">Twitter</a>
+<a class="wz-footer-meta-social-link wz-footer-meta-social-link-facebook" href="https://www.facebook.com/Waze">Facebook</a>
+<a class="wz-footer-meta-social-link wz-footer-meta-social-link-instagram" href="https://instagram.com/waze">Instagram</a>
+<a class="wz-footer-meta-social-link wz-footer-meta-social-link-youtube" href="https://www.youtube.com/waze?sub_confirmation=1">YouTube</a>
+</div>
+</div>
+<div class='footer-meta-block2'>
+<div class='wz-language-selector'>
+<div class='wz-dropdown wz-dropdown--open-above wz-dropdown--4-columns'>
+<a class='wz-dropdown__button' href='#'>
+<span>English</span>
+<i class='fa fa-caret-down'></i>
+</a>
+<div class='wz-dropdown__menu'>
+<div class='wz-dropdown__menu-heading'>
+<h2>
+Select language
+</h2>
+<span class='wz-dropdown__close-button'></span>
+</div>
+<ul>
+<li>
+<a data-locale='af' href='#'>Afrikaans</a>
+</li>
+<li>
+<a data-locale='ar' href='#'>العربية</a>
+</li>
+<li>
+<a data-locale='bg' href='#'>Български</a>
+</li>
+<li>
+<a data-locale='ca' href='#'>Català</a>
+</li>
+<li>
+<a data-locale='cs' href='#'>Čeština</a>
+</li>
+<li>
+<a data-locale='da' href='#'>Dansk</a>
+</li>
+<li>
+<a data-locale='de' href='#'>Deutsch</a>
+</li>
+<li class='active'>
+<a data-locale='en' href='#'>English</a>
+</li>
+<li>
+<a data-locale='en-GB' href='#'>UK English</a>
+</li>
+<li>
+<a data-locale='es' href='#'>Español</a>
+</li>
+<li>
+<a data-locale='es-419' href='#'>Español (A. Latina)</a>
+</li>
+<li>
+<a data-locale='et' href='#'>Eesti</a>
+</li>
+<li>
+<a data-locale='fi' href='#'>Suomi</a>
+</li>
+<li>
+<a data-locale='fr' href='#'>Français</a>
+</li>
+<li>
+<a data-locale='gl' href='#'>Galego</a>
+</li>
+<li>
+<a data-locale='he' href='#'>עברית‎</a>
+</li>
+<li>
+<a data-locale='hr' href='#'>Hrvatski</a>
+</li>
+<li>
+<a data-locale='hu' href='#'>Magyar</a>
+</li>
+<li>
+<a data-locale='id' href='#'>Bahasa Indonesia</a>
+</li>
+<li>
+<a data-locale='it' href='#'>Italiano</a>
+</li>
+<li>
+<a data-locale='ja' href='#'>日本語</a>
+</li>
+<li>
+<a data-locale='ko' href='#'>한국어</a>
+</li>
+<li>
+<a data-locale='lv' href='#'>Latviešu</a>
+</li>
+<li>
+<a data-locale='lt' href='#'>Lietuviškai</a>
+</li>
+<li>
+<a data-locale='ms' href='#'>Bahasa Inggeris</a>
+</li>
+<li>
+<a data-locale='nl' href='#'>Nederlands</a>
+</li>
+<li>
+<a data-locale='no' href='#'>Norsk</a>
+</li>
+<li>
+<a data-locale='pl' href='#'>Polski</a>
+</li>
+<li>
+<a data-locale='pt-BR' href='#'>Português (Brasil)</a>
+</li>
+<li>
+<a data-locale='pt-PT' href='#'>Português (Portugal)</a>
+</li>
+<li>
+<a data-locale='ro' href='#'>Română</a>
+</li>
+<li>
+<a data-locale='ru' href='#'>Русский</a>
+</li>
+<li>
+<a data-locale='sk' href='#'>Slovenčina</a>
+</li>
+<li>
+<a data-locale='sl' href='#'>Slovenščina</a>
+</li>
+<li>
+<a data-locale='sr' href='#'>Српски</a>
+</li>
+<li>
+<a data-locale='sv' href='#'>Svenska</a>
+</li>
+<li>
+<a data-locale='tr' href='#'>Türkçe</a>
+</li>
+<li>
+<a data-locale='uk' href='#'>Yкраїнська</a>
+</li>
+<li>
+<a data-locale='zh' href='#'>中文</a>
+</li>
+<li>
+<a data-locale='zh-TW' href='#'>國語</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class='wz-footer-links'>
+<div class='wz-footer-list footer-list-1' data-height='246'>
+<p class='wz-footer-list-heading'>
+<span class='wz-footer-list-heading-text'>Support</span>
+<i class='fa fa-caret-down wz-footer-list-heading-icon'></i>
+</p>
+<div class='wz-footer-list-content'>
+<a class='wz-footer-list-link' href='https://support.google.com/waze/answer/9058157?hl=en'>Help Center</a>
+<a class='wz-footer-list-link' href='https://support.google.com/waze/answer/7101380?hl=en'>Fix a map issue</a>
+<a class='wz-footer-list-link' href='/forum/'>Community forums</a>
+<a class='wz-footer-list-link' href='https://wazeopedia.waze.com'>Community wiki</a>
+</div>
+</div>
+<div class='wz-footer-list footer-list-2' data-height='246'>
+<p class='wz-footer-list-heading'>
+<span class='wz-footer-list-heading-text'>Live map</span>
+<i class='fa fa-caret-down wz-footer-list-heading-icon'></i>
+</p>
+<div class='wz-footer-list-content'>
+<a class='wz-footer-list-link' href='/livemap?utm_source=waze_website&amp;utm_campaign=waze_website'>Plan a drive</a>
+<a class='wz-footer-list-link' href='/events'>Major events</a>
+<a class='wz-footer-list-link' href='/editor'>Edit the map</a>
+<a class='wz-footer-list-link' href='/location'>Locations</a>
+</div>
+</div>
+<div class='wz-footer-list footer-list-3' data-height='287'>
+<p class='wz-footer-list-heading'>
+<span class='wz-footer-list-heading-text'>About</span>
+<i class='fa fa-caret-down wz-footer-list-heading-icon'></i>
+</p>
+<div class='wz-footer-list-content'>
+<a class='wz-footer-list-link' href='/about'>About us</a>
+<a class='wz-footer-list-link' href='/careers'>Jobs</a>
+<a class='wz-footer-list-link' href='/contact'>Contact Us</a>
+<a class='wz-footer-list-link' href='https://blog.waze.com'>Waze blog</a>
+<a class='wz-footer-list-link' href='/communities'>Communities</a>
+</div>
+</div>
+<div class='wz-footer-list footer-list-4' data-height='369'>
+<p class='wz-footer-list-heading'>
+<span class='wz-footer-list-heading-text'>Partners</span>
+<i class='fa fa-caret-down wz-footer-list-heading-icon'></i>
+</p>
+<div class='wz-footer-list-content'>
+<a class='wz-footer-list-link' href='http://waze.com/ads?utm_source=waze_website&amp;utm_medium=website_footer&amp;utm_campaign=advertise_on_waze'>
+Advertise with Waze
+</a>
+<a class='wz-footer-list-link' href='/broadcasters'>Broadcasters</a>
+<a class='wz-footer-list-link' href='/ccp'>Waze for Cities</a>
+<a class='wz-footer-list-link' href='/sdk'>Transport SDK</a>
+<a class='wz-footer-list-link' href='/carpool'>Waze Carpool</a>
+<a class='wz-footer-list-link' href='/beacons'>Waze Beacons Program</a>
+<a class='wz-footer-list-link' href='https://developers.google.com/waze'>Developers</a>
+</div>
+</div>
+</div>
+
+<div class='wz-footer-legal'>
+<div class='wz-footer-legal-links'>
+<a class='wz-footer-legal-link' href='/legal/tos'>
+Terms of Use
+</a>
+<a class='wz-footer-legal-link' href='/legal/privacy'>
+Privacy Policy
+</a>
+<a class='wz-footer-legal-link' href='/legal/copyright'>
+Copyright Notice
+</a>
+</div>
+<p class='wz-footer-legal-copyright'>© 2006-2022 Waze Mobile. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+
+
+<script type='text/javascript'>
+    var locale = gon.locale;
+    var translationsMap = {"af":"/website/assets/packs/js/translations/af-c013ac91ba3d891f654d.chunk.js","ar":"/website/assets/packs/js/translations/ar-bd7607d088a2417c3488.chunk.js","bg":"/website/assets/packs/js/translations/bg-bcac1ceabf01f58f70f8.chunk.js","ca":"/website/assets/packs/js/translations/ca-0e39b67376ebe3796605.chunk.js","cs":"/website/assets/packs/js/translations/cs-5ad51c145957ae699ea0.chunk.js","da":"/website/assets/packs/js/translations/da-6240d2356250ab82b5ba.chunk.js","de":"/website/assets/packs/js/translations/de-95e1ff3fefe76adb92ac.chunk.js","en-GB":"/website/assets/packs/js/translations/en-GB-d61de735e00d2f29927d.chunk.js","en":"/website/assets/packs/js/translations/en-8744bfca59f2e3f0b3e8.chunk.js","es-419":"/website/assets/packs/js/translations/es-419-6cdee3e49b7787b59825.chunk.js","es":"/website/assets/packs/js/translations/es-9cc927bb3a304d724126.chunk.js","et":"/website/assets/packs/js/translations/et-5f5be04f924e94e43b7f.chunk.js","fi":"/website/assets/packs/js/translations/fi-22b3be5e5476284c8179.chunk.js","fr":"/website/assets/packs/js/translations/fr-1fd7c15810a74b8628ff.chunk.js","gl":"/website/assets/packs/js/translations/gl-f2cf987719718f8dfc7d.chunk.js","he":"/website/assets/packs/js/translations/he-70b6793a52b9f247842f.chunk.js","hr":"/website/assets/packs/js/translations/hr-01d6d0154e5961514367.chunk.js","hu":"/website/assets/packs/js/translations/hu-7b9ba3631cbd4640ab5a.chunk.js","id":"/website/assets/packs/js/translations/id-58d033742c051ffc5bee.chunk.js","it":"/website/assets/packs/js/translations/it-e1f4ab267b06d451fe38.chunk.js","ja":"/website/assets/packs/js/translations/ja-5c349bab16ab4adbee3d.chunk.js","ko":"/website/assets/packs/js/translations/ko-a376e55a9e1c2bf26aa0.chunk.js","lt":"/website/assets/packs/js/translations/lt-110202df75aff346ce32.chunk.js","lv":"/website/assets/packs/js/translations/lv-d0f6802b7c55b234ffe8.chunk.js","ms":"/website/assets/packs/js/translations/ms-80467b51c4a52a3a937d.chunk.js","nl":"/website/assets/packs/js/translations/nl-49993d9c788ffe9297b7.chunk.js","no":"/website/assets/packs/js/translations/no-66d7ffbafa871d350f8b.chunk.js","pl":"/website/assets/packs/js/translations/pl-3de3ac34f256b1eabe12.chunk.js","pt-BR":"/website/assets/packs/js/translations/pt-BR-662d8a2372d11e7e7901.chunk.js","pt-PT":"/website/assets/packs/js/translations/pt-PT-c20e47b7996b2d0b9033.chunk.js","ro":"/website/assets/packs/js/translations/ro-9698ced82ec43223cefd.chunk.js","ru":"/website/assets/packs/js/translations/ru-ffa3f03c4b8e7469f177.chunk.js","sk":"/website/assets/packs/js/translations/sk-a37c9ea959c796860bf0.chunk.js","sl":"/website/assets/packs/js/translations/sl-dfe14260a55a6f2dd413.chunk.js","sr":"/website/assets/packs/js/translations/sr-aaa2912cf1b4e8f6bede.chunk.js","sv":"/website/assets/packs/js/translations/sv-cdc81d5d3a285612773b.chunk.js","tr":"/website/assets/packs/js/translations/tr-72274b304fa81f3f556b.chunk.js","uk":"/website/assets/packs/js/translations/uk-95975f356365a37931eb.chunk.js","zh-TW":"/website/assets/packs/js/translations/zh-TW-cf438f5cfb6a90deb5be.chunk.js","zh":"/website/assets/packs/js/translations/zh-5e1c7ef3b85fa50fa2a8.chunk.js"};
+    var translationsChunk = translationsMap[locale];
+    var scripts = [translationsChunk, '/website/assets/packs/js/runtime-b7afa706408c422704ce.js','/website/assets/packs/js/1-3d39258fc96d0fbd0c9b.chunk.js','/website/assets/packs/js/2-85b262578179d9874094.chunk.js','/website/assets/packs/js/application-076870c2bc42dacd44b0.chunk.js'];
+    scripts.forEach(function(scriptUrl) {
+      var s = document.createElement('script');
+      s.async = false; s.src = scriptUrl;
+      document.head.appendChild(s);
+    });
+  </script>
+</body>
+</html>
+
+
