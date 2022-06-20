@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js b-header--white--black">
+<head>
+    <!-- Orbit: 3.0.0-2152.6f6d6fd5 -->
+<!-- Environment: live -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+    --bbc-font: ReithSans, Arial, Helvetica, freesans, sans-serif;
+    --bbc-font-legacy: Arial, Helvetica, freesans, sans-serif;
+}
+</style>
+
+<script nomodule type="text/javascript" src="https://static.files.bbci.co.uk/orbit/ee4d5bb6e0026845542bb97eab419ef6/js/polyfills.js"></script>
+
+<link rel="stylesheet" href="https://static.files.bbci.co.uk/orbit/ee4d5bb6e0026845542bb97eab419ef6/css/orbit-v5-ltr.min.css">
+<script src="https://static.files.bbci.co.uk/orbit/ee4d5bb6e0026845542bb97eab419ef6/js/require.min.js"></script>
+
+<script type="text/javascript">
+    window.orbitData = {};
+
+    var additionalPageProperties = {};
+
+    window.orbitData.userProfileUrl = "https://www.bbc.co.uk/userprofile";
+
+    window.page = {
+        name: '' || null,
+        destination: '' || null,
+        producer: '' || null,
+        section: '' || null,
+        site: '' || null,
+        contentId: '' || null,
+        contentType: '' || null,
+        edition: '' || null,
+        additionalProperties: additionalPageProperties
+    };
+    window.page.language = 'en';
+    window.page.language = 'en';
+
+    window.page.modal = false;
+
+</script>
+
+<script type="text/javascript">!function(){var t={930:function(t,e,r){function n(t,e){var r=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);e&&(n=n.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),r.push.apply(r,n)}return r}function o(t){for(var e=1;e<arguments.length;e++){var r=null!=arguments[e]?arguments[e]:{};e%2?n(Object(r),!0).forEach((function(e){i(t,e,r[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(r)):n(Object(r)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(r,e))}))}return t}function i(t,e,r){return e in t?Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[e]=r,t}var c=r(382),u=r(19);window.bbcpage=c.init(o({},window.page)),window.page=void 0,window.bbcuser=u.init(window,o({},window.user)),window.user=void 0},382:function(t){function e(t,e){var r=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);e&&(n=n.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),r.push.apply(r,n)}return r}function r(t){for(var r=1;r<arguments.length;r++){var o=null!=arguments[r]?arguments[r]:{};r%2?e(Object(o),!0).forEach((function(e){n(t,e,o[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(o)):e(Object(o)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(o,e))}))}return t}function n(t,e,r){return e in t?Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[e]=r,t}t.exports={init:function(t){var e=r({},t);return document.addEventListener("bbc-page-reset",(function(t){var r;t.detail&&t.detail.page&&(r=t.detail.page,e=Object.assign(e,r)),document.dispatchEvent(new Event("bbc-page-updated"))})),{getName:function(){return Promise.resolve(e.name||function(){if("file:"===window.location.protocol)return"local.file";var t=window.location.pathname.replace(/\/$/,"").replace(/^\//,"").replace(/\//g,".");return"".concat(t,".page")}())},getLanguage:function(){return Promise.resolve(e.language)},getDestination:function(){return Promise.resolve(e.destination)},getProducer:function(){return Promise.resolve(e.producer)},getSection:function(){return Promise.resolve(e.section)},getContentType:function(){return Promise.resolve(e.contentType)},getContentId:function(){return Promise.resolve(e.contentId)},getReferrer:function(){return Promise.resolve(window.orb&&null!==window.orb.referrer&&void 0!==window.orb.referrer?window.orb.referrer:document.referrer)},getAdditionalProperties:function(){return Promise.resolve(r({},e.additionalProperties))},loadCSS:function(t){return new Promise((function(e,r){var n=document.createElement("link");n.type="text/css",n.rel="stylesheet",n.onload=function(){e()},n.href=t,document.getElementsByTagName("head")[0].appendChild(n)}))},isModal:function(){return Promise.resolve(e.modal)}}}}},19:function(t,e,r){function n(t){return n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(t)}function o(t,e){var r=Object.keys(t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(t);e&&(n=n.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),r.push.apply(r,n)}return r}function i(t){for(var e=1;e<arguments.length;e++){var r=null!=arguments[e]?arguments[e]:{};e%2?o(Object(r),!0).forEach((function(e){c(t,e,r[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(r)):o(Object(r)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(r,e))}))}return t}function c(t,e,r){return e in t?Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}):t[e]=r,t}function u(t,e){for(var r=0;r<e.length;r++){var n=e[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function a(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function f(t,e){if(e&&("object"===n(e)||"function"==typeof e))return e;if(void 0!==e)throw new TypeError("Derived constructors may only return object or undefined");return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(t)}function s(t){var e="function"==typeof Map?new Map:void 0;return s=function(t){if(null===t||(r=t,-1===Function.toString.call(r).indexOf("[native code]")))return t;var r;if("function"!=typeof t)throw new TypeError("Super expression must either be null or a function");if(void 0!==e){if(e.has(t))return e.get(t);e.set(t,n)}function n(){return l(t,arguments,d(this).constructor)}return n.prototype=Object.create(t.prototype,{constructor:{value:n,enumerable:!1,writable:!0,configurable:!0}}),h(n,t)},s(t)}function l(t,e,r){return l=p()?Reflect.construct.bind():function(t,e,r){var n=[null];n.push.apply(n,e);var o=new(Function.bind.apply(t,n));return r&&h(o,r.prototype),o},l.apply(null,arguments)}function p(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(t){return!1}}function h(t,e){return h=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},h(t,e)}function d(t){return d=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(t){return t.__proto__||Object.getPrototypeOf(t)},d(t)}var y=r(890).loadModule,v=function(t){!function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),Object.defineProperty(t,"prototype",{writable:!1}),e&&h(t,e)}(s,t);var e,r,n,o,i,c=(e=s,r=p(),function(){var t,n=d(e);if(r){var o=d(this).constructor;t=Reflect.construct(n,arguments,o)}else t=n.apply(this,arguments);return f(this,t)});function s(){return a(this,s),c.apply(this,arguments)}return n=s,o&&u(n.prototype,o),i&&u(n,i),Object.defineProperty(n,"prototype",{writable:!1}),n}(s(Error));t.exports={init:function(t,e){var r,n=i({},e),o=null;function c(){if(["X-Country","X-Ip_is_advertise_combined","X-Ip_is_uk_combined"].every((function(t){return!!n[t]})))return Promise.resolve(n);if(!o){var e=t.location.hostname.endsWith(".com")?"com":"co.uk";o=t.fetch("https://www.bbc.".concat(e,"/userinfo")).then((function(t){return t.json()}))}return o}function u(t){if(t.status>=200&&t.status<300)return t;var e=new Error(t.statusText);throw e.response=t,e}function a(t){return t.json()}function f(){if(n.ageBand)return Promise.resolve(n);if(!r){if("undefined"==typeof XMLHttpRequest||!("withCredentials"in new XMLHttpRequest))return Promise.resolve(n);r=y(["idcta-v2/idcta-1"]).then((function(e){return e.initiateTokenRefresh().then((function(){return t.fetch(t.orbitData.userProfileUrl,{credentials:"include"}).then(u).then(a).then((function(t){return n=i(i({},n),t)}))}))}))}return r}var s={getHashedId:function(){return y(["idcta-v2/idcta-1"]).then((function(t){return t.getCookieInstance().getHidFromCookie()}))},isSignedIn:function(){return y(["idcta-v2/idcta-1"]).then((function(t){return t&&t.getCookieInstance().hasCookie()}))},getCountry:function(){return c().then((function(t){return t["X-Country"]||"gb"}))},isUKCombined:function(){return c().then((function(t){if(!t["X-Ip_is_uk_combined"])throw new v("missing isUKCombined from userinfo response");return"yes"===t["X-Ip_is_uk_combined"].toLowerCase()}))},canSeeAdverts:function(){return c().then((function(t){if(!t["X-Ip_is_advertise_combined"])throw new v("missing canSeeAdverts from userinfo response");return"yes"===t["X-Ip_is_advertise_combined"].toLowerCase()}))},getAgeBand:function(){return c().then((function(t){return t["X-Age-Band"]?Promise.resolve(t["X-Age-Band"]):s.isSignedIn().then((function(t){if(t)return f().then((function(t){return n["X-Age-Band"]=t["X-Age-Band"],n["X-Age-Band"]||void 0})).catch((function(){return n["X-Age-Band"]||void 0}))}))}))},allowsPerformanceCookies:function(){return y(["orb/cookies"]).then((function(t){return!!t.cookiesEnabled()&&!!t.readPolicy("performance")}))},allowsFunctionalCookies:function(){return y(["orb/cookies"]).then((function(t){return!!t.cookiesEnabled()&&!!t.readPolicy("personalisation")}))},getCookieValue:function(t){return y(["orb/cookies"]).then((function(e){return e.get(t)}))}};return s},BBCUserError:v}},890:function(t){t.exports={loadModule:function(t){return new Promise((function(e,r){window.require(t,(function(){e.apply(this,arguments)}),(function(t){r(t)}))}))}}},666:function(t){var e=function(t){"use strict";var e,r=Object.prototype,n=r.hasOwnProperty,o="function"==typeof Symbol?Symbol:{},i=o.iterator||"@@iterator",c=o.asyncIterator||"@@asyncIterator",u=o.toStringTag||"@@toStringTag";function a(t,e,r){return Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{a({},"")}catch(t){a=function(t,e,r){return t[e]=r}}function f(t,e,r,n){var o=e&&e.prototype instanceof v?e:v,i=Object.create(o.prototype),c=new k(n||[]);return i._invoke=function(t,e,r){var n=l;return function(o,i){if(n===h)throw new Error("Generator is already running");if(n===d){if("throw"===o)throw i;return C()}for(r.method=o,r.arg=i;;){var c=r.delegate;if(c){var u=_(c,r);if(u){if(u===y)continue;return u}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if(n===l)throw n=d,r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);n=h;var a=s(t,e,r);if("normal"===a.type){if(n=r.done?d:p,a.arg===y)continue;return{value:a.arg,done:r.done}}"throw"===a.type&&(n=d,r.method="throw",r.arg=a.arg)}}}(t,r,c),i}function s(t,e,r){try{return{type:"normal",arg:t.call(e,r)}}catch(t){return{type:"throw",arg:t}}}t.wrap=f;var l="suspendedStart",p="suspendedYield",h="executing",d="completed",y={};function v(){}function b(){}function g(){}var w={};a(w,i,(function(){return this}));var m=Object.getPrototypeOf,O=m&&m(m(S([])));O&&O!==r&&n.call(O,i)&&(w=O);var P=g.prototype=v.prototype=Object.create(w);function j(t){["next","throw","return"].forEach((function(e){a(t,e,(function(t){return this._invoke(e,t)}))}))}function E(t,e){function r(o,i,c,u){var a=s(t[o],t,i);if("throw"!==a.type){var f=a.arg,l=f.value;return l&&"object"==typeof l&&n.call(l,"__await")?e.resolve(l.__await).then((function(t){r("next",t,c,u)}),(function(t){r("throw",t,c,u)})):e.resolve(l).then((function(t){f.value=t,c(f)}),(function(t){return r("throw",t,c,u)}))}u(a.arg)}var o;this._invoke=function(t,n){function i(){return new e((function(e,o){r(t,n,e,o)}))}return o=o?o.then(i,i):i()}}function _(t,r){var n=t.iterator[r.method];if(n===e){if(r.delegate=null,"throw"===r.method){if(t.iterator.return&&(r.method="return",r.arg=e,_(t,r),"throw"===r.method))return y;r.method="throw",r.arg=new TypeError("The iterator does not provide a 'throw' method")}return y}var o=s(n,t.iterator,r.arg);if("throw"===o.type)return r.method="throw",r.arg=o.arg,r.delegate=null,y;var i=o.arg;return i?i.done?(r[t.resultName]=i.value,r.next=t.nextLoc,"return"!==r.method&&(r.method="next",r.arg=e),r.delegate=null,y):i:(r.method="throw",r.arg=new TypeError("iterator result is not an object"),r.delegate=null,y)}function x(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function L(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function k(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(x,this),this.reset(!0)}function S(t){if(t){var r=t[i];if(r)return r.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var o=-1,c=function r(){for(;++o<t.length;)if(n.call(t,o))return r.value=t[o],r.done=!1,r;return r.value=e,r.done=!0,r};return c.next=c}}return{next:C}}function C(){return{value:e,done:!0}}return b.prototype=g,a(P,"constructor",g),a(g,"constructor",b),b.displayName=a(g,u,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===b||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,g):(t.__proto__=g,a(t,u,"GeneratorFunction")),t.prototype=Object.create(P),t},t.awrap=function(t){return{__await:t}},j(E.prototype),a(E.prototype,c,(function(){return this})),t.AsyncIterator=E,t.async=function(e,r,n,o,i){void 0===i&&(i=Promise);var c=new E(f(e,r,n,o),i);return t.isGeneratorFunction(r)?c:c.next().then((function(t){return t.done?t.value:c.next()}))},j(P),a(P,u,"Generator"),a(P,i,(function(){return this})),a(P,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var r in t)e.push(r);return e.reverse(),function r(){for(;e.length;){var n=e.pop();if(n in t)return r.value=n,r.done=!1,r}return r.done=!0,r}},t.values=S,k.prototype={constructor:k,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=e,this.done=!1,this.delegate=null,this.method="next",this.arg=e,this.tryEntries.forEach(L),!t)for(var r in this)"t"===r.charAt(0)&&n.call(this,r)&&!isNaN(+r.slice(1))&&(this[r]=e)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var r=this;function o(n,o){return u.type="throw",u.arg=t,r.next=n,o&&(r.method="next",r.arg=e),!!o}for(var i=this.tryEntries.length-1;i>=0;--i){var c=this.tryEntries[i],u=c.completion;if("root"===c.tryLoc)return o("end");if(c.tryLoc<=this.prev){var a=n.call(c,"catchLoc"),f=n.call(c,"finallyLoc");if(a&&f){if(this.prev<c.catchLoc)return o(c.catchLoc,!0);if(this.prev<c.finallyLoc)return o(c.finallyLoc)}else if(a){if(this.prev<c.catchLoc)return o(c.catchLoc,!0)}else{if(!f)throw new Error("try statement without catch or finally");if(this.prev<c.finallyLoc)return o(c.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var o=this.tryEntries[r];if(o.tryLoc<=this.prev&&n.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var c=i?i.completion:{};return c.type=t,c.arg=e,i?(this.method="next",this.next=i.finallyLoc,y):this.complete(c)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),y},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),L(r),y}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.tryLoc===t){var n=r.completion;if("throw"===n.type){var o=n.arg;L(r)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,r,n){return this.delegate={iterator:S(t),resultName:r,nextLoc:n},"next"===this.method&&(this.arg=e),y}},t}(t.exports);try{regeneratorRuntime=e}catch(t){"object"==typeof globalThis?globalThis.regeneratorRuntime=e:Function("r","regeneratorRuntime = r")(e)}}},e={};function r(n){var o=e[n];if(void 0!==o)return o.exports;var i=e[n]={exports:{}};return t[n](i,i.exports,r),i.exports}r(666);r(930)}();</script>
+
+<script type="module">
+    window.importmap = {"orbit-drawer":"https://static.files.bbci.co.uk/orbit/ee4d5bb6e0026845542bb97eab419ef6/js/drawer.mjs","bbccookies":"https://static.files.bbci.co.uk/cookies/2e8917a000cbc9051af7ab0a431d1750/cookie-banner/cookie-library.module.js"};
+    var o={738:function(o){o.exports={loadModule:function(o){return new Promise(((n,t)=>{window.require(o,(function(){n.apply(this,arguments)}),(o=>{t(o)}))}))}}},61:function(o,n,t){const{loadModule:r}=t(738);o.exports=function(o){return function(n){return"string"==typeof n&&o[n]?import(o[n]):r(n)}}}},n={};function t(r){var i=n[r];if(void 0!==i)return i.exports;var e=n[r]={exports:{}};return o[r](e,e.exports,t),e.exports}!function(){const o=t(61);window.shimport=o({...window.importmap}),window.importMap=void 0}();</script>
+
+<script type="text/javascript">
+    window.page = undefined;
+    window.user = undefined;
+</script>
+
+<link rel="preload" href="https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_Rg.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_Bd.woff2" as="font" type="font/woff2" crossorigin>
+
+    
+    <!-- searchbox Web Module: 3.1.0-560.3292af1 -->
+    
+    
+    <!-- navpromo Web Module: 3.0.0-313.12486b9 -->
+    
+    
+    <!-- cookies Web Module: 0.0.3-729.bb9a63d -->
+    
+    
+    <!-- useractivityhelper Web Module: 1.0.0-243.dad5188 -->
+    
+    
+    <!-- reverb Web Module: 3.4.1 -->
+    
+    
+    <!-- ukomtracking Web Module: 1.0.3 -->
+    
+    
+    <!-- idcta Web Module:  -->
+    
+
+    
+<link rel="stylesheet" href="https://nav.files.bbci.co.uk/searchbox/f86b755d34489cbca2b17774b273fba1/css/box.css">
+
+    
+    
+    
+    
+    
+         <script src="https://static.files.bbci.co.uk/cookies/2e8917a000cbc9051af7ab0a431d1750/cookie-banner/cookie-library.bundle.js"></script><script type="text/javascript">void 0!==window.define&&define("orb/cookies",function(){return window.bbccookies})</script>  
+    
+    
+    <script type='text/javascript'>window.__detectview={clickManagementEnabled:false};</script>
+    
+    
+    <script type="text/javascript">"use strict";!function(){window.__reverbStaticLocation="https://mybbc-analytics.files.bbci.co.uk/reverb-client-js/",window.__smarttagVersion="5.29.1",window.__reverb={},window.__reverb.__reverbLoadedPromise=new Promise(function(e,i){window.__reverb.__resolveReverbLoaded=e,window.__reverb.__rejectReverbLoaded=i}),window.__reverb.__reverbTimeout=setTimeout(function(){window.__reverb.__rejectReverbLoaded()},5e3);var i=function(d,a){window.__reverb.__reverbLoadedPromise.then(function(e){if(d&&d.detail){var i=!!d.detail.item,n=d.detail.label,t=i?"viewability":d.detail.type,o=d.detail.elem,r=d.detail.originalEvent;d.detail.isClick&&(a=d.detail.isClick),e.userActionEvent(t,n,d.detail,o,r,a)}},function(){console.log("Reverb failed to load. Event not sent")})},n=function(){window.__reverb.__reverbLoadedPromise.then(function(e){e.initialise().then(function(){return e.viewEvent()})},function(){console.log("Reverb failed to load. Event not sent")})};document.addEventListener("bbc-user-event",function(e){i(e,!1)}),document.addEventListener("bbc-user-click",function(e){i(e,!0)}),document.addEventListener("bbc-page-updated",n),window.addEventListener("pageshow",function(e){e.persisted&&n()})}();</script><script type='text/javascript' src='https://mybbc-analytics.files.bbci.co.uk/reverb-client-js/reverb-3.4.1.js' async></script>
+    
+    
+    <script type="text/javascript">"use strict";function asyncGeneratorStep(e,t,n,r,o,a,i){try{var s=e[a](i),c=s.value}catch(e){return void n(e)}s.done?t(c):Promise.resolve(c).then(r,o)}function _asyncToGenerator(s){return function(){var e=this,i=arguments;return new Promise(function(t,n){var r=s.apply(e,i);function o(e){asyncGeneratorStep(r,t,n,o,a,"next",e)}function a(e){asyncGeneratorStep(r,t,n,o,a,"throw",e)}o(void 0)})}}var wrapMethod=function(e,t){return e[t]&&"function"==typeof e[t]?e[t]():Promise.resolve(null)},getPageVariables=function(){return window&&window.bbcpage?Promise.all(["getDestination","getSection"].map(function(e){return wrapMethod(window.bbcpage,e)})).then(function(e){var t=JSON.parse(JSON.stringify(e));return{destination:t[0],section:t[1]}}):Promise.resolve(void 0)},getUserVariables=function(){return window&&window.bbcuser?Promise.all(["isSignedIn","getHashedId"].map(function(e){return wrapMethod(window.bbcuser,e)})).then(function(e){var t=JSON.parse(JSON.stringify(e));return{isSignedIn:t[0],hashedId:t[1]}}):Promise.resolve(void 0)},dotMetricsTag=function(e,t){var n=document.createElement("script");return n.src="https://uk-script.dotmetrics.net/door.js?d=".concat(t,"&t=").concat(e),n.async=!0,n.id="dotmetrics",document.body.appendChild(n),function(){document.body.removeChild(n)}},isAccountPage=function(e,t){return!!e.includes("account.bbc")||!!t&&("account"===t.toLowerCase()||"account_test"===t.toLowerCase())},parseSiteSectionName=function(e){var t=e.destination,n=e.section,r=document?document.location.host.replace(/:.*/,""):"bbc.no.host";if(t){var o="";return n&&["NEWS_PS","NEWS_PS_TEST","SOUNDS","SOUNDS_TEST","SPORT_PS","SPORT_PS_TEST","IPLAYER","IPLAYER_TEST"].includes(t.toUpperCase())&&(o=n.split("::")[0]),{siteSectionNameString:"".concat(t).concat(o).toLowerCase().replace(/_/g,""),host:r}}return{siteSectionNameString:"other",host:r}};function startUkom(){return _startUkom.apply(this,arguments)}function _startUkom(){return(_startUkom=_asyncToGenerator(regeneratorRuntime.mark(function e(){var t,n,r;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,getUserVariables();case 2:if((t=e.sent)&&t.isSignedIn&&null==t.hashedId)return e.abrupt("return");e.next=5;break;case 5:return e.next=7,getPageVariables();case 7:if(n=e.sent,isAccountPage(document.location.host,n.destination))return e.abrupt("return");e.next=10;break;case 10:r=parseSiteSectionName(n),dotMetricsTag(r.siteSectionNameString,r.host);case 12:case"end":return e.stop()}},e)}))).apply(this,arguments)}document.addEventListener("bbc-page-updated",function(){startUkom()}),window.addEventListener("pageshow",function(e){e.persisted&&startUkom()}),document.addEventListener("DOMContentLoaded",function(){startUkom()});</script>
+    
+    
+    <link rel="stylesheet" href="https://static.files.bbci.co.uk/account/id-cta/583/style/id-cta.css"><script type="text/javascript">(function () {if (!window.require) {throw new Error('idcta: could not find require module');}if (typeof (map) == 'undefined') {var map = {};}if (!!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect) {document.documentElement.className += ' id-svg';}var ptrt = new RegExp("[\\?&]ptrt=([^&]*)").exec(document.location.href);var ENDPOINT_URL = 'https://idcta.api.bbc.co.uk';var ENDPOINT_CONFIG = ('/idcta/config?callback=&ptrt=' + (ptrt ? ptrt[1] : encodeURIComponent(document.location.href))).replace(/\&amp;/g, '&');var ENDPOINT_TRANSLATIONS = '/idcta/translations?callback=';function hasPromise() {var P = window.Promise;var promiseToString = null;if (P) {try {promiseToString = Object.prototype.toString.call(P.resolve());} catch (e) {/*silently ignored*/}}return (promiseToString === '[object Promise]' && !P.cast);}if (hasPromise()) {define('idcta/es6-promise', function () {return window.Promise;});define('idcta-v2/es6-promise', function () {return window.Promise;});}map['idcta-v2'] = 'https://static.files.bbci.co.uk/account/id-cta/583/modules/idcta-v2';map['idcta-v2/config'] = ENDPOINT_URL + ENDPOINT_CONFIG;map['idcta-v2/translations'] = ENDPOINT_URL + ENDPOINT_TRANSLATIONS;map['idcta'] = 'https://static.files.bbci.co.uk/account/id-cta/1.8.2/modules/idcta';map['idcta-v2/idcta-1'] = 'https://static.files.bbci.co.uk/account/id-cta/583/modules/idcta-v2/dist/idcta-1.min';map['idcta-v2/experiment-snippet'] = 'https://cdn.optimizely.com/public/4621041136/s/idcta_live';const idctaShim = {deps: ['idcta-v2/idcta-1'],};require({shim: {'idcta-v2/statusbar': idctaShim,'idcta-v2/id-config': idctaShim},map: {'*': {'idcta/idcta-1': 'idcta-v2/idcta-1','idcta': 'idcta-v2',}},paths: map});window.idctaBaseUrl = ENDPOINT_URL;define('idcta/config', ['idcta-v2/config'], function (data) { return data; });define('idcta/translations', ['idcta-v2/translations'], function (data) { return data; });})();</script>
+    
+
+<script type="text/javascript">
+    require.config({
+        "baseUrl": "//static.bbci.co.uk/",
+        "paths": {
+            "jquery-1": "//static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.7.2",
+            "jquery-1.9": "//static.bbci.co.uk/frameworks/jquery/0.4.1/sharedmodules/jquery-1.9.1",
+            "swfobject-2": "//static.bbci.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2",
+            "bump-3": "//emp.bbci.co.uk/emp/bump-3/bump-3"
+        }
+    });
+</script>
+<title>
+    
+    The BBC Privacy and Cookies Policy - Using the BBC
+    
+</title>
+<meta name="description" content="We take your personal data very seriously. Find out how the BBC collects, uses, discloses, transfers and stores it.">
+<meta name="keywords" content="privacy, data, policy, cookies, information, personal, ">
+
+<meta property="og:type" content="website" />
+<meta property="og:description" content="We take your personal data very seriously. Find out how the BBC collects, uses, discloses, transfers and stores it." />
+
+<meta property="og:site_name" content="The BBC Privacy and Cookies Policy - Using the BBC" />
+
+<meta property="og:locale" content="en_GB" />
+<meta charset="utf-8" />
+
+<link href="/usingthebbc/static/css/app.css?ver=8.5.1" rel="stylesheet" />
+<link href="/usingthebbc/static/css/mybbc-privacy-hub.min.css?ver=1.0.20180728" rel="stylesheet" />
+<script type="text/javascript">
+    window.usingthebbcIDCTA = {
+        locale: 'en_GB',
+        idcta: 'https://ssl.bbc.co.uk/idcta/init',
+        notifications: {
+            get: 'https://preferences.notifications.api.bbc.co.uk/subscriptions',
+            set: 'https://preferences.notifications.api.bbc.co.uk/preference'
+        },
+        url: 'https://www.bbc.co.uk/usingthebbc/privacy-policy/',
+        renderIDCTAButton: false
+    };
+</script>
+<script src="/usingthebbc/static/js/script.min.js" type="text/javascript"></script>
+
+</head>
+<body class="page-explainer-full">
+
+ <div id="cookiePrompt"></div> <noscript><p style="position: absolute; top: -999em"><img src="https://a1.api.bbc.co.uk/hit.xiti?&col=1&from=p&ptag=js&s=598253&p=unknown&x2=[responsive]&x3=[bbc_website]&x4=[en]&x8=[reverb-3.4.1-nojs]&x11=[]&x12=[]" height="1" width="1" alt=""></p></noscript>  <div class="orbit-header-container" id="orbit-header"><header id="orb-banner" role="banner" aria-label="BBC" class="orbit-header geo orbit-default orbit-language-en orbit-ux-v5"><div id="orb-header" class="orb-nav-pri orb-nav-pri-white orb-nav-empty" dir="ltr"><div class="orb-nav-pri-container b-r b-g-p"><div class="orb-nav-section orb-nav-blocks"><a href="https://www.bbc.co.uk" id="homepage-link"><svg width="112" height="32" viewbox="0 0 112 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.99999 6.99999H15.7552C17.7458 6.99999 19.2878 7.39887 20.3811 8.19576C21.4741 8.99309 22.021 10.1385 22.021 11.6321C22.021 12.4881 21.8252 13.2308 21.4335 13.8601C21.0419 14.4894 20.4625 14.9891 19.6958 15.358C20.7563 15.7104 21.5682 16.2686 22.1311 17.0321C22.6941 17.796 22.9755 18.7232 22.9755 19.814C22.9755 20.8882 22.7021 21.8114 22.1555 22.5832C21.6087 23.3553 20.8296 23.9513 19.8182 24.3706C18.8062 24.7903 17.5909 25 16.1713 25H8.99999V6.99999ZM0 32H32V0H0V32ZM48.9999 6.99999H55.7551C57.7457 6.99999 59.2877 7.39887 60.3811 8.19576C61.4741 8.99309 62.0209 10.1385 62.0209 11.6321C62.0209 12.4881 61.8251 13.2308 61.4334 13.8601C61.0419 14.4894 60.4624 14.9891 59.6957 15.358C60.7562 15.7104 61.568 16.2686 62.1311 17.0321C62.694 17.796 62.9753 18.7232 62.9753 19.814C62.9753 20.8882 62.7019 21.8114 62.1554 22.5832C61.6087 23.3553 60.8297 23.9513 59.818 24.3706C58.8062 24.7903 57.5908 25 56.1712 25H48.9999V6.99999ZM39.9999 32H71.9999V0H39.9999V32ZM55.8775 17.2209H52.6469V22.0797H55.8286C56.9216 22.0797 57.7622 21.8743 58.3497 21.4629C58.9369 21.0518 59.2308 20.4602 59.2308 19.6881C59.2308 18.0435 58.1128 17.2209 55.8775 17.2209ZM55.4125 9.92026C57.3541 9.92026 58.3252 10.6338 58.3252 12.06C58.3252 12.7988 58.0763 13.3735 57.5787 13.7846C57.0808 14.196 56.3588 14.4014 55.4125 14.4014H52.6469V9.92026H55.4125ZM15.4126 9.92026C17.3542 9.92026 18.3253 10.6338 18.3253 12.06C18.3253 12.7988 18.0763 13.3735 17.5787 13.7846C17.0808 14.196 16.3588 14.4014 15.4126 14.4014H12.6469V9.92026H15.4126ZM15.8776 17.2209H12.6469V22.0797H15.8287C16.9217 22.0797 17.7623 21.8743 18.3497 21.4629C18.937 21.0518 19.2308 20.4602 19.2308 19.6881C19.2308 18.0435 18.1129 17.2209 15.8776 17.2209ZM100.391 24.8338C101.373 24.5956 102.237 24.2706 102.982 23.8592V20.4292C101.407 21.4001 99.6879 21.8851 97.8249 21.8851C96.6052 21.8851 95.5677 21.6549 94.7125 21.1942C93.857 20.7338 93.2048 20.0633 92.7562 19.1831C92.3071 18.3032 92.0829 17.238 92.0829 15.9876C92.0829 14.7377 92.3155 13.6766 92.7814 12.8045C93.2472 11.9327 93.9161 11.2665 94.7887 10.8058C95.6608 10.3454 96.7153 10.1148 97.9519 10.1148C98.8494 10.1148 99.705 10.2343 100.518 10.4726C101.331 10.7113 102.084 11.0609 102.779 11.5212V8.01737C102.017 7.62259 101.191 7.32259 100.302 7.1167C99.4128 6.91126 98.4683 6.80826 97.4691 6.80826C96.0292 6.80826 94.7292 7.02226 93.5691 7.44981C92.4088 7.87781 91.4136 8.4947 90.5839 9.30048C89.7537 10.1067 89.1187 11.0732 88.6783 12.1999C88.2377 13.3269 88.0176 14.5896 88.0176 15.9876C88.0176 17.4188 88.2295 18.7062 88.6529 19.8493C89.0761 20.9929 89.6859 21.9591 90.4822 22.7488C91.2782 23.5383 92.252 24.143 93.404 24.5624C94.5557 24.9819 95.8515 25.1917 97.2912 25.1917C98.375 25.1917 99.4085 25.0721 100.391 24.8338ZM112 32H79.9998V4.44444e-05H112V32Z"></svg><span class="orbit-button-text">Homepage</span></a></div><section><div class="orb-skip-links"><h2>Accessibility links</h2><ul><li><a href="#orb-modules"><span>Skip to content</span></a></li><li><a id="orb-accessibility-help" href="https://www.bbc.co.uk/accessibility/"><span>Accessibility Help</span></a></li></ul></div></section><div class="orbit-header-left"><div class="orbit-module-idcta"><div id="idcta-statusbar" class="orbit-header-account" data-bbc-container="id-cta" data-bbc-event-type="click" data-bbc-ignore-views="1" data-bbc-metadata="{&quot;id-cta-type&quot;: &quot;statusbar-orbit&quot;}" data-bbc-source="responsive_web" data-bbc-title="id-cta-sign-in"><a id="idcta-link" href="https://account.bbc.com/account"><span id="idcta-username">BBC Account</span></a></div><script type="text/javascript">require(['idcta/statusbar'], function (statusbar) {new statusbar.Statusbar({id: 'idcta-statusbar', publiclyCacheable: true});});</script></div><div class="orbit-module-notifications"><a class="orbit-header-notifications" href="https://www.bbc.co.uk/notifications"><svg width="23" height="24" viewbox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.35 15.1883C19.8562 15.7235 20.6674 16.0612 21.7837 16.1996L23 16.3481V18.6667H0V16.3481L1.21634 16.1996C2.35241 16.0612 3.16834 15.7235 3.66602 15.1883C4.16276 14.6532 4.41113 13.8413 4.41113 12.7517V9.71992C4.41113 7.97614 4.87764 6.53868 5.81068 5.40938C6.74371 4.28008 8.06204 3.54752 9.76567 3.20983V0H13.2343V3.20983C14.938 3.54752 16.2553 4.28008 17.1893 5.40938C18.1224 6.53868 18.5889 7.97614 18.5889 9.71992V12.7517C18.5889 13.8413 18.8429 14.6532 19.35 15.1883ZM11.4996 24C10.4854 24 9.66944 23.6713 9.05088 23.0122C8.43232 22.353 8.12351 21.5721 8.12351 20.6667H14.8767C14.8767 21.5721 14.5669 22.353 13.9493 23.0122C13.3307 23.6713 12.5139 24 11.4996 24Z"></svg><span class="orbit-button-text">Notifications</span></a></div></div><nav class="orbit-header-links domestic"><ul><li class="orb-nav-home"><a href="https://www.bbc.co.uk"><span>Home</span></a></li><li class="orb-nav-news"><a href="https://www.bbc.co.uk/news"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#B80000" d="M302,424h-68c-0.552,0-1.052-0.224-1.414-0.586S232,422.552,232,422V306c0-0.552,0.224-1.052,0.586-1.414
+                S233.448,304,234,304h68c0.552,0,1.052,0.224,1.414,0.586S304,305.448,304,306v116c0,0.552-0.224,1.052-0.586,1.414
+                S302.552,424,302,424z"></path><path fill="#EB0000" d="M422,280H234c-0.552,0-1.052-0.224-1.414-0.586S232,278.552,232,278V90c0-0.552,0.224-1.052,0.586-1.414
+                S233.448,88,234,88h188c0.552,0,1.052,0.224,1.414,0.586S424,89.448,424,90v188c0,0.552-0.224,1.052-0.586,1.414
+                S422.552,280,422,280z"></path><path fill="#D30000" d="M206,328H90c-0.552,0-1.052-0.224-1.414-0.586S88,326.552,88,326V210c0-0.552,0.224-1.052,0.586-1.414
+                S89.448,208,90,208h116c0.552,0,1.052,0.224,1.414,0.586S208,209.448,208,210v116c0,0.552-0.224,1.052-0.586,1.414
+                S206.552,328,206,328z"></path></g></svg><span>News</span></a></li><li class="orb-nav-sport"><a href="https://www.bbc.co.uk/sport"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#FFD230" d="M90,184h332c0.552,0,1.052-0.224,1.414-0.586S424,182.552,424,182V90c0-0.552-0.224-1.052-0.586-1.414
+                S422.552,88,422,88H90c-0.552,0-1.052,0.224-1.414,0.586S88,89.448,88,90v92c0,0.552,0.224,1.052,0.586,1.414S89.448,184,90,184z"></path><path fill="#FFA100" d="M306,424h116c0.552,0,1.052-0.224,1.414-0.586S424,422.552,424,422v-92c0-0.552-0.224-1.052-0.586-1.414
+                S422.552,328,422,328H306c-0.552,0-1.052,0.224-1.414,0.586S304,329.448,304,330v92c0,0.552,0.224,1.052,0.586,1.414
+                S305.448,424,306,424z"></path><path fill="#FFBA00" d="M210,304h212c0.552,0,1.052-0.224,1.414-0.586S424,302.552,424,302v-92c0-0.552-0.224-1.052-0.586-1.414
+                S422.552,208,422,208H210c-0.552,0-1.052,0.224-1.414,0.586S208,209.448,208,210v92c0,0.552,0.224,1.052,0.586,1.414
+                S209.448,304,210,304z"></path></g></svg><span>Sport</span></a></li><li class="orb-nav-weather"><a href="https://www.bbc.co.uk/weather"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#067EB3" d="M316.234,368.56l52.326-52.326c0.391-0.391,0.586-0.902,0.586-1.414c0-0.512-0.195-1.024-0.586-1.414
+                L252.594,197.44c-0.391-0.391-0.902-0.586-1.414-0.586s-1.024,0.195-1.414,0.586l-52.326,52.326
+                c-0.391,0.391-0.586,0.902-0.586,1.414s0.195,1.024,0.586,1.414L313.406,368.56c0.391,0.391,0.902,0.586,1.414,0.586
+                C315.332,369.146,315.844,368.95,316.234,368.56z"></path><path fill="#1969A6" d="M90,424h74c0.552,0,1.052-0.224,1.414-0.586S166,422.552,166,422V258c0-0.552-0.224-1.052-0.586-1.414
+                S164.552,256,164,256H90c-0.552,0-1.052,0.224-1.414,0.586S88,257.448,88,258v164c0,0.552,0.224,1.052,0.586,1.414
+                S89.448,424,90,424z"></path><path fill="#149EDC" d="M258,166h164c0.552,0,1.052-0.224,1.414-0.586S424,164.552,424,164V90c0-0.552-0.224-1.052-0.586-1.414
+                S422.552,88,422,88H258c-0.552,0-1.052,0.224-1.414,0.586S256,89.448,256,90v74c0,0.552,0.224,1.052,0.586,1.414
+                S257.448,166,258,166z"></path></g></svg><span>Weather</span></a></li><li class="orb-nav-iplayer"><a href="https://www.bbc.co.uk/iplayer"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#DC2878" d="M182,358h-68c-0.55,0-1.05-0.225-1.412-0.587C112.225,357.05,112,356.55,112,356V156
+                c0-0.552,0.224-1.052,0.586-1.414S113.448,154,114,154h68c0.55,0,1.05,0.225,1.413,0.587C183.775,154.95,184,155.45,184,156v200
+                c0,0.552-0.224,1.052-0.586,1.414S182.552,358,182,358z"></path><path fill="#FF4C98" d="M372.106,248.243l34-58.89c0.275-0.476,0.33-1.022,0.197-1.517c-0.133-0.495-0.453-0.94-0.93-1.215
+                l-173.205-100c-0.478-0.276-1.023-0.332-1.518-0.2c-0.494,0.132-0.938,0.454-1.214,0.932l-34,58.89
+                c-0.275,0.476-0.33,1.022-0.197,1.517c0.133,0.495,0.453,0.94,0.93,1.215l173.205,100c0.478,0.276,1.023,0.332,1.518,0.2
+                C371.386,249.042,371.83,248.721,372.106,248.243z"></path><path fill="#AF0D5B" d="M372.106,263.757l34,58.89c0.275,0.476,0.33,1.022,0.197,1.517c-0.133,0.495-0.453,0.94-0.93,1.215
+                l-173.205,100c-0.478,0.276-1.023,0.332-1.518,0.2c-0.494-0.132-0.938-0.454-1.214-0.932l-34-58.89
+                c-0.275-0.476-0.33-1.022-0.197-1.517c0.133-0.495,0.453-0.94,0.93-1.215l173.205-100c0.478-0.276,1.023-0.332,1.518-0.2
+                C371.386,262.958,371.83,263.279,372.106,263.757z"></path></g></svg><span>iPlayer</span></a></li><li class="orb-nav-sounds"><a href="https://www.bbc.co.uk/sounds"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#A13104" d="M122,304H78c-0.552,0-1.052-0.224-1.414-0.586S76,302.552,76,302v-92c0-0.552,0.224-1.052,0.586-1.414
+                S77.448,208,78,208h44c0.552,0,1.052,0.224,1.414,0.586S124,209.448,124,210v92c0,0.552-0.224,1.052-0.586,1.414
+                S122.552,304,122,304z"></path><path fill="#D24712" d="M230,376h-80c-0.552,0-1.052-0.224-1.414-0.586S148,374.552,148,374V138c0-0.552,0.224-1.052,0.586-1.414
+                S149.448,136,150,136h80c0.552,0,1.052,0.224,1.414,0.586S232,137.448,232,138v236c0,0.552-0.224,1.052-0.586,1.414
+                S230.552,376,230,376z"></path><path fill="#FA6400" d="M422,424H258c-0.552,0-1.052-0.224-1.414-0.586S256,422.552,256,422V90c0-0.552,0.224-1.052,0.586-1.414
+                S257.448,88,258,88h164c0.552,0,1.052,0.224,1.414,0.586S424,89.448,424,90v332c0,0.552-0.224,1.052-0.586,1.414
+                S422.552,424,422,424z"></path></g></svg><span>Sounds</span></a></li><li class="orb-nav-bitesize"><a href="https://www.bbc.co.uk/bitesize"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#6100A8" d="M134,400H78c-0.552,0-1.052-0.224-1.414-0.586S76,398.552,76,398V162c0-0.552,0.224-1.052,0.586-1.414
+                S77.448,160,78,160h56c0.552,0,1.052,0.224,1.414,0.586S136,161.448,136,162v236c0,0.552-0.224,1.052-0.586,1.414
+                S134.552,400,134,400z"></path><path fill="#7222C6" d="M254,400h-92c-0.552,0-1.052-0.224-1.414-0.586S160,398.552,160,398V114c0-0.552,0.224-1.052,0.586-1.414
+                S161.448,112,162,112h92c0.552,0,1.052,0.224,1.414,0.586S256,113.448,256,114v284c0,0.552-0.224,1.052-0.586,1.414
+                S254.552,400,254,400z"></path><path fill="#963CE1" d="M444.77,373.863l-85.829,26.232c-0.529,0.162-1.073,0.093-1.526-0.148s-0.812-0.655-0.973-1.184
+                L273.901,126.63c-0.16-0.528-0.091-1.07,0.149-1.521c0.241-0.451,0.653-0.811,1.18-0.972l85.829-26.232
+                c0.529-0.162,1.073-0.093,1.526,0.148s0.812,0.655,0.973,1.184l82.542,272.133c0.16,0.528,0.091,1.07-0.149,1.521
+                C445.71,373.342,445.297,373.702,444.77,373.863z"></path></g></svg><span>Bitesize</span></a></li><li class="orb-nav-cbeebies"><a href="https://www.bbc.co.uk/cbeebies"><span>CBeebies</span></a></li><li class="orb-nav-cbbc"><a href="https://www.bbc.co.uk/cbbc"><span>CBBC</span></a></li><li class="orb-nav-food"><a href="https://www.bbc.co.uk/food"><span>Food</span></a></li></ul></nav><nav class="orbit-header-links international"><ul><li class="orb-nav-homedotcom"><a href="https://www.bbc.com/"><span>Home</span></a></li><li class="orb-nav-newsdotcom"><a href="https://www.bbc.com/news"><span>News</span></a></li><li class="orb-nav-sport"><a href="https://www.bbc.com/sport"><span>Sport</span></a></li><li class="orb-nav-reeldotcom"><a href="https://www.bbc.com/reel"><span>Reel</span></a></li><li class="orb-nav-worklife"><a href="https://www.bbc.com/worklife"><span>Worklife</span></a></li><li class="orb-nav-traveldotcom"><a href="https://www.bbc.com/travel"><span>Travel</span></a></li><li class="orb-nav-future"><a href="https://www.bbc.com/future"><span>Future</span></a></li><li class="orb-nav-culture"><a href="https://www.bbc.com/culture"><span>Culture</span></a></li><li class="orb-nav-tv"><a href="https://www.bbc.co.uk/schedules/p00fzl9m"><span>TV</span></a></li><li class="orb-nav-weather"><a href="https://www.bbc.com/weather"><span>Weather</span></a></li><li class="orb-nav-sounds"><a href="https://www.bbc.co.uk/sounds"><span>Sounds</span></a></li></ul></nav><div class="orbit-header-right"><a aria-label="All BBC destinations menu" class="orbit-header-more" href="#orbit-more-drawer" id="orbit-more-button"><svg class="orbit-header-more-desktop" width="20" height="4" viewbox="0 0 20 4" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Overflow" transform="translate(-14.000000, -22.000000)"><path d="M18,22 L18,26 L14,26 L14,22 L18,22 Z M34,22 L34,26 L30,26 L30,22 L34,22 Z M26,22 L26,26 L22,26 L22,22 L26,22 Z" id="More"></path></g></svg><svg class="orbit-header-more-mobile" width="24" height="22" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 3.63393H20V0H0V3.63393ZM0 10.9018H20V7.26787H0V10.9018ZM0 18.5H20V14.8661H0V18.5Z"></svg><span class="orbit-button-text">More menu</span></a><div class="orb-nav-section orb-nav-search" role="search">  <a id="orbit-search-button" class="orbit-search__button" aria-expanded="false" href="https://search.bbc.co.uk/search?scope=all" title="Search BBC"><span class="ux-v4">Search BBC</span> <span class="ux-v5"><svg class="orbit-search-button-icon-only" width="1.75rem" height="1.8125rem" viewbox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11,-0.0001 C17.0751322,-0.0001 22,4.92476775 22,10.9999 C22,13.5276632 21.1473793,15.8562862 19.7140404,17.7138664 L28,26 L25,29 L16.518046,20.5178339 C14.8960209,21.4602385 13.0110328,21.9999 11,21.9999 C4.92486775,21.9999 0,17.0750322 0,10.9999 C0,4.92476775 4.92486775,-0.0001 11,-0.0001 Z M11,2.5 C6.30557963,2.5 2.5,6.30557963 2.5,11 C2.5,15.6944204 6.30557963,19.5 11,19.5 C15.6944204,19.5 19.5,15.6944204 19.5,11 C19.5,6.30557963 15.6944204,2.5 11,2.5 Z"></path></svg><svg class="orbit-search-button-icon-with-text" width="0.9375rem" height="1rem" viewbox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M6,-5.32907052e-15 C9.3137085,-5.32907052e-15 12,2.6862915 12,6 C12,7.43892143 11.4934776,8.75953821 10.6490096,9.79327337 L15,14.24 L13.2782609,16 L8.72578477,11.3465317 C7.90789326,11.7643456 6.98146665,12 6,12 C2.6862915,12 -1.687539e-14,9.3137085 -1.687539e-14,6 C-1.687539e-14,2.6862915 2.6862915,-5.32907052e-15 6,-5.32907052e-15 Z M6,1.5 C3.51471863,1.5 1.5,3.51471863 1.5,6 C1.5,8.48528137 3.51471863,10.5 6,10.5 C8.48528137,10.5 10.5,8.48528137 10.5,6 C10.5,3.51471863 8.48528137,1.5 6,1.5 Z"></path></svg><span>Search BBC</span></span></a>  </div></div></div></div></header><div id="orbit-drawer-container" class="orbit-drawer-container"></div><section class="orbit-more-drawer geo orbit-default orbit-language-en b-r b-g-p" id="orbit-more-drawer"><div class="orbit-more-drawer-content"><ul class="more-domestic"><li class="orb-nav-home"><a href="https://www.bbc.co.uk"><span>Home</span></a></li><li class="orb-nav-news"><a href="https://www.bbc.co.uk/news"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#B80000" d="M302,424h-68c-0.552,0-1.052-0.224-1.414-0.586S232,422.552,232,422V306c0-0.552,0.224-1.052,0.586-1.414
+                S233.448,304,234,304h68c0.552,0,1.052,0.224,1.414,0.586S304,305.448,304,306v116c0,0.552-0.224,1.052-0.586,1.414
+                S302.552,424,302,424z"></path><path fill="#EB0000" d="M422,280H234c-0.552,0-1.052-0.224-1.414-0.586S232,278.552,232,278V90c0-0.552,0.224-1.052,0.586-1.414
+                S233.448,88,234,88h188c0.552,0,1.052,0.224,1.414,0.586S424,89.448,424,90v188c0,0.552-0.224,1.052-0.586,1.414
+                S422.552,280,422,280z"></path><path fill="#D30000" d="M206,328H90c-0.552,0-1.052-0.224-1.414-0.586S88,326.552,88,326V210c0-0.552,0.224-1.052,0.586-1.414
+                S89.448,208,90,208h116c0.552,0,1.052,0.224,1.414,0.586S208,209.448,208,210v116c0,0.552-0.224,1.052-0.586,1.414
+                S206.552,328,206,328z"></path></g></svg><span>News</span></a></li><li class="orb-nav-sport"><a href="https://www.bbc.co.uk/sport"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#FFD230" d="M90,184h332c0.552,0,1.052-0.224,1.414-0.586S424,182.552,424,182V90c0-0.552-0.224-1.052-0.586-1.414
+                S422.552,88,422,88H90c-0.552,0-1.052,0.224-1.414,0.586S88,89.448,88,90v92c0,0.552,0.224,1.052,0.586,1.414S89.448,184,90,184z"></path><path fill="#FFA100" d="M306,424h116c0.552,0,1.052-0.224,1.414-0.586S424,422.552,424,422v-92c0-0.552-0.224-1.052-0.586-1.414
+                S422.552,328,422,328H306c-0.552,0-1.052,0.224-1.414,0.586S304,329.448,304,330v92c0,0.552,0.224,1.052,0.586,1.414
+                S305.448,424,306,424z"></path><path fill="#FFBA00" d="M210,304h212c0.552,0,1.052-0.224,1.414-0.586S424,302.552,424,302v-92c0-0.552-0.224-1.052-0.586-1.414
+                S422.552,208,422,208H210c-0.552,0-1.052,0.224-1.414,0.586S208,209.448,208,210v92c0,0.552,0.224,1.052,0.586,1.414
+                S209.448,304,210,304z"></path></g></svg><span>Sport</span></a></li><li class="orb-nav-weather"><a href="https://www.bbc.co.uk/weather"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#067EB3" d="M316.234,368.56l52.326-52.326c0.391-0.391,0.586-0.902,0.586-1.414c0-0.512-0.195-1.024-0.586-1.414
+                L252.594,197.44c-0.391-0.391-0.902-0.586-1.414-0.586s-1.024,0.195-1.414,0.586l-52.326,52.326
+                c-0.391,0.391-0.586,0.902-0.586,1.414s0.195,1.024,0.586,1.414L313.406,368.56c0.391,0.391,0.902,0.586,1.414,0.586
+                C315.332,369.146,315.844,368.95,316.234,368.56z"></path><path fill="#1969A6" d="M90,424h74c0.552,0,1.052-0.224,1.414-0.586S166,422.552,166,422V258c0-0.552-0.224-1.052-0.586-1.414
+                S164.552,256,164,256H90c-0.552,0-1.052,0.224-1.414,0.586S88,257.448,88,258v164c0,0.552,0.224,1.052,0.586,1.414
+                S89.448,424,90,424z"></path><path fill="#149EDC" d="M258,166h164c0.552,0,1.052-0.224,1.414-0.586S424,164.552,424,164V90c0-0.552-0.224-1.052-0.586-1.414
+                S422.552,88,422,88H258c-0.552,0-1.052,0.224-1.414,0.586S256,89.448,256,90v74c0,0.552,0.224,1.052,0.586,1.414
+                S257.448,166,258,166z"></path></g></svg><span>Weather</span></a></li><li class="orb-nav-iplayer"><a href="https://www.bbc.co.uk/iplayer"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#DC2878" d="M182,358h-68c-0.55,0-1.05-0.225-1.412-0.587C112.225,357.05,112,356.55,112,356V156
+                c0-0.552,0.224-1.052,0.586-1.414S113.448,154,114,154h68c0.55,0,1.05,0.225,1.413,0.587C183.775,154.95,184,155.45,184,156v200
+                c0,0.552-0.224,1.052-0.586,1.414S182.552,358,182,358z"></path><path fill="#FF4C98" d="M372.106,248.243l34-58.89c0.275-0.476,0.33-1.022,0.197-1.517c-0.133-0.495-0.453-0.94-0.93-1.215
+                l-173.205-100c-0.478-0.276-1.023-0.332-1.518-0.2c-0.494,0.132-0.938,0.454-1.214,0.932l-34,58.89
+                c-0.275,0.476-0.33,1.022-0.197,1.517c0.133,0.495,0.453,0.94,0.93,1.215l173.205,100c0.478,0.276,1.023,0.332,1.518,0.2
+                C371.386,249.042,371.83,248.721,372.106,248.243z"></path><path fill="#AF0D5B" d="M372.106,263.757l34,58.89c0.275,0.476,0.33,1.022,0.197,1.517c-0.133,0.495-0.453,0.94-0.93,1.215
+                l-173.205,100c-0.478,0.276-1.023,0.332-1.518,0.2c-0.494-0.132-0.938-0.454-1.214-0.932l-34-58.89
+                c-0.275-0.476-0.33-1.022-0.197-1.517c0.133-0.495,0.453-0.94,0.93-1.215l173.205-100c0.478-0.276,1.023-0.332,1.518-0.2
+                C371.386,262.958,371.83,263.279,372.106,263.757z"></path></g></svg><span>iPlayer</span></a></li><li class="orb-nav-sounds"><a href="https://www.bbc.co.uk/sounds"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#A13104" d="M122,304H78c-0.552,0-1.052-0.224-1.414-0.586S76,302.552,76,302v-92c0-0.552,0.224-1.052,0.586-1.414
+                S77.448,208,78,208h44c0.552,0,1.052,0.224,1.414,0.586S124,209.448,124,210v92c0,0.552-0.224,1.052-0.586,1.414
+                S122.552,304,122,304z"></path><path fill="#D24712" d="M230,376h-80c-0.552,0-1.052-0.224-1.414-0.586S148,374.552,148,374V138c0-0.552,0.224-1.052,0.586-1.414
+                S149.448,136,150,136h80c0.552,0,1.052,0.224,1.414,0.586S232,137.448,232,138v236c0,0.552-0.224,1.052-0.586,1.414
+                S230.552,376,230,376z"></path><path fill="#FA6400" d="M422,424H258c-0.552,0-1.052-0.224-1.414-0.586S256,422.552,256,422V90c0-0.552,0.224-1.052,0.586-1.414
+                S257.448,88,258,88h164c0.552,0,1.052,0.224,1.414,0.586S424,89.448,424,90v332c0,0.552-0.224,1.052-0.586,1.414
+                S422.552,424,422,424z"></path></g></svg><span>Sounds</span></a></li><li class="orb-nav-bitesize"><a href="https://www.bbc.co.uk/bitesize"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#6100A8" d="M134,400H78c-0.552,0-1.052-0.224-1.414-0.586S76,398.552,76,398V162c0-0.552,0.224-1.052,0.586-1.414
+                S77.448,160,78,160h56c0.552,0,1.052,0.224,1.414,0.586S136,161.448,136,162v236c0,0.552-0.224,1.052-0.586,1.414
+                S134.552,400,134,400z"></path><path fill="#7222C6" d="M254,400h-92c-0.552,0-1.052-0.224-1.414-0.586S160,398.552,160,398V114c0-0.552,0.224-1.052,0.586-1.414
+                S161.448,112,162,112h92c0.552,0,1.052,0.224,1.414,0.586S256,113.448,256,114v284c0,0.552-0.224,1.052-0.586,1.414
+                S254.552,400,254,400z"></path><path fill="#963CE1" d="M444.77,373.863l-85.829,26.232c-0.529,0.162-1.073,0.093-1.526-0.148s-0.812-0.655-0.973-1.184
+                L273.901,126.63c-0.16-0.528-0.091-1.07,0.149-1.521c0.241-0.451,0.653-0.811,1.18-0.972l85.829-26.232
+                c0.529-0.162,1.073-0.093,1.526,0.148s0.812,0.655,0.973,1.184l82.542,272.133c0.16,0.528,0.091,1.07-0.149,1.521
+                C445.71,373.342,445.297,373.702,444.77,373.863z"></path></g></svg><span>Bitesize</span></a></li><li class="orb-nav-cbeebies"><a href="https://www.bbc.co.uk/cbeebies"><span>CBeebies</span></a></li><li class="orb-nav-cbbc"><a href="https://www.bbc.co.uk/cbbc"><span>CBBC</span></a></li><li class="orb-nav-food"><a href="https://www.bbc.co.uk/food"><span>Food</span></a></li></ul><ul class="more-international"><li class="orb-nav-homedotcom"><a href="https://www.bbc.com/"><span>Home</span></a></li><li class="orb-nav-newsdotcom"><a href="https://www.bbc.com/news"><span>News</span></a></li><li class="orb-nav-sport"><a href="https://www.bbc.com/sport"><span>Sport</span></a></li><li class="orb-nav-reeldotcom"><a href="https://www.bbc.com/reel"><span>Reel</span></a></li><li class="orb-nav-worklife"><a href="https://www.bbc.com/worklife"><span>Worklife</span></a></li><li class="orb-nav-traveldotcom"><a href="https://www.bbc.com/travel"><span>Travel</span></a></li><li class="orb-nav-future"><a href="https://www.bbc.com/future"><span>Future</span></a></li><li class="orb-nav-culture"><a href="https://www.bbc.com/culture"><span>Culture</span></a></li><li class="orb-nav-tv"><a href="https://www.bbc.co.uk/schedules/p00fzl9m"><span>TV</span></a></li><li class="orb-nav-weather"><a href="https://www.bbc.com/weather"><span>Weather</span></a></li><li class="orb-nav-sounds"><a href="https://www.bbc.co.uk/sounds"><span>Sounds</span></a></li></ul><a href="#" class="orbit-more-drawer-close" role="button"><svg width="32" height="32" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.48651 5.71054L5.79834 7.39871L12.3428 14.0225L5.81992 20.6229L7.46434 22.2673L13.9778 15.6768L20.5123 22.2895H20.5135L22.2017 20.6007L15.6567 13.9781L22.1795 7.37712L20.5351 5.73271L14.0216 12.3232L7.48651 5.71054Z"></svg><span class="orbit-button-text">Close menu</span></a></div></section></div>  <!-- Styling hook for shared modules only -->
+<div id="orb-modules">
+
+
+<nav class="navbar navbar-subject">
+    <div class="container-fluid">
+        <div class="navbar-tabs">
+            <div class="navbar-item">
+                <div class="navbar-header">
+                    <a class="navbar-brand gel-great-primer-bold gel-header-link text-color-white" href="/usingthebbc/"
+                       title="Using the BBC">Using the BBC</a>
+                    <button aria-expanded="true" class="navbar-toggle" type="button"><span class="icon-label gel-long-primer">Menu</span></button>
+                </div>
+            </div>
+            <div class="navbar-item navbar-list" aria-expanded="false">
+
+                <!-- navigation mobile -->
+                <ul class="nav navbar-mobile">
+                    <li class="dropdown"><a class="gel-brevier-bold" data-id="9695fab2-d67d-4d2b-93be-39d7a74967dc" href="#" title="Your Information &amp; Privacy">Your Information &amp; Privacy <span class="caret"></span></a><ul id="9695fab2-d67d-4d2b-93be-39d7a74967dc" class="dropdown-menu" aria-expanded="false">
+                                <li><a class="gel-brevier-bold" href="/usingthebbc/privacy/" title="Your Information &amp; Privacy Home">Your Information &amp; Privacy Home</a></li><li><a class="gel-brevier-bold" href="/usingthebbc/privacy/what-are-you-doing-with-my-data/" title="Personal Information">Personal Information</a></li><li><a class="gel-brevier-bold" href="/usingthebbc/privacy/privacy-promise/" title="Privacy and Your Activity">Privacy and Your Activity</a></li></ul></li><li class="dropdown"><a class="gel-brevier-bold" data-id="eb47bba9-bd19-496a-86c0-e7d327b5a5ad" href="#" title="Cookie &amp; Browser Settings">Cookie &amp; Browser Settings <span class="caret"></span></a><ul id="eb47bba9-bd19-496a-86c0-e7d327b5a5ad" class="dropdown-menu" aria-expanded="false">
+                                <li><a class="gel-brevier-bold" href="/usingthebbc/cookies/" title="Cookie &amp; Browser Settings Home">Cookie &amp; Browser Settings Home</a></li><li><a class="gel-brevier-bold" href="/usingthebbc/cookies/what-do-i-need-to-know-about-cookies/" title="About Cookies">About Cookies</a></li><li><a class="gel-brevier-bold" href="/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/" title="Cookie Settings">Cookie Settings</a></li></ul></li><li class="dropdown"><a class="gel-brevier-bold" data-id="d56a7dec-4194-4b04-8aa2-1ef3ea347c8a" href="#" title="Creating &amp; Using Your Account">Creating &amp; Using Your Account <span class="caret"></span></a><ul id="d56a7dec-4194-4b04-8aa2-1ef3ea347c8a" class="dropdown-menu" aria-expanded="false">
+                                <li><a class="gel-brevier-bold" href="/usingthebbc/account/" title="Creating &amp; Using Your Account Home">Creating &amp; Using Your Account Home</a></li><li><a class="gel-brevier-bold" href="/usingthebbc/account/what-is-a-bbc-account/" title="Help Registering &amp; Signing In">Help Registering &amp; Signing In</a></li><li><a class="gel-brevier-bold" href="/usingthebbc/account/adding-things-on-the-bbc/" title="Account Features">Account Features</a></li><li><a class="gel-brevier-bold" href="/usingthebbc/account/how-is-the-bbc-personalised-to-me/" title="Personalisation &amp; Recommendations">Personalisation &amp; Recommendations</a></li></ul></li><li class="dropdown"><a class="gel-brevier-bold" data-id="316b35c9-45f4-482f-9869-98765474c4a2" href="#" title="Terms of Use">Terms of Use <span class="caret"></span></a><ul id="316b35c9-45f4-482f-9869-98765474c4a2" class="dropdown-menu" aria-expanded="false">
+                                <li><a class="gel-brevier-bold" href="/usingthebbc/terms/" title="Terms of Use Home">Terms of Use Home</a></li><li><a class="gel-brevier-bold" href="/usingthebbc/terms/do-i-need-a-tv-licence/" title="Accessing the BBC">Accessing the BBC</a></li><li><a class="gel-brevier-bold" href="/usingthebbc/terms/what-are-the-rules-for-commenting/" title="Joining in">Joining in</a></li><li><a class="gel-brevier-bold" href="/usingthebbc/terms/can-i-use-bbc-content/" title="Using BBC Content">Using BBC Content</a></li></ul></li></ul>
+                <!-- navigation mobile -->
+
+                <!-- navigation desktop -->
+                <div class="navbar-desktop">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a class="gel-brevier-bold" href="/usingthebbc/privacy/" title="Your Information &amp; Privacy">Your Information &amp; Privacy <span class="caret"></span></a></li><li class=""><a class="gel-brevier-bold" href="/usingthebbc/cookies/" title="Cookie &amp; Browser Settings">Cookie &amp; Browser Settings <span class="caret"></span></a></li><li class=""><a class="gel-brevier-bold" href="/usingthebbc/account/" title="Creating &amp; Using Your Account">Creating &amp; Using Your Account <span class="caret"></span></a></li><li class=""><a class="gel-brevier-bold" href="/usingthebbc/terms/" title="Terms of Use">Terms of Use <span class="caret"></span></a></li>
+                    </ul>
+                </div>
+                <!-- navigation desktop -->
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+<section id="top" class="bg-color-light grid-padding">
+    <div class="gel-wrap">
+        <div class="gel-layout">
+
+            <div class="gel-layout__item">
+                <div class="gel-explainer-full--header">
+                    <div class="text-color-mid gel-pica-bold gel-mv+">Privacy and Cookies Policy</div>
+                </div>
+            </div>
+
+            <div class="gel-layout__item gel-bp-l-1/2">
+                <div class="gel-explainer-full--header">
+                    <h1 class="gel-double-pica-bold gel-mv+">The BBC Privacy and Cookies Policy</h1>
+
+                    <p class="gel-brevier">
+                        <span class="gel-explainer--date">Page updated: 
+                            
+                            July 2021
+                            
+                        </span>
+                        <span class="gel-explainer--version">Version 3.1</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="gel-layout__item gel-bp-m-3/4 gel-bp-l-1/2">
+                <ul class="button-block button-block-right">
+                    <li class="gel-pica-bold icons icon-document"><a class="gel-track-download" target="_blank" href="https://downloads.bbc.co.uk/usingthebbc/PrivacyCookiesPolicy3-1.pdf" title="Download Privacy and Cookies Policy as PDF">Download Privacy and Cookies Policy as PDF</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="gel-layout__item gel-mb+ gel-hidden-section">
+                <a class="gel-brevier-bold gel-open-sections">Sections <span class="caret"></span></a>
+                <aside class="gel-aside-index-floating">
+                    <!-- explainer-content -->
+                    
+                    <ul>
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#9b6021e1463fd4f6d86a449a50da8598" title="1. What&#39;s in this policy?">1. What&#39;s in this policy?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#71b04243c6c2cb8b0d183ac1b4f92b1f" title="2. What does this policy cover?">2. What does this policy cover?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#a4754401b9338c76c84e37bb0250bc8e" title="3. How do you protect my personal information?">3. How do you protect my personal information?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#4aa3d429a0c00603d75b0a4cffd9e7d1" title="4. What types of personal information does the BBC collect about me?">4. What types of personal information does the BBC collect about me?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#e7c570eb00a8c5019159cb3012bf9481" title="5. How long will the BBC keep my personal information?">5. How long will the BBC keep my personal information?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#392685c07752f9b2f99eb10cf4f3032c" title="6. How can the BBC use my personal information?">6. How can the BBC use my personal information?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#833f5613d0ead3584c83cba814a958a5" title="7. When will the BBC use my information to contact me?">7. When will the BBC use my information to contact me?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#26543a5fc6e4d2c820b768833fcc9509" title="8. Will I be contacted for marketing purposes?">8. Will I be contacted for marketing purposes?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#b3eab403dbc1bb3f87aa55cc70b93bd9" title="9. When does the BBC share my personal information with others?">9. When does the BBC share my personal information with others?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#7c38a9c0788971e47704bb7f0abdccc8" title="10. What&#39;s different for kids and teens?">10. What&#39;s different for kids and teens?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#6966bbae310fd177968e78b1ba763411" title="11. Can I delete my information?">11. Can I delete my information?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#eeb6ee0bbd5c762300780465659f374b" title="12. What are my rights?">12. What are my rights?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#76c2dd3c9edcdd72d45e474bb33c0eed" title="13. How does the BBC use cookies and similar tracking?">13. How does the BBC use cookies and similar tracking?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#f5765be49bb2273160276ee1814daf6f" title="14. How will I find out about changes to this policy?">14. How will I find out about changes to this policy?</a></li>
+                        
+                        
+                        
+                        <li><a class="gel-brevier-bold" href="#d7f5820adaeb0ffce4f313c26bdf8498" title="15. How can I contact the BBC?">15. How can I contact the BBC?</a></li>
+                        
+                        
+                    </ul>
+                    
+                </aside>
+            </div>
+
+            <div class="gel-layout__item gel-bp-m-3/4">
+
+                <article id="9c0ccddb-a3d7-47f8-b30b-3ca5b28aa48a" class="bg-color-white gel-explainer-full-ops">
+
+                    <!-- explainer-content -->
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="9b6021e1463fd4f6d86a449a50da8598" class="gel-great-primer-bold">1. What&#39;s in this policy?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>This policy tells you:</p>
+<ul>
+<li>what information we might collect about you</li>
+<li>how we might use that information</li>
+<li>when we might use your details to contact you</li>
+<li>what information of yours we might share with others</li>
+<li>your choices about the personal information you give us</li>
+</ul>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="71b04243c6c2cb8b0d183ac1b4f92b1f" class="gel-great-primer-bold">2. What does this policy cover?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>This policy covers <a href="/usingthebbc/terms/terms-of-use#8d3b08a2eb8e55faf084a6d803c43b3d">the services</a> that are offered by the British Broadcasting Corporation.</p>
+<p>And sometimes it covers services offered by parts of our organisation that operate as separate companies. Such as:</p>
+<p><a href="https://www.bbc.co.uk/worldserviceradio">BBC World Service</a>, <a href="https://www.bbcstudios.com/">BBC Studios</a>, <a href="https://www.bbcstudioworks.com/">BBC Studioworks</a>, BBC Global News, BBC Media Applications Technology, BBC World Service Trading and TV Licensing and BBC charities.</p>
+<p>But only when those services link to this policy or tell you it applies.</p>
+<p>It&rsquo;s up to you to decide how much detail you want to know. We have just-in-time explanations that appear when we ask you to input your personal information. As well as what&rsquo;s in this Policy, a service might have a short privacy notice. In that privacy notice you can find key information on what we do with your personal information when you use that service. <a href="/usingthebbc">And if you&rsquo;re after more detail have a look at these topics.</a></p>
+<p><strong>What's not covered in this policy?</strong></p>
+<p>Our services sometimes link to services run by other companies' services, like opening a track from BBC Sounds on another music service such as Spotify. Those companies have their own privacy and cookies policies, so remember that the information you give them will follow their rules and not ours.</p>
+<p>Sometimes you can access our services from other places, like a BBC Radio 1 YouTube page or the BBC iPlayer app on your connected TV. Make sure to check their privacy policy so you know how they will use your information.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="a4754401b9338c76c84e37bb0250bc8e" class="gel-great-primer-bold">3. How do you protect my personal information?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>We're strongly committed to keeping you and your family's information safe. And to do this we design our services with your safety in mind. We also have dedicated teams to look after your information security and privacy.</p>
+<p>At the same time, no service can be completely secure - if you have any concerns that your <a href="/usingthebbc/account/what-is-a-bbc-account/">BBC account</a> or personal information has been put at risk, for example if someone could have found out your password, please <a href="/usingthebbc/account/im-having-problems-with-my-password/">get in touch</a> straight away.</p>
+<p><strong>Where we store your information</strong></p>
+<p>Some companies that provide services to us run their services from outside the UK and the European Economic Area. We only let that happen if we are satisfied with their levels of security. Keep in mind that when you give us personal information it could be being transferred, stored or processed in a location outside the UK and the EEA.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="4aa3d429a0c00603d75b0a4cffd9e7d1" class="gel-great-primer-bold">4. What types of personal information does the BBC collect about me?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>We'll give you details about why we need your personal information and how we'll use it before you begin, unless it's obvious.</p>
+<p><strong>a. Information that you give us</strong></p>
+<p>We might ask for your name and contact details, your date of birth or financial details, depending on what you're doing. If you apply to take part in a programme on politics, for example, we might ask you about your political opinions. Information you give us might include information in a <a href="/usingthebbc/terms-of-use/#349d7bccaa27c197ed02856d14c6b7b9">creation</a> you share with us, such as people's names that appear in the creation.</p>
+<p>When you <a href="https://www.bbc.co.uk/usingthebbc/account/help-registering/">register for a BBC account</a>, or update your details or settings we ask for some personal information, like your email address and age.</p>
+<p><strong>b. Device information</strong></p>
+<p>Devices are lots of things like:</p>
+<ul>
+<li>your computer</li>
+<li>your mobile</li>
+<li>your TV</li>
+<li>your tablet</li>
+<li>your voice-enabled device</li>
+</ul>
+<p><a href="/usingthebbc/privacy/how-does-the-bbc-collect-data-about-me/">We automatically collect some technical information from these devices and web browsers</a> even when you're not signed into to a <a title="BBC account" href="https://www.bbc.co.uk/usingthebbc/account/what-is-a-bbc-account/">BBC account</a>. This might include:</p>
+<ul>
+<li>IP (internet protocol) address</li>
+<li>device ID</li>
+<li>app ID</li>
+<li>vendor ID</li>
+<li>advertising ID</li>
+</ul>
+<p><strong>c. Location Information</strong></p>
+<p>We collect information about your location when you use our products and services. This helps us to determine whether you&rsquo;re somewhere where are services are available, helps us to ensure we are fulfilling our Charter obligations and to offer additional features whilst using our products and services, such as a weather forecast for your location.</p>
+<p>Your location can be determined at a town or city level by:<br />&bull; GPS<br />&bull; IP address<br />&bull; Information about nearby cell towers and Wi-Fi access point information</p>
+<p>What type of location data (for example Country, Region, City or Town) is collected depends on the product or service your using, the device you're using (for example Apple or Android) and your devices settings (whether permissions are enabled or disabled). You can change your permissions on or off any time in your device&rsquo;s settings. You can read more about <a title="how our apps capture your data on our explainers" href="https://www.bbc.co.uk/usingthebbc/privacy/how-do-apps-capture-my-data/">how our apps capture your data on our explainers</a>.</p>
+<p><strong>d. Information on your activities outside the BBC when you talk about us</strong></p>
+<p>Like if you've mentioned us in a Twitter post, we'll collect your Twitter handle.</p>
+<p><strong>e. Information on how you use our services</strong></p>
+<p>Like <a href="/usingthebbc/privacy/how-does-the-bbc-collect-data-about-me/">the articles you read and the programmes you watch</a>.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="e7c570eb00a8c5019159cb3012bf9481" class="gel-great-primer-bold">5. How long will the BBC keep my personal information?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>When you give us any personal information <a href="/usingthebbc/privacy/how-long-will-the-bbc-keep-my-information/">we'll let you know how long we'll hold it for</a>. And always stick to these principles:</p>
+<ul>
+<li>we only hold your information for as long as we do the activities we told you about or have a <a href="/usingthebbc/privacy-policy/#392685c07752f9b2f99eb10cf4f3032c">valid reason</a> to keep it</li>
+<li>we think about what type of information it is, the amount collected, how sensitive it might be and any legal requirements</li>
+<li>we design <a href="http://www.bbc.co.uk/usingthebbc/terms-of-use/#8d3b08a2eb8e55faf084a6d803c43b3d">our services</a> so that we don't hold your information any longer than we have to</li>
+<li>we may close your BBC account if you haven't used it in the last year. We'll send you an email to tell you that we plan to do this before we delete anything, so please check to see if we've sent you any emails about this</li>
+</ul>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="392685c07752f9b2f99eb10cf4f3032c" class="gel-great-primer-bold">6. How can the BBC use my personal information?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>We have to have a valid reason to use your personal information. It's called the "lawful basis for processing". Sometimes we might ask your permission to do things, like <a href="http://www.bbc.co.uk/usingthebbc/account/what-emails-and-newsletters-will-the-bbc-send-me/">when you subscribe to an email</a>. Other times, when you'd reasonably expect us to use your personal information, we don't ask your permission, but only when:</p>
+<ul>
+<li>the law says it's fine to use it, and</li>
+<li>it fits with the <a href="https://www.bbc.co.uk/usingthebbc/privacy/what-are-my-rights/">rights you have</a></li>
+</ul>
+<p>We use your information for these types of things:</p>
+<p><strong>a. to deliver our services and to provide you with information about them</strong></p>
+<p><strong>b. to deal with your requests, complaints and enquiries</strong></p>
+<p><strong>c. to check if you're using BBC iPlayer and to keep the licensing database accurate and up to date</strong></p>
+<p><strong>d. to personalise services and give you things more tailored to your tastes</strong></p>
+<p>Your BBC account lets you personalise your BBC online experience. To do that, &ldquo;Allow Personalisation&rdquo; is set to on when you create an account. If you&rsquo;re under 13 and create an account your personalisation is set to off. Information about <a href="/usingthebbc/privacy-policy/#4aa3d429a0c00603d75b0a4cffd9e7d1">how you use our online services</a> is then connected with other i<a href="/usingthebbc/privacy-policy/#4aa3d429a0c00603d75b0a4cffd9e7d1">nformation you give us</a> to personalise your experience.</p>
+<p>If you don&rsquo;t want us to do this, you can always <a href="/usingthebbc/account/about-your-personalisation-settings/">turn personalisation off</a> in your account settings. If you&rsquo;re under 13 you don&rsquo;t need to do anything.</p>
+<p><strong>e. to show you <a href="/usingthebbc/privacy-policy/#26543a5fc6e4d2c820b768833fcc9509">relevant advertising</a> on another company's site</strong></p>
+<p><strong>f. to help us understand what kind of services you might use</strong></p>
+<p>And sometimes how you might share things with other people</p>
+<p><strong>g. to <a href="/usingthebbc/account/what-does-recommended-for-you-mean/">recommend things</a> we think might interest you</strong></p>
+<p><strong>h. to show you advertising when you access a BBC service from outside the UK</strong></p>
+<p>Some of this advertising might be <a href="/usingthebbc/cookies/how-does-the-bbc-use-cookies-for-advertising/">tailored to you</a>.</p>
+<p><strong>i. to research and innovate</strong></p>
+<p>You're not a guinea-pig here, but <a href="/usingthebbc/privacy-policy/#b3eab403dbc1bb3f87aa55cc70b93bd9">knowing how you use our services</a> could lead to the next big technology breakthrough.</p>
+<p><strong>j. to <a href="/usingthebbc/privacy-policy/#833f5613d0ead3584c83cba814a958a5">contact you</a> about various things</strong></p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="833f5613d0ead3584c83cba814a958a5" class="gel-great-primer-bold">7. When will the BBC use my information to contact me?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>We might use your information to contact you about different things, like:</p>
+<ul>
+<li>to update you on any changes to the BBC&rsquo;s policies, practices and <a href="https://www.bbc.co.uk/usingthebbc/terms/">Terms of Use</a></li>
+<li>to check with you about any service or activity you&rsquo;ve signed up for. For example, we might tell you if your <a href="/usingthebbc/privacy-policy/#e7c570eb00a8c5019159cb3012bf9481">BBC account hasn't been used in a long time</a>. Or it might be about <a href="https://www.bbc.co.uk/usingthebbc/account/how-to-register-a-child-account/">creating a child account</a></li>
+<li>to contact you about a <a href="https://www.bbc.co.uk/usingthebbc/terms-of-use/#349d7bccaa27c197ed02856d14c6b7b9">creation</a> you sent us, like things you&rsquo;ve sent in to School Report news day</li>
+<li>to answer you when you&rsquo;ve contacted us, or to respond to a comment or complaint</li>
+<li>to invite you to take part in surveys about BBC services, which are always voluntary</li>
+<li>for <a href="/usingthebbc/privacy-policy/#26543a5fc6e4d2c820b768833fcc9509">marketing purposes</a></li>
+<li>to send you notifications on your device depending on <a href="http://www.bbc.co.uk/usingthebbc/account/how-can-i-use-notifications/">your settings</a></li>
+</ul>
+<p>We&rsquo;ll only contact you when we need to or when you&rsquo;ve given us permission.</p>
+<p>We&rsquo;ll never contact you to ask for your <a href="https://www.bbc.co.uk/usingthebbc/account/help-updating-your-account-details-after-registering/">BBC account password</a>.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="26543a5fc6e4d2c820b768833fcc9509" class="gel-great-primer-bold">8. Will I be contacted for marketing purposes?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>We'll only send you <a href="/usingthebbc/account/what-emails-and-newsletters-will-the-bbc-send-me/">marketing emails</a> or contact you about BBC programmes, services and your views on issues about the BBC if you've agreed to this.</p>
+<p>Keep in mind, even if you unsubscribe, <a href="/usingthebbc/privacy-policy/#833f5613d0ead3584c83cba814a958a5">we may still contact you.</a></p>
+<p><strong>Will my personal information be used when the BBC advertises with other companies?</strong></p>
+<p>If you have a<a href="https://www.bbc.co.uk/usingthebbc/account/what-is-a-bbc-account/"> BBC account</a> we might use information that we hold about you to show you relevant and <a href="https://www.bbc.co.uk/usingthebbc/privacy/do-you-share-my-data/">targeted advertising</a> for BBC services through other companies&rsquo; sites, like Facebook, Google, Snapchat or Twitter for example. This could be showing you a <a href="https://www.bbc.co.uk/usingthebbc/privacy/sharing-information-with-social-media-sites/">BBC sponsored message</a> where we know you have a BBC account and have used BBC services.</p>
+<p>Where we do this, we will share your data in a hashed format with these providers so that, where you have an account on the same platform, you will see adverts from the BBC. In these scenarios, we are joint controllers with these companies because we jointly determine the purposes and means of processing your personal data.</p>
+<p>We also assess certain characteristics of our audience members in order to find others who are similar to them to provide advertising to those individuals.&nbsp;</p>
+<p>If you don&rsquo;t want to see our targeted advertising, you can set ad preferences in your social media companies&rsquo; settings. Also, you can visit your BBC account and <a href="https://www.bbc.co.uk/usingthebbc/privacy/sharing-information-with-social-media-sites/">turn this off</a>.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="b3eab403dbc1bb3f87aa55cc70b93bd9" class="gel-great-primer-bold">9. When does the BBC share my personal information with others?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>We'll never sell your personal information. We do share it with others in these ways:</p>
+<p><strong>a. When you make something public</strong></p>
+<p>Like <a href="/usingthebbc/account/what-happens-to-the-comments-i-post-on-the-bbc/">post a comment</a> which the public can see.</p>
+<p><strong>b. When we use other companies to power our services</strong></p>
+<p>In order for us to give you quality experiences and to understand how you're using our services we often use other companies to process <a href="/usingthebbc/privacy-policy/#4aa3d429a0c00603d75b0a4cffd9e7d1">your personal information</a> on our behalf. For example, sending you emails about things we think might interest you, to ask you what you think about our services, or to analyse data on how people use our digital services so we can improve them.</p>
+<p>We make sure that your personal information is looked after as if we were handling it directly. We carefully select these companies, only share with them what they need to do the work and we make sure they <a href="/usingthebbc/privacy-policy/#a4754401b9338c76c84e37bb0250bc8e">keep your information secure</a>.</p>
+<p><strong>c. When we share personal information with <a href="/usingthebbc/privacy-policy/#71b04243c6c2cb8b0d183ac1b4f92b1f">companies in the BBC family</a></strong></p>
+<p><strong>d. When you <a href="/usingthebbc/privacy-policy/#71b04243c6c2cb8b0d183ac1b4f92b1f">use another company's service </a>that connects to us, like voice-enabled devices and connected TV</strong></p>
+<p>You can access our services through a voice-enabled device, like Amazon Alexa, or a connected TV. You&rsquo;ll need to sign in to your BBC account to use BBC services on your connected TV. When you do this we&rsquo;ll share an identifier for your <a href="https://www.bbc.co.uk/usingthebbc/account/what-is-a-bbc-account/">BBC account</a> with the company who runs the service you are using. Make sure to check that company&rsquo;s privacy policy so you know how it will use your information. The BBC isn&rsquo;t responsible when you access a BBC service through another company&rsquo;s services. It&rsquo;s up to you if you want to access the BBC in this way.</p>
+<p><strong>e. When we do collaborative research</strong></p>
+<p>We do research activities and sometimes collaborate with research partners. Every now and then we share our <a href="http://www.bbc.co.uk/usingthebbc/terms/terms-of-use#8d3b08a2eb8e55faf084a6d803c43b3d">content</a> and data with them. This might include information we&rsquo;ve collected about you. But we&rsquo;re careful about what we share and what our research partners can do with it.</p>
+<p><strong>f. TV Licensing</strong></p>
+<p>We share some personal information with <a href="http://www.tvlicensing.co.uk/privacy-security-policies">TV Licensing</a>, to check if you&rsquo;re using BBC iPlayer and to keep the licensing database accurate and up to date.</p>
+<p><strong>g. Sometimes by law we have to pass on your information to other organisations</strong></p>
+<p>We might also share your information if we have to by law, or when we need to protect you or other people from harm.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="7c38a9c0788971e47704bb7f0abdccc8" class="gel-great-primer-bold">10. What&#39;s different for kids and teens?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>The BBC has services that are kid-friendly and for teens.</p>
+<p>Here's what happens when you use them.</p>
+<p><strong>a. Why do we collect information about you in the first place?</strong></p>
+<p>We keep information about you so that we can</p>
+<ul>
+<li><a href="/usingthebbc/privacy-policy/#392685c07752f9b2f99eb10cf4f3032c">get the right services for you</a></li>
+<li><a href="/usingthebbc/privacy-policy/#392685c07752f9b2f99eb10cf4f3032c">plan and improve our services</a></li>
+<li><a href="/usingthebbc/privacy-policy/#833f5613d0ead3584c83cba814a958a5">keep in touch with you</a></li>
+</ul>
+<p><strong>b. We'll always tell you why we're collecting your personal information</strong></p>
+<p>We&rsquo;ll explain why and how we use it and for how long. It&rsquo;s called a &ldquo;privacy notice&rdquo;. And if we need your parent or guardian's permission we'll give you clear details about what's needed at the time.</p>
+<p><strong>c. We can only use your personal information <a href="/usingthebbc/privacy/privacy-policy/#392685c07752f9b2f99eb10cf4f3032c">if we have a valid reason</a></strong></p>
+<p><strong>d. We share personal information about you to others but we follow <a href="/usingthebbc/privacy-policy/#b3eab403dbc1bb3f87aa55cc70b93bd9">some rules</a></strong></p>
+<p>The main rule is we will never sell your personal information to anyone.</p>
+<p><strong>e. We might ask you to tell us your age</strong></p>
+<p>To make sure you use the parts of the BBC that are suitable for you. For example:</p>
+<ul>
+<li>so that adults don't <a href="/usingthebbc/account/what-happens-to-the-comments-i-post-on-the-bbc/">post comments</a> on kid's message boards</li>
+<li>when you want to <a href="/usingthebbc/account/help-with-child-accounts/">get a BBC account</a></li>
+<li>When you're watching a programme, like on BBC iPlayer, and it's a bit edgy</li>
+</ul>
+<p><strong>f. Sometimes we'll ask to get your parent or guardian's consent</strong></p>
+<p>You'll see a notification. We might also ask for some details from them, so that we can contact them. Other times we may contact your parent or guardian:</p>
+<ul>
+<li>so you can <a href="/usingthebbc/account/what-are-notifications/">get notifications</a> from us</li>
+<li>so we can s<a href="/usingthebbc/privacy-policy/#392685c07752f9b2f99eb10cf4f3032c">how you more things we think you'll like</a>, based on what you do</li>
+<li>so you can post comments</li>
+<li>so you can upload your contribution to us</li>
+</ul>
+<p><strong>g. Sometimes we'll tell your parents about your activities</strong></p>
+<p>For example, if you enter one of our competitions, we might contact your parent.</p>
+<p><strong>h. When we can contact you</strong></p>
+<p>Sometimes we need to get in touch with you but we'll always follow <a href="/usingthebbc/privacy-policy/#833f5613d0ead3584c83cba814a958a5">these rules</a>.</p>
+<p><strong>i. It's safe to use us</strong></p>
+<p>It's our job to <a href="/usingthebbc/privacy-policy/#a4754401b9338c76c84e37bb0250bc8e">keep your personal information safe and secure</a>. That's why we design our services with your safety in mind. And we're always looking for the best ways to improve this.</p>
+<p>There are also <a href="https://www.bbc.co.uk/cbbc/watch/p01g2pt6">things that you can do to keep safe</a>, like <a href="https://www.bbc.co.uk/programmes/articles/442GW0f6QRHCJN3RKJCxmgH/safer-internet-day?intc_type=mixedcards&amp;intc_location=schoolreport&amp;intc_campaign=schoolreport&amp;intc_linkname=vidclip_onlinesafety_contentcard4">thinking about what information you share</a> and how to keep your devices secure.</p>
+<p><strong>j. Human beings and <a href="/usingthebbc/privacy/how-is-my-info-being-used-to-make-decisions/">not robots</a> will make the big decisions that affect you</strong></p>
+<p><strong>k. You might not be able to use our services if you're outside the UK</strong></p>
+<p>If you're outside the UK you might not be able to access some services. Like CBBC and CBeebies.</p>
+<p>And you may not be able to get a BBC account. Sorry about that.</p>
+<p><strong>l. You're in control of how we use cookies and tracking</strong></p>
+<p>Cookies are small text files that transfer onto your device when you use a service.</p>
+<p>We use cookies and tracking to get information about what type of device you&rsquo;re using to access our services and we record things like what sites you visit, your IP address (a unique number your device creates every time you connect to the internet) and <a href="https://www.bbc.co.uk/usingthebbc/privacy-policy/#76c2dd3c9edcdd72d45e474bb33c0eed">to make things easier for you</a>, like remembering where you got to in a game or what emoji you selected.</p>
+<p>You <a href="/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/">can switch off some cookies</a> and similar tracking technologies. Or your parent or guardian can do this if you&rsquo;re under 13.</p>
+<p><a href="/usingthebbc/privacy-policy/#76c2dd3c9edcdd72d45e474bb33c0eed">But other cookies can&rsquo;t be turned off</a>.</p>
+<p><strong>m. What we do when you post, upload or share a creation</strong></p>
+<p>When you share your <a href="/usingthebbc/terms-of-use/#349d7bccaa27c197ed02856d14c6b7b9">creation</a> with us we'll <a href="/usingthebbc/terms/what-can-the-bbc-do-with-the-content-that-i-post/">try to tell you exactly what we're going to do with it</a>.</p>
+<p><strong>n. You've got <a href="/usingthebbc/privacy/what-are-my-rights/">privacy rights</a>, the same as adults, so get to know what they are</strong></p>
+<p>You can:</p>
+<ul>
+<li>ask us <a href="/usingthebbc/privacy/what-info-do-you-have-about-me/">what personal information we hold</a> about you</li>
+<li>ask us <a href="/usingthebbc/privacy/how-do-i-change-my-info/">to correct</a> or <a href="/usingthebbc/privacy/can-i-delete-my-data/">delete your personal information</a></li>
+<li>tell us <a href="/usingthebbc/privacy/how-can-i-stop-you-using-my-personal-info/">to stop using your personal information</a></li>
+</ul>
+<p>If you're 13 or older, you can do this yourself, but not always. Sometimes we'll be asking for your parent or guardian to do that.</p>
+<p>If you're under 13 your parent or guardian probably has to do it for you.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="6966bbae310fd177968e78b1ba763411" class="gel-great-primer-bold">11. Can I delete my information?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>This depends on what information you're talking about.</p>
+<p><strong>a. If you're talking about BBC account</strong></p>
+<p>You can <a href="/usingthebbc/account/how-to-delete-your-account/">delete your account</a>. Your account information is immediately deleted. Keep in mind:</p>
+<ul>
+<li>we keep a record of how you've used our services, but this information can't be linked back to you</li>
+<li>we also keep anything you've uploaded or commented on</li>
+</ul>
+<p><strong>b. What about other information I've shared with you?</strong></p>
+<p>We might have collected other personal information that you might <a href="/usingthebbc/privacy/can-i-delete-my-data/">ask to be deleted</a> that has nothing to do with BBC account.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="eeb6ee0bbd5c762300780465659f374b" class="gel-great-primer-bold">12. What are my rights?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>Remember, you're in control of your personal information.</p>
+<p><a href="/usingthebbc/privacy/what-are-my-rights/">You have the right to</a>:</p>
+<ul>
+<li><a href="/usingthebbc/privacy/what-info-do-you-have-about-me/">request a copy of your information</a></li>
+<li><a href="/usingthebbc/privacy/how-is-my-info-being-used-to-make-decisions/">not let robots make big decisions about you</a></li>
+<li>to ask us to correct information that's wrong, to delete it or to request that we only use it for certain purposes</li>
+<li>to change your mind, and ask us to stop using your information. For example, <a href="/usingthebbc/account/what-emails-and-newsletters-will-the-bbc-send-me/">unsubscribing from any marketing emails</a> or <a href="/usingthebbc/account/what-emails-and-newsletters-will-the-bbc-send-me/">turning off personalisation</a></li>
+</ul>
+<p>Bear in mind, sometimes we might not be able to help. Like if the law tells us we can't or it forms part of our journalistic output.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="76c2dd3c9edcdd72d45e474bb33c0eed" class="gel-great-primer-bold">13. How does the BBC use cookies and similar tracking?</h2>
+                            
+                            <div class="gel-copy">
+                                <p><strong>a. What are cookies and tracking technologies?</strong></p>
+<p>Cookies are small text files which are transferred to your computer or mobile when you visit a website or app.</p>
+<p>There are also similar <a href="/usingthebbc/privacy-policy/#4aa3d429a0c00603d75b0a4cffd9e7d1">pieces of tracking information we collect</a>.</p>
+<p><strong>b. Why do we use <a href="/usingthebbc/cookies/what-do-i-need-to-know-about-cookies/">cookies and other tracking</a>?</strong></p>
+<p>To do a few different things:</p>
+<ul>
+<li>to remember information about you, so you don't have to give it to us again. And again. And again</li>
+<li>to keep you signed in, even on different devices</li>
+<li>to help us understand how people are using our services, so we can make them better</li>
+<li>to deliver advertising to websites outside of the UK</li>
+<li>to help us personalise the BBC to you by remembering your preferences and settings. And your progress, so you can pause and pick up where you left off watching a programme even on a different device</li>
+<li>to find out if our emails have been read and if you find them useful</li>
+</ul>
+<p><strong>c. What are the types of cookies?</strong></p>
+<p>Some cookies are always on when you visit us, and you can&rsquo;t turn them off unless you change your browser settings. We call these <a href="https://www.bbc.co.uk/usingthebbc/cookies/what-do-i-need-to-know-about-cookies/">&ldquo;strictly necessary cookies&rdquo;</a>. We use them to make sure our digital services work correctly and are meeting audience needs and interests.</p>
+<p>We also use <a href="http://www.bbc.co.uk/usingthebbc/cookies/what-do-i-need-to-know-about-cookies/">functional, performance and advertising cookies</a> to make your experience more enjoyable. You can switch these on or off at any time and you can always change your mind. We&rsquo;ll only use them if you&rsquo;ve agreed.</p>
+<p>Bear in mind there are some other cookies out there from other companies. These <a href="http://www.bbc.co.uk/usingthebbc/cookies/what-do-i-need-to-know-about-cookies/">"third-party cookies"</a> might track how you use different websites, including ours. For example, you might get a social media company&rsquo;s cookie when you see the option to share something. <a href="http://www.bbc.co.uk/usingthebbc/cookies/what-happens-if-third-party-cookies-are-disabled-on-my-browser/">You can turn them off</a>, but not through us.</p>
+<p><strong>d. How do cookies last?</strong></p>
+<p>Some are erased when you close the browser on your website or app. <a href="http://www.bbc.co.uk/usingthebbc/cookies/what-do-i-need-to-know-about-cookies/">Others stay longer</a>, sometimes forever, and are saved onto your device so that they&rsquo;re there when you come back.</p>
+<p><strong>e. How do I control my cookies and tracking?</strong></p>
+<p>Strictly necessary cookies are always on when you visit us. On your first visit to us, we&rsquo;ll tell you about our other types of cookies and ask you to choose which cookies we can use. You can always change your mind <a href="http://www.bbc.co.uk/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/">by going to your settings</a>.</p>
+<p>Stopping all cookies might mean you can&rsquo;t access some BBC services, or that some of them might not work properly for you.</p>
+<p>Another way to control some tracking is in the settings on your device.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="f5765be49bb2273160276ee1814daf6f" class="gel-great-primer-bold">14. How will I find out about changes to this policy?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>We update this policy sometimes. If we make important changes, like how we use your personal information, we'll let you know. It might be a notice, an email or a message in your app.</p>
+<p>If you don't agree to the changes, then you can always stop using our services, <a href="/usingthebbc/account/how-to-delete-your-account/">delete your account</a> and stop giving us any more personal information. We'd be sorry to see you go.</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+                    <div class="gel-pica">
+                        <div class="gel-explainer--generic">
+                            
+                            <h2 id="d7f5820adaeb0ffce4f313c26bdf8498" class="gel-great-primer-bold">15. How can I contact the BBC?</h2>
+                            
+                            <div class="gel-copy">
+                                <p>Find out more and <a href="/usingthebbc/privacy/what-are-my-rights/">contact us about your rights</a>.</p>
+<p>For any other questions or comments about this policy speak to our Data Protection Officer.</p>
+<ul>
+<li><a href="mailto:DataProtection.Officer@bbc.co.uk">by email</a></li>
+<li>by post</li>
+</ul>
+<p>BBC Data Protection Office,&nbsp;BBC Broadcast Centre, BC2 C6, 201 Wood Lane, London W12 7TP</p>
+<p>If you&rsquo;re outside the UK please contact the BBC Studios Data Protection Officer:</p>
+<ul>
+<li><a href="mailto:Dataprotection@bbc.com">by email</a></li>
+<li>by post at BBC Studios DPO, Regulatory Affairs, 1 Television Centre, 101 Wood Lane, London W12 7FA</li>
+</ul>
+<p>We're regulated by the <a href="https://ico.org.uk/concerns/">Information Commissioner's Office</a>. You can also contact them for advice and support.</p>
+<p>&copy; BBC 2019</p>
+                            </div>
+                            <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+                        </div>
+                    </div>
+                    
+
+                </article>
+
+                
+<div class="gel-layout">
+    <!-- Dynamic Dropdown -->
+    <div class="gel-layout__item">
+        <div class="gel-language-opts bg-color-white gel-long-primer"><span>Choose language: </span><a class="gel-long-primer-bold" href="/usingthebbc/privacy-policy/cy/" title="Cymraeg">Cymraeg</a><a class="gel-long-primer-bold" href="/usingthebbc/privacy-policy/gd/" title="G&agrave;idhlig">G&agrave;idhlig</a></div>
+    </div>
+</div>
+
+
+            </div>
+
+            <div class="gel-layout__item gel-bp-m-1/4">
+
+                <aside class="gel-aside-index">
+
+                    <!-- explainer-content -->
+                    
+                    <ul>
+                    
+                        <li><a class="gel-brevier-bold" href="#9b6021e1463fd4f6d86a449a50da8598" title="1. What&#39;s in this policy?">1. What&#39;s in this policy?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#71b04243c6c2cb8b0d183ac1b4f92b1f" title="2. What does this policy cover?">2. What does this policy cover?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#a4754401b9338c76c84e37bb0250bc8e" title="3. How do you protect my personal information?">3. How do you protect my personal information?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#4aa3d429a0c00603d75b0a4cffd9e7d1" title="4. What types of personal information does the BBC collect about me?">4. What types of personal information does the BBC collect about me?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#e7c570eb00a8c5019159cb3012bf9481" title="5. How long will the BBC keep my personal information?">5. How long will the BBC keep my personal information?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#392685c07752f9b2f99eb10cf4f3032c" title="6. How can the BBC use my personal information?">6. How can the BBC use my personal information?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#833f5613d0ead3584c83cba814a958a5" title="7. When will the BBC use my information to contact me?">7. When will the BBC use my information to contact me?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#26543a5fc6e4d2c820b768833fcc9509" title="8. Will I be contacted for marketing purposes?">8. Will I be contacted for marketing purposes?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#b3eab403dbc1bb3f87aa55cc70b93bd9" title="9. When does the BBC share my personal information with others?">9. When does the BBC share my personal information with others?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#7c38a9c0788971e47704bb7f0abdccc8" title="10. What&#39;s different for kids and teens?">10. What&#39;s different for kids and teens?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#6966bbae310fd177968e78b1ba763411" title="11. Can I delete my information?">11. Can I delete my information?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#eeb6ee0bbd5c762300780465659f374b" title="12. What are my rights?">12. What are my rights?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#76c2dd3c9edcdd72d45e474bb33c0eed" title="13. How does the BBC use cookies and similar tracking?">13. How does the BBC use cookies and similar tracking?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#f5765be49bb2273160276ee1814daf6f" title="14. How will I find out about changes to this policy?">14. How will I find out about changes to this policy?</a></li>
+                    
+                        <li><a class="gel-brevier-bold" href="#d7f5820adaeb0ffce4f313c26bdf8498" title="15. How can I contact the BBC?">15. How can I contact the BBC?</a></li>
+                    
+                    </ul>
+                    
+
+                    <a class="gel-back-to-top gel-minion-bold" href="#top" title="Back to top">Back to top</a>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</div>
+<div id="orb-footer" class="orb-footer" dir="ltr"> <div id="navp-orb-footer-promo"></div><aside role="complementary"><div id="orb-aside" class="orb-nav-sec b-r b-g-p"><div class="orb-footer-inner" role="navigation" aria-label="BBC"><h2 class="orb-footer-lead">Explore the BBC</h2><div class="orb-footer-primary-links"><ul class="domestic"><li class="orb-nav-home"><a href="https://www.bbc.co.uk"><span>Home</span></a></li><li class="orb-nav-news"><a href="https://www.bbc.co.uk/news"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#B80000" d="M302,424h-68c-0.552,0-1.052-0.224-1.414-0.586S232,422.552,232,422V306c0-0.552,0.224-1.052,0.586-1.414
+                                        S233.448,304,234,304h68c0.552,0,1.052,0.224,1.414,0.586S304,305.448,304,306v116c0,0.552-0.224,1.052-0.586,1.414
+                                        S302.552,424,302,424z"></path><path fill="#EB0000" d="M422,280H234c-0.552,0-1.052-0.224-1.414-0.586S232,278.552,232,278V90c0-0.552,0.224-1.052,0.586-1.414
+                                        S233.448,88,234,88h188c0.552,0,1.052,0.224,1.414,0.586S424,89.448,424,90v188c0,0.552-0.224,1.052-0.586,1.414
+                                        S422.552,280,422,280z"></path><path fill="#D30000" d="M206,328H90c-0.552,0-1.052-0.224-1.414-0.586S88,326.552,88,326V210c0-0.552,0.224-1.052,0.586-1.414
+                                        S89.448,208,90,208h116c0.552,0,1.052,0.224,1.414,0.586S208,209.448,208,210v116c0,0.552-0.224,1.052-0.586,1.414
+                                        S206.552,328,206,328z"></path></g></svg><span>News</span></a></li><li class="orb-nav-sport"><a href="https://www.bbc.co.uk/sport"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#FFD230" d="M90,184h332c0.552,0,1.052-0.224,1.414-0.586S424,182.552,424,182V90c0-0.552-0.224-1.052-0.586-1.414
+                                        S422.552,88,422,88H90c-0.552,0-1.052,0.224-1.414,0.586S88,89.448,88,90v92c0,0.552,0.224,1.052,0.586,1.414S89.448,184,90,184z"></path><path fill="#FFA100" d="M306,424h116c0.552,0,1.052-0.224,1.414-0.586S424,422.552,424,422v-92c0-0.552-0.224-1.052-0.586-1.414
+                                        S422.552,328,422,328H306c-0.552,0-1.052,0.224-1.414,0.586S304,329.448,304,330v92c0,0.552,0.224,1.052,0.586,1.414
+                                        S305.448,424,306,424z"></path><path fill="#FFBA00" d="M210,304h212c0.552,0,1.052-0.224,1.414-0.586S424,302.552,424,302v-92c0-0.552-0.224-1.052-0.586-1.414
+                                        S422.552,208,422,208H210c-0.552,0-1.052,0.224-1.414,0.586S208,209.448,208,210v92c0,0.552,0.224,1.052,0.586,1.414
+                                        S209.448,304,210,304z"></path></g></svg><span>Sport</span></a></li><li class="orb-nav-weather"><a href="https://www.bbc.co.uk/weather"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#067EB3" d="M316.234,368.56l52.326-52.326c0.391-0.391,0.586-0.902,0.586-1.414c0-0.512-0.195-1.024-0.586-1.414
+                                        L252.594,197.44c-0.391-0.391-0.902-0.586-1.414-0.586s-1.024,0.195-1.414,0.586l-52.326,52.326
+                                        c-0.391,0.391-0.586,0.902-0.586,1.414s0.195,1.024,0.586,1.414L313.406,368.56c0.391,0.391,0.902,0.586,1.414,0.586
+                                        C315.332,369.146,315.844,368.95,316.234,368.56z"></path><path fill="#1969A6" d="M90,424h74c0.552,0,1.052-0.224,1.414-0.586S166,422.552,166,422V258c0-0.552-0.224-1.052-0.586-1.414
+                                        S164.552,256,164,256H90c-0.552,0-1.052,0.224-1.414,0.586S88,257.448,88,258v164c0,0.552,0.224,1.052,0.586,1.414
+                                        S89.448,424,90,424z"></path><path fill="#149EDC" d="M258,166h164c0.552,0,1.052-0.224,1.414-0.586S424,164.552,424,164V90c0-0.552-0.224-1.052-0.586-1.414
+                                        S422.552,88,422,88H258c-0.552,0-1.052,0.224-1.414,0.586S256,89.448,256,90v74c0,0.552,0.224,1.052,0.586,1.414
+                                        S257.448,166,258,166z"></path></g></svg><span>Weather</span></a></li><li class="orb-nav-iplayer"><a href="https://www.bbc.co.uk/iplayer"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#DC2878" d="M182,358h-68c-0.55,0-1.05-0.225-1.412-0.587C112.225,357.05,112,356.55,112,356V156
+                                        c0-0.552,0.224-1.052,0.586-1.414S113.448,154,114,154h68c0.55,0,1.05,0.225,1.413,0.587C183.775,154.95,184,155.45,184,156v200
+                                        c0,0.552-0.224,1.052-0.586,1.414S182.552,358,182,358z"></path><path fill="#FF4C98" d="M372.106,248.243l34-58.89c0.275-0.476,0.33-1.022,0.197-1.517c-0.133-0.495-0.453-0.94-0.93-1.215
+                                        l-173.205-100c-0.478-0.276-1.023-0.332-1.518-0.2c-0.494,0.132-0.938,0.454-1.214,0.932l-34,58.89
+                                        c-0.275,0.476-0.33,1.022-0.197,1.517c0.133,0.495,0.453,0.94,0.93,1.215l173.205,100c0.478,0.276,1.023,0.332,1.518,0.2
+                                        C371.386,249.042,371.83,248.721,372.106,248.243z"></path><path fill="#AF0D5B" d="M372.106,263.757l34,58.89c0.275,0.476,0.33,1.022,0.197,1.517c-0.133,0.495-0.453,0.94-0.93,1.215
+                                        l-173.205,100c-0.478,0.276-1.023,0.332-1.518,0.2c-0.494-0.132-0.938-0.454-1.214-0.932l-34-58.89
+                                        c-0.275-0.476-0.33-1.022-0.197-1.517c0.133-0.495,0.453-0.94,0.93-1.215l173.205-100c0.478-0.276,1.023-0.332,1.518-0.2
+                                        C371.386,262.958,371.83,263.279,372.106,263.757z"></path></g></svg><span>iPlayer</span></a></li><li class="orb-nav-sounds"><a href="https://www.bbc.co.uk/sounds"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#A13104" d="M122,304H78c-0.552,0-1.052-0.224-1.414-0.586S76,302.552,76,302v-92c0-0.552,0.224-1.052,0.586-1.414
+                                        S77.448,208,78,208h44c0.552,0,1.052,0.224,1.414,0.586S124,209.448,124,210v92c0,0.552-0.224,1.052-0.586,1.414
+                                        S122.552,304,122,304z"></path><path fill="#D24712" d="M230,376h-80c-0.552,0-1.052-0.224-1.414-0.586S148,374.552,148,374V138c0-0.552,0.224-1.052,0.586-1.414
+                                        S149.448,136,150,136h80c0.552,0,1.052,0.224,1.414,0.586S232,137.448,232,138v236c0,0.552-0.224,1.052-0.586,1.414
+                                        S230.552,376,230,376z"></path><path fill="#FA6400" d="M422,424H258c-0.552,0-1.052-0.224-1.414-0.586S256,422.552,256,422V90c0-0.552,0.224-1.052,0.586-1.414
+                                        S257.448,88,258,88h164c0.552,0,1.052,0.224,1.414,0.586S424,89.448,424,90v332c0,0.552-0.224,1.052-0.586,1.414
+                                        S422.552,424,422,424z"></path></g></svg><span>Sounds</span></a></li><li class="orb-nav-bitesize"><a href="https://www.bbc.co.uk/bitesize"><svg class="product-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" focusable="false" aria-hidden="true"><g><path fill="#6100A8" d="M134,400H78c-0.552,0-1.052-0.224-1.414-0.586S76,398.552,76,398V162c0-0.552,0.224-1.052,0.586-1.414
+                                        S77.448,160,78,160h56c0.552,0,1.052,0.224,1.414,0.586S136,161.448,136,162v236c0,0.552-0.224,1.052-0.586,1.414
+                                        S134.552,400,134,400z"></path><path fill="#7222C6" d="M254,400h-92c-0.552,0-1.052-0.224-1.414-0.586S160,398.552,160,398V114c0-0.552,0.224-1.052,0.586-1.414
+                                        S161.448,112,162,112h92c0.552,0,1.052,0.224,1.414,0.586S256,113.448,256,114v284c0,0.552-0.224,1.052-0.586,1.414
+                                        S254.552,400,254,400z"></path><path fill="#963CE1" d="M444.77,373.863l-85.829,26.232c-0.529,0.162-1.073,0.093-1.526-0.148s-0.812-0.655-0.973-1.184
+                                        L273.901,126.63c-0.16-0.528-0.091-1.07,0.149-1.521c0.241-0.451,0.653-0.811,1.18-0.972l85.829-26.232
+                                        c0.529-0.162,1.073-0.093,1.526,0.148s0.812,0.655,0.973,1.184l82.542,272.133c0.16,0.528,0.091,1.07-0.149,1.521
+                                        C445.71,373.342,445.297,373.702,444.77,373.863z"></path></g></svg><span>Bitesize</span></a></li><li class="orb-nav-cbeebies"><a href="https://www.bbc.co.uk/cbeebies"><span>CBeebies</span></a></li><li class="orb-nav-cbbc"><a href="https://www.bbc.co.uk/cbbc"><span>CBBC</span></a></li><li class="orb-nav-food"><a href="https://www.bbc.co.uk/food"><span>Food</span></a></li></ul><ul class="international"><li class="orb-nav-homedotcom"><a href="https://www.bbc.com/"><span>Home</span></a></li><li class="orb-nav-newsdotcom"><a href="https://www.bbc.com/news"><span>News</span></a></li><li class="orb-nav-sport"><a href="https://www.bbc.com/sport"><span>Sport</span></a></li><li class="orb-nav-reeldotcom"><a href="https://www.bbc.com/reel"><span>Reel</span></a></li><li class="orb-nav-worklife"><a href="https://www.bbc.com/worklife"><span>Worklife</span></a></li><li class="orb-nav-traveldotcom"><a href="https://www.bbc.com/travel"><span>Travel</span></a></li><li class="orb-nav-future"><a href="https://www.bbc.com/future"><span>Future</span></a></li><li class="orb-nav-culture"><a href="https://www.bbc.com/culture"><span>Culture</span></a></li><li class="orb-nav-tv"><a href="https://www.bbc.co.uk/schedules/p00fzl9m"><span>TV</span></a></li><li class="orb-nav-weather"><a href="https://www.bbc.com/weather"><span>Weather</span></a></li><li class="orb-nav-sounds"><a href="https://www.bbc.co.uk/sounds"><span>Sounds</span></a></li></ul></div></div></div></aside><footer role="contentinfo"><div id="orb-contentinfo" class="orb-nav-sec b-r b-g-p"><div class="orb-footer-inner"><div><ul><li class="orb-footer-terms"><a href="https://www.bbc.co.uk/usingthebbc/terms/">Terms of Use</a></li><li class="orb-footer-about"><a href="https://www.bbc.co.uk/aboutthebbc">About the BBC</a></li><li class="orb-footer-privacy"><a href="https://www.bbc.co.uk/usingthebbc/privacy/">Privacy Policy</a></li><li class="orb-footer-cookies"><a href="https://www.bbc.co.uk/usingthebbc/cookies/">Cookies</a></li><li class="orb-footer-accessibility"><a href="https://www.bbc.co.uk/accessibility/">Accessibility Help</a></li><li class="orb-footer-parental"><a href="https://www.bbc.co.uk/guidance">Parental Guidance</a></li><li class="orb-footer-contact"><a href="https://www.bbc.co.uk/contact">Contact the BBC</a></li><li class="domestic orb-footer-newsletter"><a href="https://www.bbc.co.uk/bbcnewsletter">BBC emails for you</a></li><li class="international orb-footer-newsletter"><a href="https://www.bbc.co.uk/bbcnewsletter">Get Personalised Newsletters</a></li><li class="international orb-footer-ads"><a href="https://www.bbcglobalnews.com/">Advertise with us</a></li><li class="international orb-footer-adchoices"><a href="https://www.bbc.com/usingthebbc/cookies/how-does-the-bbc-use-cookies-for-advertising/">AdChoices / Do Not Sell My Info</a></li></ul><small><em class="orb-hilight">Copyright &copy; 2022 BBC.</em> The BBC is not responsible for the content of external sites. <span class="orb-footer-links"><a href="https://www.bbc.co.uk/editorialguidelines/guidance/feeds-and-links" class="orb-hilight">Read about our approach to external linking.</a></span></small></div></div></div></footer></div><script type="text/javascript" src="https://static.files.bbci.co.uk/orbit/ee4d5bb6e0026845542bb97eab419ef6/js/redirect.js" async=""></script><script type="text/javascript" src="https://static.files.bbci.co.uk/orbit/ee4d5bb6e0026845542bb97eab419ef6/js/performance.js" data-release="3.0.0-2152.6f6d6fd5" data-ux="v5" async=""></script> <script type="module" src="https://static.files.bbci.co.uk/orbit/ee4d5bb6e0026845542bb97eab419ef6/js/more-drawer.mjs"></script> <script type="module" src="https://static.files.bbci.co.uk/orbit/ee4d5bb6e0026845542bb97eab419ef6/js/orbit.mjs" async=""></script><script nomodule="" type="text/javascript" src="https://static.files.bbci.co.uk/orbit/ee4d5bb6e0026845542bb97eab419ef6/js/orbit.js" async=""></script>   <script type="text/javascript">/*<![CDATA[*/
+    (function() {
+  function loadJs(url) {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = url;
+      script.async = true;
+      document.getElementsByTagName('body')[0].appendChild(script);
+  }
+     window.bbcuser.isUKCombined().then(function(isUK) {
+       if (isUK) {
+         loadJs('https://static.files.bbci.co.uk/orbit/ee4d5bb6e0026845542bb97eab419ef6/js/edr.js');
+       }
+     });
+   })();
+   /*]]>*/</script>      <script type="module">if (window.bbcuser && window.bbcuser.isUKCombined) {
+        bbcuser.isUKCombined().then(function (isUK) {
+            if (isUK) {
+                import('https://nav.files.bbci.co.uk/searchbox/f86b755d34489cbca2b17774b273fba1//js/search-suggest.js').then(drawer => {
+                    drawer.setupSearchDrawer({
+                        searchboxAppStaticPrefix: 'https://nav.files.bbci.co.uk/searchbox/f86b755d34489cbca2b17774b273fba1/',
+                        variant: 'default',
+                    });
+                });
+            }
+        });
+    }</script>     <script type="text/javascript" src="https://nav.files.bbci.co.uk/navpromo/34f98a4c8573fabed16dc8acea28feb8/js/footerpromo.js" data-base="https://navpromo.api.bbci.co.uk" data-variant="" async=""></script>    <script type="text/javascript">window.COOKIES_STATIC_HOST="https://static.files.bbci.co.uk/cookies/2e8917a000cbc9051af7ab0a431d1750/cookie-banner/cookie-prompt/"</script><script src="https://static.files.bbci.co.uk/cookies/2e8917a000cbc9051af7ab0a431d1750/cookie-banner/cookie-banners.bundle.js" async=""></script>  <script src="https://nav.files.bbci.co.uk//user-activity-helper/a8196ecdef2d10b40b1afc53b833773a/js/detectview.bundle.js" async=""></script><script type="text/javascript">"use strict";window.__reverb.__reverbLoadedPromise.then(function(e){return e.initialise().then(function(){return e.viewEvent()})},function(){console.log("Failed to load reverb. No event sent")});</script>
+
+
+</body>
+</html>
